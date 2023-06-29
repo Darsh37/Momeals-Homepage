@@ -1,7 +1,7 @@
 
 import './App.css';
 import { Header } from './layout/Header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import { HomePage } from './Components/Homepage/HomePage';
 import { LunchelloPage } from './Pages/LunchelloPage';
 import { OurStoryPage } from './Pages/OurStoryPage';
@@ -13,13 +13,17 @@ import FoodWastage from './Components/FoodWastage/FoodWastage';
 import FoodHunger from './Components/FoodHunger/FoodHunger';
 import Header1 from './layout/Header1';
 import DonationPage from './Components/DonationPage/DonationPage';
-
+import ContactUs from './Components/ContactUsPage/ContactUs';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const hideNavbar = location.pathname ==='/ContactUs';
+
   return (
-    <div className='Apppage'>
+    <div className='Apppage'> 
       
-      <BrowserRouter>
       <div className='header1'>
       <Header1/>
       </div>
@@ -27,7 +31,7 @@ function App() {
       <div className='header'>
       <Header/>
       </div>
-      <Navbar/>
+      {!hideNavbar && <Navbar />}
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/linchello' element={<LunchelloPage/>}/>
@@ -37,13 +41,20 @@ function App() {
           <Route path= '/FoodWastage' element={<FoodWastage/>}/>
           <Route path= '/FoodHunger' element={<FoodHunger/>}/>
           <Route path= '/DonationPage' element={<DonationPage/>}/>
+          <Route path= '/ContactUs' element={<ContactUs/>}/>
         </Routes>
         <div className='footer'>
         <Footer/>
         </div>
-      </BrowserRouter>
+      
     </div>
   );
 }
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
