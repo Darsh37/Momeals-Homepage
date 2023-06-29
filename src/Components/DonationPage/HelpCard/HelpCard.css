@@ -2,7 +2,7 @@
 
 .help_container {
   background: #C7F2AB;
-  
+  padding: 0 50px;
 }
 .p_heading{
   font-family: 'Comfortaa';
@@ -37,14 +37,7 @@ line-height: 27px;
   line-height: 25px;
 }
 
-.help_left {
-  position: relative;
-  left: 80px;
-}
-.help_right {
-  position: relative;
-  right: 80px;
-}
+
 
 .but_help {
   background-color: orange;
@@ -194,4 +187,7 @@ line-height: 27px;
 .card:hover .card-title,
 .card:hover .card-text {
   color: white !important;
+}
+.inner_card .card-text {
+  width:100% !important;
 }
