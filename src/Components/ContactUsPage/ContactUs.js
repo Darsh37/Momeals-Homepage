@@ -1,13 +1,23 @@
 import React from "react";
-import """
-
+import Arrow from "./../Images/Arrow 4 (1).png";
+import phone from "./../Images/Phone.png";
+import whatsapp from "./../Images/WhatsApp.png";
+import insta from "./../Images/Instagram.png";
 import "./ContactUs.css";
-import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 function ContactUs() {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/");
+  };
+
   return (
     <div className="contactUs-container">
+        
       <div className="contactUs-header">
+      <img src={Arrow} alt="" onClick={handleNavigate}></img>
         <h3>Contact Us</h3>
       </div>
       <div className="contactUs-middle-container">
@@ -28,22 +38,39 @@ function ContactUs() {
             <p>Available All Time To Help You. </p>
             <p>+91-8567085690</p>
           </div>
-          <img src={} alt=""/>
-          <img src={} alt=""/>
-          <img src={} alt=""/>
+          <img src={phone} alt="" />
+          <img src={insta} alt="" />
+          <img src={whatsapp} alt="" />
         </div>
         <div className="contactUs-right-side">
-         
-          <h3><spam style={{color:"#2EB167"}}>Got Ideas?</spam> Let’s Team Up And Make A <spam style={{color:"#2EB167"}}>Difference</spam> With Us.</h3>
-          <input type="text" placeholder="Your Name" />
-          <br/><br/>
-          <input type="email" placeholder="yourname@gmail.com" />
-          <p style={{margin:"1rem 0rem"}}>Share Your Idea,How Can You Make A difference?</p>
-          <input type="text" placeholder="" />
-          
-    
-          <p style={{margin:"1rem 0rem"}}>How can you help us to make this world better ?</p>
-          <form >
+          <h3>
+            <spam style={{ color: "#2EB167" }}>Got Ideas?</spam> Let’s Team Up
+            And Make A <spam style={{ color: "#2EB167" }}>Difference</spam> With
+            Us.
+          </h3>
+          <input
+            className="d-7"
+            type="text"
+            placeholder="Your Name"
+            style={{ width: "25rem" }}
+          />
+          <br />
+          <br />
+          <input
+           className="d-7"
+            type="email"
+            placeholder="yourname@gmail.com"
+            style={{ width: "25rem" }}
+          />
+          <p style={{ margin: "1rem 0rem" }}>
+            Share Your Idea,How Can You Make A difference?
+          </p>
+          <input className="d-7" type="text" placeholder="" style={{ width: "25rem" }} />
+
+          <p style={{ margin: "1rem 0rem" }}>
+            How can you help us to make this world better ?
+          </p>
+          <form>
             <div className="radio">
               <label>
                 <input type="radio" value="Funds  Allocation" />
@@ -68,14 +95,11 @@ function ContactUs() {
                 Voluteer
               </label>
             </div>
-            <button className="contactUs1-btn" >
-             Contact Us
-            </button>
+            <button className="contactUs1-btn">Contact Us</button>
           </form>
         </div>
       </div>
     </div>
-   
   );
 }
 

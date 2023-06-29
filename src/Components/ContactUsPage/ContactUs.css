@@ -1,14 +1,18 @@
 .contactUs-container{
-   
     margin: 2rem 5rem;
+    margin-bottom: 5rem;
 }
 
 .contactUs-header{
-  display: flex;
- justify-content: center;
- margin: 2rem 0;
+display: flex;
+margin: 2rem 0;
 
 }
+.contactUs-header h3{
+    display: flex;
+   margin-left: 30rem;
+    }
+
 
 .contactUs-middle-container{
     display: flex;
@@ -21,7 +25,7 @@ padding: 2rem;
 
 .contactUs-right-side{
     margin-left: 30rem;
-    height: 40rem;
+    height: 45rem;
     width: 40rem;
     border-radius: 50px;
     background: #C7F2AB;
@@ -75,6 +79,10 @@ padding: 2rem;
         padding: 1rem; 
         border-radius: 15px; 
     
+    }
+
+    .d-7{
+       width: 17rem !important;
     }
     .contactUs1-btn{
         margin: 2rem;
