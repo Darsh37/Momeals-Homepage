@@ -2,19 +2,13 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { DoubleArrow } from "@mui/icons-material";
 
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./HelpCard.css";
 
 function HelpCard() {
-  const sliderSettings = {
-    dots: true,
-    slidesToShow: 1,
-    infinite: true,
-    speed: 500,
-    arrows: false,
-  };
+
 
   return (
     <div className="mt-5 help_container pb-5">
@@ -34,7 +28,7 @@ function HelpCard() {
         <Col xs={12} lg={12} xl={6} md={12} className="help_right">
           <div className="cards_help">
             
-            <Card className="inner_card">
+            <Card className="inner_card p-3">
               <Card.Title className="card-title">Therapeutic Food</Card.Title>
               <Card.Text className="card-text">
                 Provide and distribute therapeutic food to undernutrition children.
@@ -44,7 +38,7 @@ function HelpCard() {
               </div>
               <div className="color-line1"></div>
             </Card>
-            <Card className="inner_card">
+            <Card className="inner_card p-3">
               <Card.Title>Malnutrition Testing</Card.Title>
               <Card.Text>
                 Trace Malnutrition Children’s and provide them MAUC Tape to test it on their own.
@@ -54,7 +48,7 @@ function HelpCard() {
               </div>
               <div className="color-line2"></div>
             </Card>
-            <Card className="inner_card">
+            <Card className="inner_card p-3">
               <Card.Title>Education Facilities</Card.Title>
               <Card.Text>
                 Provide proper meals to malnourished children to help them grow up better.

@@ -15,9 +15,6 @@
   .cause-description {
     width: 375px;
   }
-  .donation-caption {
-    text-align: center;
-  }
 
   .donation-caption .first-half {
     font-size: 43px;
@@ -42,6 +39,10 @@
   }
   .donation-caption {
     text-align: left;
+  }
+  .donate-buttons{
+    display: flex;
+    justify-content: flex-start;
   }
 
   .donation-caption .first-half {
