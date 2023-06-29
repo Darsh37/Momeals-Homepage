@@ -116,7 +116,7 @@ export const Navbar = () => {
           <a href="/foodWarrior">About Us</a>
         </li>
         <li>
-          <a href="/ourStory">Contact Us</a>
+          <a href="/ContactUs">Contact Us</a>
         </li>
         <li>
           <a href="/ourStory">Become A Member</a>

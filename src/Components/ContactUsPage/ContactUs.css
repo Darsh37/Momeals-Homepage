@@ -1,0 +1,95 @@
+.contactUs-container{
+    margin: 2rem 5rem;
+    margin-bottom: 5rem;
+}
+
+.contactUs-header{
+display: flex;
+margin: 2rem 0;
+
+}
+.contactUs-header h3{
+    display: flex;
+   margin-left: 30rem;
+    }
+
+
+.contactUs-middle-container{
+    display: flex;
+   
+}
+
+.contactUs-left-side{
+padding: 2rem;
+}
+
+.contactUs-right-side{
+    margin-left: 30rem;
+    height: 45rem;
+    width: 40rem;
+    border-radius: 50px;
+    background: #C7F2AB;
+    padding: 5rem;
+
+}
+.contactUs-right-side input{
+    border-bottom:2px solid #888888;  
+    background: #C7F2AB;
+}
+
+
+
+.contactUs1-btn{
+    margin: 2rem;
+    border-radius: 20px;
+    width:25rem;
+    height: 2.5rem;
+    background: #1B5240;
+    color:#FFFFFF;
+}
+.d-6{
+    margin-bottom:2rem;
+}
+@media(max-width:1200px){
+    
+    .contactUs-right-side{
+       margin-left: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media(max-width:800px){
+    .contactUs-middle-container{
+        flex-direction: column;
+    }
+    .contactUs-right-side{
+      margin-left: 2rem;
+        padding: 0rem;
+    
+    }
+}
+
+@media(max-width:360px){
+    .contactUs-container{
+        margin: 1rem 1rem;
+    }
+    .contactUs-right-side{
+        width: 20rem;
+        margin: 0.5rem !important;
+        padding: 1rem; 
+        border-radius: 15px; 
+    
+    }
+
+    .d-7{
+       width: 17rem !important;
+    }
+    .contactUs1-btn{
+        margin: 2rem;
+        border-radius: 20px;
+        width:10rem;
+        height: 2.5rem;
+        background: #1B5240;
+        color:#FFFFFF;
+    }
+}
