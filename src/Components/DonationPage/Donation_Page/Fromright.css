@@ -1,0 +1,138 @@
+.form-modal {
+    background-color: #c7f2ab;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+   
+   
+  }
+ 
+@media (min-width: 768px){
+    .form-modal{
+        width: 26rem;
+        height: 35rem;
+        margin-bottom: -40px;
+        padding: 0px 35px;
+    }
+
+}
+
+
+.amt-btn button:focus{
+    border:2px solid #0d8354;
+   
+}
+
+.form-header{
+    text-align:center;
+    color:#1B5240;
+    font-size:32px;
+    font-weight:bold;
+    line-height: 65px;
+    letter-spacing: -2px;
+}
+.form-modal small{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+line-height: 27px;
+}
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  
+  }
+  .monthly,.one-time{
+    text-transform: uppercase;
+    font-size: 20px;
+     text-align:center;
+     width: 180px;
+     height: 60px;
+     font-weight: 400;
+     border:none;
+  }
+
+.monthly{
+   
+    background-color:#FFFFFF;
+  
+}
+
+.one-time.active,.monthly.active  {
+    background-color: #1B5240;
+    color: white;
+  }
+  
+ 
+  .custom-button {
+    border: 1px solid #0d8354;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    padding:0px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+  }
+
+
+.amt-input input {
+  width: 100%;
+    border: 1px solid #0d8354;
+    border-radius: 8px;
+    padding: 8px;
+    /* Add the following properties */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+.amt-input input:focus{
+    outline:2px solid #1B5240;
+}
+
+.donate-now{
+    text-align:center;
+}
+.donatebtn:hover{
+  background-color: orange !important;
+}
+@media (max-width: 767px) {
+    .button-container {
+      flex-wrap: wrap;
+    }
+    .form-modal{
+        width: 100%;
+    }
+    
+    .one-time,
+    .monthly {
+      flex-basis: calc(50%);
+    }
+    
+  }
+  
+.donate-now button {
+    background-color: #1b5240;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 18px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+   
+    text-transform: uppercase;
+    height: 50px;
+    letter-spacing: 1px;
+  }
+  
+/* .donate-now button:hover{
+    transform: translateY(-3px);
+}
+.donate-now button:active{
+    transform: translateY(3px);
+} */

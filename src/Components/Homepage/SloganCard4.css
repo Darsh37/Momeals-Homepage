@@ -1,0 +1,121 @@
+.card-row .card-3rd{
+box-shadow: none;
+border: none;
+color: black;
+width: 100%;
+
+}
+@media (max-width: 575.98px) {
+    .card-3rd p{
+        font-size: 22px;
+      }
+}
+
+
+
+  /* for large devices */
+@media only screen and (min-width: 992px), screen and (min-width: 768px) {
+    
+}
+@media only screen and (min-width: 992px) {
+ 
+    .card-row .card-3rd{
+      width:100%;
+      
+    }
+    .card-row{
+      padding:0px 40px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .card-row .card-3rd .para1{
+    font-family: 'Poppins';
+font-weight: 700;
+font-size: 28px;
+}
+.card-row .card-3rd .para2{
+    font-family: 'Comfortaa';
+    font-weight: 700;
+font-size: 48px;
+line-height: 54px;
+justify-content: center;
+text-align: left;
+}
+.middle-text-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 250px; /* Adjust the margin as needed */
+  }
+  
+  @media (max-width: 576px) {
+    .middle-text-container {
+      margin: 0; /* Remove the left and right margin for small screens */
+    }
+  }
+  
+.card-row .card-3rd .para3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+}
+
+}
+
+/* slider */
+@media (min-width: 992px) {
+    #slider-btn{
+      visibility: visible !important;
+    }
+  }
+  .slick-prev,.slick-next{
+  display: none !important;
+  }
+  #slider-btn {
+
+    border: none !important;
+    color: #000000 !important;
+    font-size: 24px !important;
+   
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* border: 2px solid #000000 !important; */
+   
+  
+  
+    background: #FFFFFF !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  display: flex !important;
+  }
+  .slider-buttons{
+    display: flex !important;
+  }
+  
+  
+  .slider-button:hover {
+    background: #ECECEC !important;
+    box-shadow: none !important;
+  }
+  
+  
+  @media (min-width:1025px){
+    .slider-container {
+      margin: 0 auto;
+      max-width: 80%;
+      position: relative;
+    }
+    
+   
+  }
+  
+  
+  
+  
+  
+  
+    

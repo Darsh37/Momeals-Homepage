@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
+
+.card{
+  border-radius: 4px !important;
+  background: #F1F1F1 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  
+cursor: pointer !important;
+
+}
+@media (max-width: 1024px) {
+  .card{
+    height: 24rem !important;
+  }
+}
+ @media (min-width: 1200px){
+  .middlecardrow{
+    margin: 0px 145px !important;
+  }
+  
+  .card{
+    height: 23rem !important;
+    width: 350px !important;
+  }
+ }
+
+
+@media (max-width: 768px) {
+  .middlecardrow {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+}
+
+.middle-container .card-title {
+  text-align: left !important;
+  font-size: 18px !important;
+  font-family: 'Comfortaa' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 25px !important;
+  text-transform: uppercase !important;
+  justify-content: left !important;
+  display: flex !important;
+  color: #000000 !important;
+}
+
+.middle-container .card-text {
+  text-align: left;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+display: flex;
+align-items: center;
+margin-bottom: 0;
+color: #000000;
+
+}
+.middle-container .card-line {
+  width: 50px !important;
+  height: 2px !important;
+  background-color: #000 !important;
+
+  align-self: flex-start !important;
+  position: relative ;
+  left: 0;
+}
+
+.card-text {
+  margin-top: 10px !important;
+  margin-bottom: 0 !important; /* Optional: Remove any bottom margin if needed */
+}
+#member_but:hover{
+  background: orange;
+}
+#member_but{
+ border: none ;
+  color: white;
+  width: 250px;
+  height: 55px;
+  top: 100px;
+  font-size: x-large;
+  font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+background: #067749;
+border: 1px solid #000000;
+border-radius: 30px;
+}
+
+.card:hover{
+
+background-color: #D55342 !important;
+
+}
+.card:hover .heading,
+.card:hover .card-text {
+  color: white !important;
+}
+.card:hover .card-line {
+background-color: white !important;
+}
+
+
+.middle-container{
+  
+ 
+  background: #ECECEC !important;
+}
+
+
+  .work-header h1{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 600;
+font-size: 42px;
+  }
+  .work-header p{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 400  !important;
+font-size: 22px !important;
+line-height: 27px !important;
+  }
+  @media (max-width: 768px) {
+    .card{
+      width: 100% !important;
+    }
+    .work-header h1{
+      font-size: 20px !important;
+    }
+    .work-header p{
+      font-size: 17px !important;
+    }
+  }
+
+
+
+
+
+
+  /* Add these styles to MiddleCard.css */
+
+.slider-container {
+  position: relative ;
+  margin: 0px 40px;
+}
+
+.slider-buttons {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  z-index: 1 !important;
+}
+
+@media (min-width: 992px) {
+  .slider-button {
+    visibility: hidden !important;
+  }
+}
+.slider-button:first-child {
+  margin-left: -40px !important;
+}
+
+.slider-button:last-child {
+  margin-right: -40px !important;
+}
+/* Modify the existing styles in MiddleCard.css */
+
+.slider-button {
+  background-color: transparent !important;
+  border: none !important;
+  color: #000000 !important;
+  font-size: 24px !important;
+  cursor: pointer !important;
+  outline: none !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 2px solid #000000 !important;
+  transition: background-color 0.3s !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+
+
+.slider-button:hover {
+  background: #ECECEC;
+}
+
+
+@media (min-width:1025px){
+  .slider-container {
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative;
+  }
+  
+ 
+}
+
+
+
+
+
+
