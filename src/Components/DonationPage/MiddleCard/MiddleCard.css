@@ -69,7 +69,7 @@ color: #000000;
 
   align-self: flex-start !important;
   position: relative ;
-  left: 0;
+
 }
 
 .card-text {
@@ -142,7 +142,10 @@ line-height: 27px !important;
     }
   }
 
-
+  .helpingcards .card-text {
+    width:100% !important;
+    margin-left: 0px !important;
+  }
 
 
 
