@@ -9,8 +9,15 @@ import Malnutritio_child from "../../Images/Malnutritio_ Child_2.png";
 import HelpCard from "../HelpCard/HelpCard";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function MiddleCard() {
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/MembershipForm');
+  }; 
+
   const [data] = useState([
     {
       heading: "MALNUTRITION CHILDREN’S",
@@ -126,7 +133,7 @@ function MiddleCard() {
             </Button>
           </div>
         </div>
-        <Button className="mt-5 " id="member_but">
+        <Button className="mt-5 " id="member_but" onClick={handleClick}>
           Become A Member
         </Button>
       </center>

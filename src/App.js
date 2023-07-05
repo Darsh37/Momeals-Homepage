@@ -15,6 +15,7 @@ import Header1 from './layout/Header1';
 import DonationPage from './Components/DonationPage/DonationPage';
 import ContactUs from './Components/ContactUsPage/ContactUs';
 import { useLocation } from 'react-router-dom';
+import Membership from './Components/Membershippage/Membership';
 
 function App() {
   const location = useLocation();
@@ -42,6 +43,8 @@ function App() {
           <Route path= '/FoodHunger' element={<FoodHunger/>}/>
           <Route path= '/DonationPage' element={<DonationPage/>}/>
           <Route path= '/ContactUs' element={<ContactUs/>}/>
+          <Route path= '/MembershipForm' element={<Membership/>}/>
+
         </Routes>
         <div className='footer'>
         <Footer/>

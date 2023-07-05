@@ -54,7 +54,7 @@
     margin: 0.5rem;
 }
 
-@media (max-width:360px) {
+@media (max-width: 360px) and (min-width: 300px) {
     .Donation-container{
         width: 20rem; 
      }
