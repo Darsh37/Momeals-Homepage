@@ -1,20 +1,26 @@
 @media (max-width: 575.98px) {
-  .card-text2nd p{
+  .slogan3card-text2nd p{
       font-size: 18px;
     }
 }
+.slide-contain .card{
+  background-color: #172B0D !important;
+}
+.slide-contain .card:hover{
+  background:#172B0D  !important;
+}
 @media (max-width: 780.98px) {
-  .card-row .card-text2nd{
+  .slogan3card-row .slogan3card-text2nd{
       width: 250px;
       height: 250px;
     }
 }
-.card-text2nd p{
+.slogan3card-text2nd p{
   font-family: 'Comfortaa';
 }
 /* for large devices */
 @media only screen and (min-width: 992px), screen and (min-width: 768px) {
-  .card-text2nd p{
+  .slogan3card-text2nd p{
  
       font-style: normal;
       font-weight: 600;
@@ -24,37 +30,37 @@
 }
 @media only screen and (min-width: 992px) {
 
-  .card-row .card-text2nd{
+  .slogan3card-row .slogan3card-text2nd{
     width:100%;
     
   }
-  .card-row{
+  .slogan3card-row{
     padding:0px 40px;
   }
 }
 @media only screen and (min-width:1400px) {
-  #card-text2nd{
+  #slogan3card-text2nd{
     width:100% ;
     height:320px;
     
   }
 }
 @media only screen and (min-width: 768px){
-  .card-row .card-text2nd{
+  .slogan3card-row .slogan3card-text2nd{
       width: 300px;
       height: 350px;
     }
 }
 /* slider */
 @media (min-width: 992px) {
-  .slider-button {
+  .slider-butn{
     visibility: hidden !important;
   }
 }
-.slick-prev,.slick-next{
+.slide-contain .slick-prev,.slick-next{
 display: none !important;
 }
-#slider-btns{
+#slid-btns{
 
   border: none !important;
   color: #000000 !important;
@@ -74,19 +80,19 @@ display: none !important;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
 display: flex !important;
 }
-.slider-buttons{
+.slide-buts{
   display: flex !important;
 }
 
 
-.slider-button:hover {
+/* .slider-button:hover {
   background: #ECECEC !important;
   box-shadow: none !important;
-}
+} */
 
 
 @media (min-width:1025px){
-  .slider-container {
+  .slide-contain {
     margin: 0 auto;
     max-width: 80%;
     position: relative;

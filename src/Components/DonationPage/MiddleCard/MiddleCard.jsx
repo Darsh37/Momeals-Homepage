@@ -26,7 +26,7 @@ function MiddleCard() {
     },
     {
       heading: "Orphans",
-      para: "Provide them nutritional meals and gifts so they don’t feel alone",
+      para: "Provide them nutritional meals and gifts so they don’t feel alone ",
       imgs: Orphan,
     },
   ]);
@@ -93,22 +93,22 @@ function MiddleCard() {
               <div className="helpingcards" key={id}>
                 <Card  className="card-spacing mt-5">
                   <Card.Body className="d-flex flex-column ">
-                    <div className="flex-grow-1">
+                    
                       <Card.Title className="heading">{dta.heading}</Card.Title>
-                      <div className="position-relative mt-3">
-                        <div className="position-absolute bottom-0 end-0 card-line"></div>
+                      <div className=" mt-3">
+                        <div className="position-absolute left-0 card-line"></div>
                       </div>
-                      <div className="mb-5 position-relative" style={{marginBottom:"50px"}}>
-                        <Card.Text variant="top" className="position-absolute mt-4 card-text ">
+                      <div className="mb-5" style={{marginBottom:"50px"}}>
+                        <Card.Text variant="top" className=" mt-4 card-text ">
                           {dta.para}
                         </Card.Text>
                       </div>
-                    </div>
-                    <div className="position-relative">
+                   
+                    <div className="mt-5">
                       <Card.Img
                         variant="top"
-                        className="position-absolute bottom-0 end-0"
-                        style={{ width: "100px" }}
+                        className="mt-5"
+                        style={{ width: "100px", position: "absolute", bottom: 0, right: 0 }}
                         src={dta.imgs}
                       />
                     </div>
