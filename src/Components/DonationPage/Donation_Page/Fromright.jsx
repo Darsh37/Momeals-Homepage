@@ -25,6 +25,7 @@ function Fromright() {
 
   return (
     <div className=' form-modal'>
+      <center>
         <Row className='m-3'>
         <Col className='form-header pt-3'>
             DONATE NOW!!
@@ -38,7 +39,7 @@ function Fromright() {
         </Col>
        </Row>
   <Row className='d-flex justify-content-center mt-5 interval-btns'  style={{width:"100%"}}>
-  <Col className='button-container'>
+  <Col className='button-container '>
     <button
       className={`one-time ${button1Color ? 'active' : ''}`}
       onClick={handleButton1Click}
@@ -55,8 +56,9 @@ function Fromright() {
 </Row>
 
       
-        <Row xs={3}   sm={3} md={3} xl={3} style={{width:"100%"}}  className='d-flex sm-justify-content-center amt-btn mt-4'>
-          <Col  className='d-flex justify-content-center mb-3'>
+       
+       <Row xs={3}   sm={3} md={3} xl={3} style={{width:"100%"}}  className='d-flex sm-justify-content-center amt-btn mt-4'>
+          <Col  className='d-flex justify-content-center mb-3 '>
             <button onClick={updateValue} className='custom-button'>
               Rs. 50
             </button>
@@ -88,6 +90,7 @@ function Fromright() {
           </Col>
         </Row>
       
+      
         {/* <div className='amt-btn'>
             <button onClick={updateValue}>Rs. 50</button>
             <button onClick={updateValue}>Rs. 100</button>
@@ -117,6 +120,7 @@ function Fromright() {
            <Button className='mb-5 donatebtn'style={{width:"100%"}} >Donate Now</Button>
            </Col>
         </Row>
+        </center>
     </div>
   )
 }

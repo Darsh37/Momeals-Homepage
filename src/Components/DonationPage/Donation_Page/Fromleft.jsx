@@ -17,14 +17,14 @@ function Fromleft() {
         </div>
       </section>
       <div className="donate-buttons mb-3">
-        <Row className="justify-content-center justify-content-sm-start btnrow">
-          <Col className="col-auto">
-            <Button className="btn-1">Give Food</Button>
-          </Col>
-          <Col className="col-auto">
-            <Button className="btn-2">Donate</Button>
-          </Col>
-        </Row>
+      <Row className="justify-content-center btnrow">
+        <Col xs="auto" className="d-sm-flex justify-content-sm-start">
+          <Button className="btn-1">Give Food</Button>
+        </Col>
+        <Col xs="auto" className="d-sm-flex justify-content-sm-start ">
+          <Button className="btn-2">Donate</Button>
+        </Col>
+      </Row>
         
      
     
