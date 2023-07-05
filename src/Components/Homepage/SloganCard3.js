@@ -50,13 +50,13 @@ const SloganCard3 = () => {
   };
   
   return (
-    <div className="slider-container">
+    <div className="slide-contain">
           <Slider {...settings} ref={sliderRef}>
         {data.map((obj, index) => (
-          <div key={index} className="card-row p-2">
+          <div key={index} className="slogan3card-row p-2">
             <Card
-              className="card-text2nd m-md-1 m-lg-2 p-sm-2"
-              id="card-text2nd"
+              className="slogan3card-text2nd m-md-1 m-lg-2 p-sm-2"
+              id="slogan3card-text2nd"
               style={{ background: "#172B0D", position: "relative"}}
             >
               <p className="m-3" style={{ color: "white" }}>{obj.dta}</p>
@@ -69,11 +69,11 @@ const SloganCard3 = () => {
           
         ))}
        </Slider>
-       <div className="slider-buttons p-2 ">
-            <Button className="slider-button"  id="slider-btns" onClick={slidePrev}>
+       <div className="slide-buts p-2 ">
+            <Button className="slider-butn"  id="slid-btns" onClick={slidePrev}>
               <FaAngleLeft />
             </Button>
-            <Button className="slider-button"  id="slider-btns" onClick={slideNext}>
+            <Button className="slider-butn"  id="slid-btns" onClick={slideNext}>
               <FaAngleRight />
             </Button>
           </div>
