@@ -13,6 +13,9 @@ import FoodWastage from './Components/FoodWastage/FoodWastage';
 import FoodHunger from './Components/FoodHunger/FoodHunger';
 import Header1 from './layout/Header1';
 import DonationPage from './Components/DonationPage/DonationPage';
+import FoodDonation from './Components/Fooddonationpage/FoodDonation';
+import Fooddonarpage from './Components/FoodDonarpage/Fooddonarpage';
+import Fooddonationpageinfo from './Components/Fooddonationpageinfo/Fooddonationpageinfo';
 
 
 function App() {
@@ -37,6 +40,9 @@ function App() {
           <Route path= '/FoodWastage' element={<FoodWastage/>}/>
           <Route path= '/FoodHunger' element={<FoodHunger/>}/>
           <Route path= '/DonationPage' element={<DonationPage/>}/>
+          <Route path= '/fooddonationpage' element={<FoodDonation/>}/>
+          <Route path= '/fooddonarpage' element={<Fooddonarpage/>}/>
+          <Route path= '/fooddonarinfopage' element={<Fooddonationpageinfo/>}/>
         </Routes>
         <div className='footer'>
         <Footer/>

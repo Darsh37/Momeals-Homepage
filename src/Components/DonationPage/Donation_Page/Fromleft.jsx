@@ -1,8 +1,13 @@
 import React from 'react';
 import './Fromleft.css';
 import { Button, Col, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 function Fromleft() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/fooddonationpage');
+  }; 
   return (
     <div className="donation-caption m-4">
       
@@ -22,7 +27,9 @@ function Fromleft() {
           <Button className="btn-1">Give Food</Button>
         </Col>
         <Col xs="auto" className="d-sm-flex justify-content-sm-start ">
-          <Button className="btn-2">Donate</Button>
+          <Button className="btn-2"    onClick={handleClick}>
+            Donate
+          </Button>
         </Col>
       </Row>
         

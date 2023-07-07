@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
 
-.card{
+.middle-container .card{
   border-radius: 4px !important;
   background: #F1F1F1 !important;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
@@ -11,7 +11,7 @@ cursor: pointer !important;
 
 }
 @media (max-width: 1024px) {
-  .card{
+  .middle-container .card{
     height: 24rem !important;
   }
 }
@@ -20,7 +20,7 @@ cursor: pointer !important;
     margin: 0px 145px !important;
   }
   
-  .card{
+ .middle-container .card{
     height: 23rem !important;
     width: 350px !important;
   }
@@ -72,7 +72,7 @@ color: #000000;
 
 }
 
-.card-text {
+.middle-container .card-text {
   margin-top: 10px !important;
   margin-bottom: 0 !important; /* Optional: Remove any bottom margin if needed */
 }
@@ -94,16 +94,16 @@ border: 1px solid #000000;
 border-radius: 30px;
 }
 
-.card:hover{
+.helpingcards .card:hover{
 
-background-color: #D55342 !important;
+background: #D55342 !important;
 
 }
-.card:hover .heading,
-.card:hover .card-text {
+.helpingcards .card:hover   .heading,
+.helpingcards .card:hover .card-text {
   color: white !important;
 }
-.card:hover .card-line {
+.middle-container .card:hover .card-line {
 background-color: white !important;
 }
 
@@ -131,7 +131,7 @@ font-size: 22px !important;
 line-height: 27px !important;
   }
   @media (max-width: 768px) {
-    .card{
+   .middle-container .card{
       width: 100% !important;
     }
     .work-header h1{
