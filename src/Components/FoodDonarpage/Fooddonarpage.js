@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Fooddonarpage = () => {
   const navigate = useNavigate();
   const fooddonarinfoClick = () => {
-    navigate('/fooddonarinfopage');
+    navigate('/Thanku');
   }; 
   React.useEffect(() => {
     document.body.classList.add('custom-body');

@@ -16,6 +16,7 @@ import DonationPage from './Components/DonationPage/DonationPage';
 import FoodDonation from './Components/Fooddonationpage/FoodDonation';
 import Fooddonarpage from './Components/FoodDonarpage/Fooddonarpage';
 import Fooddonationpageinfo from './Components/Fooddonationpageinfo/Fooddonationpageinfo';
+import ThankU from './Components/ThankU/ThankU';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path= '/fooddonationpage' element={<FoodDonation/>}/>
           <Route path= '/fooddonarpage' element={<Fooddonarpage/>}/>
           <Route path= '/fooddonarinfopage' element={<Fooddonationpageinfo/>}/>
+          <Route path= '/Thanku' element={<ThankU/>}/>
         </Routes>
         <div className='footer'>
         <Footer/>
