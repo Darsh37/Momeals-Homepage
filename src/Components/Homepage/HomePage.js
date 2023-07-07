@@ -34,9 +34,12 @@ export const HomePage = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate('/DonationPage');
+    navigate('/Foodtype');
   }; 
 
+  const handleDonate = () => {
+    navigate('/DonationPage');
+  }; 
   const [isMobileView, setIsMobileView] = useState(true);
 
   useEffect(() => {
@@ -78,11 +81,7 @@ export const HomePage = () => {
             Orphan For <span style={{ color: "#dd4747" }}>Free.</span>
           </h1>
           <Row className="justify-content-center justify-content-sm-start btnrow mt-4 ">
-            <Col className="col-auto">
-              <Button className="btn-1 " style={{ background: " #FFA500" }}>
-                ORDER NOW
-              </Button>
-            </Col>
+           
             <Col className="col-auto">
               <Button
                 onClick={handleClick}
@@ -268,7 +267,7 @@ export const HomePage = () => {
               <button className="rounded-pill money">500 Rs</button>
             </div>
             <div className="button-sec mb-5">
-              <button className=" button-donate rounded-pill p-3">
+              <button className=" button-donate rounded-pill p-3" onClick={handleDonate}>
                 {" "}
                 DONATE NOW
               </button>
