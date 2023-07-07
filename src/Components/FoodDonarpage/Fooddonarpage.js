@@ -3,7 +3,7 @@ import {  Button, Row, Col, Card , InputGroup ,Form} from 'react-bootstrap';
 
 import './Fooddonarpage.css';
 import arrow4image from '../Images/Arrow 5.png'
-import Donorverifyimg from '../Images/Donor Verification Page 1 (3).png'
+import Donorverifyimg from '../Images/Donor verify 1.png'
 import { useNavigate } from 'react-router-dom';
 const Fooddonarpage = () => {
   const navigate = useNavigate();
@@ -57,9 +57,9 @@ const Fooddonarpage = () => {
         </Col>
         
          {/* Spacing */}
-         {/* <Col lg={1} md={1} sm={12}></Col> */}
-         <Col lg={6} md={5} sm={12}>
-       <img className="Donorverifyimg" src={Donorverifyimg}/>
+         <Col lg={1} md={1} sm={12}></Col>
+         <Col lg={5} md={4} sm={12}>
+       <img className="Donorverifyimg" src={Donorverifyimg} width="400px"/>
        </Col>
      
       </Row>
