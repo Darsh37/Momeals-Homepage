@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap");
+
+.header {
+  color: #25885f;
+  font-family: "Comfortaa";
+  font-weight: 400;
+  font-size: 4vw;
+  line-height: 1.2;
+  text-align: center;
+}
+.para {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin: 2vw auto;
+  max-width: 80%;
+}
+.card .titlecard {
+  font-size: 32px;
+  font-family: Comfortaa;
+  font-weight: 700;
+}
+.card .infocard {
+  color: #585858;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.arrowimage {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 6px;
+  margin: 10px 0px 0px 16px;
+}
+.row .btn {
+  text-transform: uppercase;
+
+  width: 156px;
+  height: 50px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  background: #1b5240;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar.navbar2 {
+  background-color: #e9ffdb !important;
+}
+.row .btn:hover {
+  background-color: #fd7e14 !important;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .row.p-lg-5 {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .row {
+    background-image: url("../Images/Rectangle\ 141.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3px;
+    background-position: center;
+  }
+  .imgs {
+    width: 100px !important;
+    height: 100px !important;
+    padding: 22px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row {
+    clip-path: polygon(62% 10%, 255% 56%, 128% 372%, -138% 51%, 48% 7%);
+  }
+  .row {
+    position: relative;
+    background-color: #c7f2ab;
+    padding-bottom: 3px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row {
+    background-image: url("../Images/Rectangle 141.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3px;
+    background-position: center;
+  }
+  .para {
+    font-size: 14px;
+  }
+  .header {
+    font-size: 32px;
+  }
+  .card .titlecard {
+    font-size: 16px;
+  }
+  .card .infocard {
+    font-size: 14px;
+  }
+  .imgs {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 22px !important;
+  }
+}
