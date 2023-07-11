@@ -1,12 +1,12 @@
 @media (max-width: 575.98px) {
-  .slogan3card-text2nd p{
+  .slogan3card-text2ndp{
       font-size: 18px;
     }
 }
-.slide-contain .card{
+.slide-contain .slogan3card-text2nd{
   background-color: #172B0D !important;
 }
-.slide-contain .card:hover{
+.slide-contain .slogan3card-text2nd:hover{
   background:#172B0D  !important;
 }
 @media (max-width: 780.98px) {
@@ -15,12 +15,12 @@
       height: 250px;
     }
 }
-.slogan3card-text2nd p{
+.slogan3card-text2ndp{
   font-family: 'Comfortaa';
 }
 /* for large devices */
 @media only screen and (min-width: 992px), screen and (min-width: 768px) {
-  .slogan3card-text2nd p{
+  .slogan3card-text2ndp{
  
       font-style: normal;
       font-weight: 600;

@@ -11,9 +11,9 @@ const Fooddonarpage = () => {
     navigate('/Thanku');
   }; 
   React.useEffect(() => {
-    document.body.classList.add('custom-body');
+    document.body.classList.add('donarcustom-body');
     return () => {
-      document.body.classList.remove('custom-body');
+      document.body.classList.remove('donarcustom-body');
     };
   }, []);
   return (
@@ -42,10 +42,10 @@ const Fooddonarpage = () => {
                <Form.Check inline className="donarcheckinfo" label="I assure that food quality and hygiene is maintained and Information that I provided is true." />
                </Form.Group>
                {/* Submit button */}
-               <Row className="justify-content-center justify-content-sm-start btnrow">
+               <Row className="justify-content-center justify-content-sm-start donarbtnrow">
                <Col className="col-auto">
                <div className="text-center mt-5 mb-4">
-          <Button className="btn-submit w-10 h-90" id="btn2" onClick={fooddonarinfoClick}>Submit</Button>
+          <Button className="donarbtn-submit w-10 h-90" id="donarbtn2" onClick={fooddonarinfoClick}>Submit</Button>
         </div>
                </Col>
           

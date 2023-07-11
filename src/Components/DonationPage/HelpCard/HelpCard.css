@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap');
 
 .help_container {
   background: #C7F2AB;
@@ -26,15 +26,23 @@ line-height: 27px;
 }
 /* Rest of the CSS code */
 
-.inner_card .card-title {
-  font-family: 'Comfortaa';
+.inner_card .helpcard-title {
+  font-family: 'Comfortaa' !important;
+margin: 0px;
+  font-size: 24px;
+  text-align: left;
+font-weight: 400;
+
 }
 
-.inner_card .card-text {
-  font-family: 'Poppins';
+.inner_card .helpcard-text {
+  margin: 0px;
+  font-family: 'Poppins' !important;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
+  width: 100% !important;
+  text-align: left;
 }
 
 
@@ -85,14 +93,14 @@ line-height: 27px;
 .help_container .arrow1,
 .help_container .arrow2,
 .help_container .arrow3 {
-  top: 240px;
+  top: 260px;
   right: 10px;
 }
 
 .cards_help {
   display: flex;
   top: 20px;
-  gap: 30px;
+  gap: 10px;
 }
 
 .color-line1 {
@@ -120,7 +128,7 @@ line-height: 27px;
 
   .inner_card {
     width: 100% !important;
-    height: 300px !important;
+
   }
 
   .help_left,
@@ -184,10 +192,10 @@ line-height: 27px;
   background-color: #D55342;
 }
 
-.help_container .card:hover .card-title,
-.card:hover .card-text {
+.help_container .card:hover .helpcard-title,
+.card:hover .help {
   color: white !important;
 } */
-.inner_card .card-text {
+.inner_card .help {
   width:100% !important;
 }

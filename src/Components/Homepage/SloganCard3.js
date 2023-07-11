@@ -59,7 +59,7 @@ const SloganCard3 = () => {
               id="slogan3card-text2nd"
               style={{ background: "#172B0D", position: "relative"}}
             >
-              <p className="m-3" style={{ color: "white" }}>{obj.dta}</p>
+              <p className="slogan3card-text2ndp m-3" style={{ color: "white" }}>{obj.dta}</p>
               <div style={{ position: "absolute", bottom: "0px", right: "10px" }}>
                 <img src={arrow} alt="Arrow Icon" />
               </div>

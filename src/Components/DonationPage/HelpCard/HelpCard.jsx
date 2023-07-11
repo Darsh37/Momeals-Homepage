@@ -29,30 +29,36 @@ function HelpCard() {
           <div className="cards_help">
             
             <Card className="inner_card p-3">
-              <Card.Title className="card-title">Therapeutic Food</Card.Title>
-              <Card.Text className="card-text">
+              <Card.Title className="helpcard-title">Therapeutic Food</Card.Title>
+              <div>
+              <Card.Text className="helpcard-text mt-3">
                 Provide and distribute therapeutic food to undernutrition children.
               </Card.Text>
+              </div>
               <div className="arrow arrow1">
                 <DoubleArrow />
               </div>
               <div className="color-line1"></div>
             </Card>
             <Card className="inner_card p-3">
-              <Card.Title>Malnutrition Testing</Card.Title>
-              <Card.Text>
+              <Card.Title className="helpcard-title">Malnutrition Testing</Card.Title>
+              <div>
+              <Card.Text  className="helpcard-text  mt-3">
                 Trace Malnutrition Children’s and provide them MAUC Tape to test it on their own.
               </Card.Text>
+              </div>
               <div className="arrow arrow2">
                 <DoubleArrow />
               </div>
               <div className="color-line2"></div>
             </Card>
             <Card className="inner_card p-3">
-              <Card.Title>Education Facilities</Card.Title>
-              <Card.Text>
+              <Card.Title className="helpcard-title">Education Facilities</Card.Title>
+              <div>
+              <Card.Text  className="helpcard-text  mt-3">
                 Provide proper meals to malnourished children to help them grow up better.
               </Card.Text>
+              </div>
               <div className="arrow arrow3">
                 <DoubleArrow />
               </div>

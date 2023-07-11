@@ -112,7 +112,7 @@ export const HomePage = () => {
           {data.map((item, index) => (
             <div className="capsule" key={index}>
               <img
-                className="m-3  mb-3 imgs"
+                className="m-3  mb-3 capsule-imgs"
                 src={item.img}
                 width="50px"
                 height="50px"
@@ -130,7 +130,7 @@ export const HomePage = () => {
       <div style={{ background: "black", color: "white" }}>
         <div className="head-section d-flex justify-content-center ">
           <div className="title text-center">
-            <p className="text1 mt-3">
+            <p className="text1 ">
               {" "}
               <img className="section-img" src={heart} alt="" /> Building a
               Better World: <br />
@@ -146,20 +146,20 @@ export const HomePage = () => {
           <div className="section-cards ">
             <SloganCard
               destination="/FoodWastage"
-              para="Collect Eatable Leftover Foods from Eateries."
+              para={<div style={{ maxWidth: '200px' }}>Collect Eatable Leftover Foods from Eateries.</div>}
               card="card1"
               slogan="FOOD WASTAGE"
               src={m1}
             />
             <SloganCard
               destination="/FoodHunger"
-              para="Feed Homeless and Malnutrition Childrens For Free."
+              para={<div style={{ maxWidth: '200px' }}>Feed Homeless and Malnutrition Childrens For Free.</div>}
               card="card2"
               slogan="FOOD HUNGER"
               src={m2}
             />
             <SloganCard
-              para="Empowering Homeless and Unemployed women's."
+              para={<div style={{ maxWidth: '200px' }}>Empowering Homeless and Unemployed women's.</div>}
               card="card3"
               slogan="EMPOWERMENT"
               src={m3}
@@ -168,7 +168,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className="pt-5 pb-5 p-3" style={{ background: "#c7f2ab" }}>
+      <div className="pb-5 p-3" style={{ background: "#c7f2ab" }}>
         <p className="m-lg-5 para2">
           MAKE A LASTING IMPRESSION ON INDIVIDUALS AND COMMUNITIES WITH MOMEALS'
           ETHICAL PRACTICES.
@@ -178,8 +178,8 @@ export const HomePage = () => {
 
       <div className="be-diff p-lg-5 p-md-5 pb-lg-0 p-4">
         <div className="para-side m-lg-5 mt-1 m-md-5 m-xs-2">
-          <h3>Be Different, Make Difference.</h3>
-          <p className="mt-3">
+          <h3 className="para-sideh3">Be Different, Make Difference.</h3>
+          <p className="para-sidep mt-3">
             At Momeals we believe in making an impactful difference in people’s
             lives through tackling both hunger and reducing food waste
             efficiently at the same time. Our team works diligently with passion
@@ -239,7 +239,7 @@ export const HomePage = () => {
             </span>
           </h4>
         </div>
-        <div className="right-form  mt-lg-4">
+        <div className="donateclassright-form  mt-lg-4">
           <div className="donate">
             <h4 className="donatenow">DONATE NOW </h4>
           </div>
@@ -298,7 +298,7 @@ export const HomePage = () => {
             </Container>
           </div>
           <div className="btn-GC pt-3 pb-3">
-            <button className="b-GC rounded-pill">JOIN US</button>
+            <button className="b-GC rounded-pill homejoin-btn">JOIN US</button>
           </div>
         </div>
         <div className="blogs pt-5 pb-5">

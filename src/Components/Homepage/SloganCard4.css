@@ -1,4 +1,4 @@
-.slogancar4-row .card{
+.slogancar4-row .slogancard4-3rd{
   box-shadow: none !important;
   border: none !important;
   color: black !important;
@@ -6,7 +6,7 @@
   background: none !important;
   height: auto !important;
   }
-  .slogancar4-row .card:hover{
+  .slogancar4-row .slogancard4-3rd:hover{
     background: none !important;
   }
   @media (max-width: 575.98px) {
@@ -89,14 +89,14 @@ font-size: 18px;
   
   /* slider */
   @media (min-width: 992px) {
-     .sliding-buttons #slider-btn{
+     .slogancard4sliding-buttons #slogancard4slider-btn{
         visibility: visible !important;
       }
     }
     .slick-prev,.slick-next{
     display: none !important;
     }
-   .sliding-buttons #slider-btn {
+   .slogancard4sliding-buttons #slogancard4slider-btn {
   
       border: none !important;
       color: #000000 !important;
@@ -116,7 +116,7 @@ font-size: 18px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
     display: flex !important;
     }
-    .sliding-buttons{
+    .slogancard4sliding-buttons{
       display: flex !important;
     }
     
@@ -128,7 +128,7 @@ font-size: 18px;
      */
     
     @media (min-width:1025px){
-      .slider-container {
+      .slogancard4slider-container {
         margin: 0 auto;
         max-width: 80%;
         position: relative;

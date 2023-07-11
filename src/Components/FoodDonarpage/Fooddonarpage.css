@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap');
 
-.custom-body {
+.donarcustom-body {
   background-color: #c7f2ab;/* Replace with your desired background color */
 }
 
@@ -39,7 +39,7 @@
   }
   
   /* Submit button */
-  .donarformpage #donarbtn{
+  .donarformpage #donarbtn2 {
     color: white;
     background: #1B5240;
     border: 1px solid #000000;
@@ -94,4 +94,4 @@ font-weight: 400;
    }
    
   }
-  
+ 

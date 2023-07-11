@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap');
 
-.formpage {
+.formpage2 {
     background-color:#C7F2AB !important;
   }
   
-  .formpage .container {
+  .formpage2 .container {
     overflow: hidden;
   }
-  .formpage .arrowimage{
+  .formpage2 .formpage2arrowimage{
     border: 1px solid black;
     border-radius: 30px;
     padding: 6px 9px;
@@ -17,7 +17,7 @@
 
 }
   /* Form */
-  .formpage .form .h6 {
+  .formpage2 .formpage2h6{
     font-weight: 400;
     font-size: 40px;
    
@@ -26,7 +26,7 @@
   }
   
   /* Form input */
-  .formpage #inp {
+  .formpage2 #formpage2inp {
     width: 100%;
     margin: 20px 0px;
     background: none;
@@ -38,8 +38,8 @@
   }
   
   /* Submit button */
-  .formpage #btn1,
-  #btn2 {
+  .formpage2 #formpage2btn1,
+  #formpage2btn2 {
     color: white;
     background: #1B5240;
     border: 1px solid #000000;
@@ -51,7 +51,7 @@
     font-family: Arvo;
   }
   
-  .formpage .form-class input::placeholder {
+  .formpage2 .formpage2form-class input::placeholder {
     color: #000000; /* Color for the placeholder text */
   }
   
@@ -63,23 +63,24 @@
   .check {
     margin-right: 5px; 
   } */
-  .formpage #checkbox1:focus{
- box-shadow: none;
+  .formpage2 #formpage2checkbox1:focus{
+ box-shadow: none ;
   }
-  .formpage  #checkbox2:focus{
+  .formpage2 #formpage2checkbox2:focus{
     box-shadow: none;
-     }
+  }
+  
   
   
   /* Checkbox info */
-  .formpage .checkinfo {
+  .formpage2 .formpage2checkinfo {
 font-size: 17px;
 font-family: Poppins;
 font-style: normal;
 font-weight: 400;
   }
   
-  .formpage .heading4 {
+  .formpage2 .formpage2heading4 {
     display: block;
     font-family: Arvo;
     font-weight: 400;
@@ -87,16 +88,16 @@ font-weight: 400;
   }
   
   /* Not visible in large screen */
-  .formpage #heading3 {
+  .formpage2 #formpage2heading3 {
     display: none;
   }
   
-  .formpage .flex-container .card {
+  .formpage2 .formpage2flex-container .formpage2card {
     border: 1px solid black !important;
     border-radius: 30px;
   }
   
-  .formpage .dashed-circle {
+  .formpage2 .formpage2dashed-circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +107,7 @@ font-weight: 400;
     border: 2px dashed black;
   }
   
-  .formpage .plus-btn {
+  .formpage2 .formpage2plus-btn {
    
     font-weight: bolder ;
     font-size: 86px;
@@ -134,7 +135,7 @@ font-weight: 400;
     box-shadow: none !important;
    
   }
-  /* .formpage .slider {
+  /* .formpage2 .slider {
     
     width: 100%;
     -webkit-appearance: none;
@@ -148,7 +149,7 @@ font-weight: 400;
     
   }
   
-  .formpage .slider::-webkit-slider-thumb {
+  .formpage2 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -159,7 +160,7 @@ font-weight: 400;
     margin-top: 0px;
   }
   
-  .formpage .slider::-moz-range-thumb {
+  .formpage2 .slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -170,16 +171,16 @@ font-weight: 400;
   
   @media screen and (min-width: 768px) {
     /* Hide the 2nd submit button in large screen view */
-    .formpage   #btn2 {
+    .formpage2   #formpage2btn2 {
       display: none;
     }
   
     /* Hide the 2nd checkbox in large screen view */
-    .formpage  #checkbox2 {
+    .formpage2  #formpage2checkbox2 {
       display: none;
     }
   
-    .formpage .flex-container .card {
+    .formpage2 .formpage2flex-container .formpage2card {
       width: 282px !important;
       height: 171px !important;
       box-shadow: none !important;
@@ -188,12 +189,12 @@ font-weight: 400;
  
   @media screen and (max-width: 576px) {
     /* Not visible in small screen */
-    .formpage .heading4 {
+    .formpage2 .formpage2heading4 {
       display: none;
     }
   
     /* Visible in small screen */
-    .formpage  #heading3 {
+    .formpage2  #formpage2heading3 {
       display: block;
       color: #067A46;
       align-items: center;
@@ -205,16 +206,16 @@ font-weight: 400;
     }
   
     /* Hide the 1st submit button in small screen view */
-    .formpage #btn1 {
+    .formpage2 #formpage2btn1 {
       display: none;
     }
   
     /* Hide the 1st checkbox in small screen view */
-    .formpage  #checkbox1 {
+    .formpage2  #formpage2checkbox1 {
       display: none;
     }
   
-    .formpage .form .h6 {
+    .formpage2 .formpage2form .formpage2h6 {
       font-size: 24px;
     }
   
@@ -222,31 +223,31 @@ font-weight: 400;
     /* #checkbox2 {
       display: flex;
     } */
-    .formpage  #inp,.min,.max{
+    .formpage2  #formpage2inp,.min,.max{
       font-size: 15px;
     }
-    .formpage .checkinfo{
+    .formpage2 .formpage2checkinfo{
       font-size: 16px;
     }
-    .formpage #btn2{
+    .formpage2 #formpage2btn2{
       font-size: 16px;
     }
-    .formpage #row{
+    .formpage2 #row{
       margin: 0px 15px;
      }
-     .formpage .dashed-circle{
+     .formpage2 .formpage2dashed-circle{
       width: 50px;
       height: 50px
      }
-     .formpage .card{
-      width: 100px;
-    height: 100px;
+     .formpage2 .formpage2card{
+      width:100% !important;
+
      }
-     .formpage  .plus-btn{
+     .formpage2  .formpage2plus-btn{
       font-size: 16px;
       font-family: Arvo;
      }
-     .formpage .flex-container {
+     .formpage2 .formpage2flex-container {
       justify-content: center;
       display: flex;
       text-align: center;
