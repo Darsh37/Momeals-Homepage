@@ -24,10 +24,10 @@ function Fromright() {
   };
 
   return (
-    <div className=' form-modal'>
+    <div className=' fromrightform-modal '>
       <center>
         <Row className='m-3'>
-        <Col className='form-header pt-3'>
+        <Col className='fromrightform-header pt-4'>
             DONATE NOW!!
         </Col>
         </Row>
@@ -38,8 +38,8 @@ function Fromright() {
         </small>
         </Col>
        </Row>
-  <Row className='d-flex justify-content-center mt-5 interval-btns'  style={{width:"100%"}}>
-  <Col className='button-container '>
+  <Row className='d-flex justify-content-center mt-4 interval-btns'  style={{width:"100%"}}>
+  <Col className='fromrightbutton-container '>
     <button
       className={`one-time ${button1Color ? 'active' : ''}`}
       onClick={handleButton1Click}
@@ -57,41 +57,41 @@ function Fromright() {
 
       
        
-       <Row xs={3}   sm={3} md={3} xl={3} style={{width:"100%"}}  className='d-flex sm-justify-content-center amt-btn mt-4'>
+       <Row xs={3}   sm={3} md={3} xl={3} style={{width:"100%"}}  className='d-flex sm-justify-content-center fromrightamt-btn mt-4'>
           <Col  className='d-flex justify-content-center mb-3 '>
-            <button onClick={updateValue} className='custom-button'>
+            <button onClick={updateValue} className='fromrightcustom-button'>
               Rs. 50
             </button>
           </Col>
           <Col  className='d-flex justify-content-center mb-3'>
-            <button onClick={updateValue} className='custom-button'>
+            <button onClick={updateValue} className='fromrightcustom-button'>
               Rs. 100
             </button>
           </Col>
           <Col  className='d-flex justify-content-center mb-3'>
-            <button onClick={updateValue} className='custom-button'>
+            <button onClick={updateValue} className='fromrightcustom-button'>
               Rs. 150
             </button>
           </Col>
           <Col  className='d-flex justify-content-center mb-3'>
-            <button onClick={updateValue} className='custom-button'>
+            <button onClick={updateValue} className='fromrightcustom-button'>
               Rs. 200
             </button>
           </Col>
           <Col  className='d-flex justify-content-center mb-3'>
-            <button onClick={updateValue} className='custom-button'>
+            <button onClick={updateValue} className='fromrightcustom-button'>
               Rs. 500
             </button>
           </Col>
           <Col  className='d-flex justify-content-center mb-3'>
-            <button onClick={updateValue} className='custom-button'>
+            <button onClick={updateValue} className='fromrightcustom-button'>
               Rs. 1000
             </button>
           </Col>
         </Row>
       
       
-        {/* <div className='amt-btn'>
+        {/* <div className='fromright'>
             <button onClick={updateValue}>Rs. 50</button>
             <button onClick={updateValue}>Rs. 100</button>
             <button onClick={updateValue}>Rs. 150</button>
@@ -101,7 +101,7 @@ function Fromright() {
         </div> */}
         <Row xs={12} sm={6} md={12} className='d-flex justify-content-center' style={{width:"100%"}}  >
           <Col xs={12} sm={6} md={12}  >
-            <div className='amt-input' >
+            <div className='fromrightamt-input' >
               <input
                 type='text'
                 name='amt'
@@ -109,15 +109,15 @@ function Fromright() {
                 placeholder='Add Custom Amount'
                 value={inputValue}
                 onChange={manualUpdate}
-                className='custom-input'
+                className='fromrightcustom-input'
                
               />
             </div>
           </Col>
         </Row>
-        <Row className='donate-now' style={{width:"100%"}}>
+        <Row className='fromrightdonate-now' style={{width:"100%"}}>
            <Col>
-           <Button className='mb-5 donatebtn'style={{width:"100%"}} >Donate Now</Button>
+           <Button className='mb-5 fromrightdonatebtn'style={{width:"100%"}} >Donate Now</Button>
            </Col>
         </Row>
         </center>

@@ -5,13 +5,16 @@ import Container3 from "./Container3";
 import { Container4 } from "./Container4";
 
 import "./FoodHunger.css";
+import { Col, Row } from "react-bootstrap";
 
 function FoodHunger() {
   return (
     <div className="foodhunger-main-container">
-      <div style={{ margin: "2rem 5rem" }}>
+      <Row className="d-flex justify-content-center pt-4 pb-2 p-5">
+        <Col className="p-5 pt-4 pb-2">
         <h1> Food Hunger</h1>
-      </div>
+        </Col>
+      </Row>
 
       <div>
         <Container1 />

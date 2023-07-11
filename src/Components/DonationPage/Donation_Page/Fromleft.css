@@ -74,10 +74,12 @@
   }
 }
 
-.donate-buttons .btn-1:hover {
-  background: #067a46 !important;
+.donate-buttons .fromleftbtn-1:hover {
+  background: #067a46 ;
+  box-shadow: none;
+  border: none;
 }
-.donate-buttons .btn-1 {
+.donate-buttons .fromleftbtn-1 {
   border-radius: 50px;
   border: none;
   height: 50px;
@@ -91,7 +93,7 @@
   border-radius: 30px;
 }
 
-.donate-buttons .btn-2 {
+.donate-buttons .fromleftbtn-2 {
   border-radius: 30px;
   height: 50px;
   width: 165px;
@@ -105,8 +107,8 @@
 }
 
 @media (max-width: 768px) {
-  .donate-buttons .btn-1,
-  .donate-buttons .btn-2 {
+  .donate-buttons .fromleftbtn-1,
+  .donate-buttons .fromleftbtn-2 {
     height: 50px;
     width: 105px;
     font-size: 15px;
@@ -127,18 +129,21 @@
 }
 
 @media (max-width: 280px) {
-  .col-auto {
+  .fromleftcolbtns {
     width: 110px !important;
   }
 }
 
 .donate-buttons {
   margin-top: 40px;
+
 }
 
-.donate-buttons .btn-2:hover {
-  background-color: #fd7e14 !important;
+.donate-buttons .fromleftbtn-2:hover {
+  background-color: #fd7e14 ;
   color: #ffffff;
+  box-shadow: none;
+  border: none;
 }
 
 @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-.form-modal {
+.fromrightform-modal {
     background-color: #c7f2ab;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
@@ -7,7 +7,7 @@
   }
  
 @media (min-width: 768px){
-    .form-modal{
+    .fromrightform-modal{
         width: 26rem;
         height: 35rem;
         margin-bottom: -40px;
@@ -17,20 +17,20 @@
 }
 
 
-.amt-btn button:focus{
+.fromrightamt-btn .fromrightcustom-button:focus{
     border:2px solid #0d8354;
    
 }
 
-.form-header{
+.fromrightform-header{
     text-align:center;
     color:#1B5240;
     font-size:32px;
     font-weight:bold;
-    line-height: 65px;
+    
     letter-spacing: -2px;
 }
-.form-modal small{
+.fromrightform-modal small{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -39,7 +39,7 @@ line-height: 27px;
 }
 
 
-  .button-container {
+  .fromrightbutton-container{
     display: flex;
     justify-content: center;
   
@@ -66,7 +66,7 @@ line-height: 27px;
   }
   
  
-  .custom-button {
+  .fromrightform-modal .fromrightcustom-button {
     border: 1px solid #0d8354;
     border-radius: 8px;
     width: 100%;
@@ -78,7 +78,7 @@ line-height: 27px;
   }
 
 
-.amt-input input {
+.fromrightamt-input .fromrightcustom-input {
   width: 100%;
     border: 1px solid #0d8354;
     border-radius: 8px;
@@ -90,21 +90,37 @@ line-height: 27px;
   }
   
 
-.amt-input input:focus{
+  .fromrightamt-input .fromrightcustom-input:focus{
     outline:2px solid #1B5240;
 }
 
-.donate-now{
+.fromrightform-modal .fromrightdonate-now{
     text-align:center;
 }
-.donatebtn:hover{
+.fromrightform-modal .fromrightdonatebtn:hover{
   background-color: orange !important;
 }
+.fromrightform-modal .fromrightdonatebtn:focus{
+box-shadow: none;
+}
+.fromrightform-modal .fromrightdonatebtn{
+  
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 18px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+ 
+  text-transform: uppercase;
+  background-color: #1b5240;
+}
 @media (max-width: 767px) {
-    .button-container {
+    .fromrightbutton-container {
       flex-wrap: wrap;
     }
-    .form-modal{
+    .fromrightform-modal{
         width: 100%;
       margin-bottom: 20px;
     }
@@ -116,8 +132,8 @@ line-height: 27px;
     
   }
   
-.donate-now button {
-    background-color: #1b5240;
+/* .fromrightdonate-now {
+  
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -129,7 +145,7 @@ line-height: 27px;
     text-transform: uppercase;
     height: 50px;
     letter-spacing: 1px;
-  }
+  } */
   
 /* .donate-now button:hover{
     transform: translateY(-3px);

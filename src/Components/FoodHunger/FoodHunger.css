@@ -5,165 +5,105 @@
 .container1-wrapper{
     display: flex;
     background:#DDECFF;
-   padding: 2rem 5rem;
+   /* padding: 2rem 5rem; */
   
 }
-.container2-wrapper{
-    display: flex;
-    padding: 2rem 5rem;
-}
+
 .container4-wrapper{
     color: #FFFFFF;
-    flex-direction: column;
-    padding: 2rem 20rem;
     background: #067749;
-    height: 20rem;
+    
 }
 .container4-heading{
-     margin-left: 5rem;
+
     font-size: 35px;
-    padding-right: 2rem;
+ 
 }
-.container4-counter{
-    display: flex;
-    flex-direction: row;
-    width: 40rem;
-}
+
 
 .container4-counter h3{
     text-align: left;
 } 
 
-.d-5{ 
+/* .d-5{ 
     text-align: left;
     margin: 1rem;
     border-right: 3px solid #FF9E00;
-}
+} */
 
 
 .container3-wrapper{ 
-    display: flex;
-    padding: 2rem 5rem;
     background: #CBF5E6;
-    margin: 0px;
+  
 }
-.container3-wrapper p{
-    height: 15rem;
+.container3-wrapperp{
+  
     font-weight: 100; 
     font-size: 20px;
-    display: flex;
-    padding: 2rem 5rem;
+  
     background: #CBF5E6;
-    border-left: 2px solid #0448BC;
+ 
 }
-.sponsor-card{
+/* .sponsor-card{
     margin-left: 1rem;
-}
+} */
+.container4-wrapper .container4-wrappercounters:not(:last-child){
+    border-right: 2px solid orange  !important;
+  }
 
-.happens-container{
-    margin-right: 10rem;
-}
-
-@media (max-width:1200px) {
-    .container1-wrapper{
-        margin: 0rem !important;
-        padding: 3rem;
-        flex-direction: column;     
-    }
-
-    .container2-wrapper{
-        margin: 0rem !important;
-        padding: 5rem !important;
-        flex-direction: column;   
-    }
-    .container4-wrapper{
-        margin: 0rem !important;
-        padding: 5rem ;
-        flex-direction: row;   
-    }
-    .container3-wrapper{
-        padding: 5rem;
-        margin: 0rem !important; 
+@media (min-width:780px){
+    .container3-wrapperp{
+        border-left: 2px solid #0448BC;
+        padding: 0px 30px
     }
 }
-
+@media (max-width: 575.98px){
+    .container1-wrapper,.container2-wrapper,.container3-wrapper,.container4-wrapper{
+        text-align: center;
+    }
+}
 @media (max-width:360px) {
- .container1-wrapper{
-        margin: 0rem !important;
-        padding: 1rem;
-        flex-direction: column;     
-    }
-    .foodhunger-main-container h1{
-        width:17rem;
-        margin: 1.2rem 0rem;
-    }
+ 
+   
     .container1-wrapper h5 {
         font-size: 15px;
 
     }
-    .card{
+    /* .card{
         width:18rem !important;
         margin-left: 0 !important;
     }
     .card-text{
         width: 15rem !important;
-    }
-    .container2-wrapper{
-        margin: 0rem !important;
-        padding: 1rem !important;
-        flex-direction: column;     
-    }
-    .happens-container {
-        width: 20rem !important;
-        margin-right: 0rem !important;
-    }
-    .d-3{
+    } */
+ 
+   
+    /* .d-3{
         margin: 0rem !important;
     }
     .d-4{
        margin: 0rem !important;
-    }
-    .container3-wrapper{
-        padding: 0rem;
-        width: 22.5rem;
-        margin: 0rem !important;
-        border: none; 
-    }
-    .container3-wrapper p{
-        width: 21rem;
-        height: 25rem;
+    } */
+    
+      
+    .container3-wrapperp{
+       
         font-weight: 100; 
         font-size: 17px;
-        padding: 1rem;
-      
-    }
-    .container4-wrapper{
-        padding: 0px !important;
-        height: 35rem;
-        
-    }
-    .container4-counter{
-        display: flex;
-        flex-direction: column;
-        width: 35rem;
-        padding-left: 3rem !important;
-      
     
+      
     }
-    .container4-counter h3{
-        width: 17rem;
-    }
+  
     .container4-heading{
-        margin-left: 1rem !important;
-        padding: 1rem !important;
+    
         font-size: 30px;
     }
 
-    .d-5{
+    /* .d-5{
         width: 13rem;
         border-right: none;
         border-bottom: 3px solid #FF9E00;
-    }
+    } */
 
 
 }

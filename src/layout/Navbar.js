@@ -58,7 +58,7 @@ export const Navbar = () => {
                 )}
               </li>
               <li className="last_editor">
-                <NavLink  className="nav-link" to="/FoodWarrior">Food Warrior</NavLink>
+                <NavLink  className="nav-link" to="/foodworrierpage">Food Warrior</NavLink>
               </li>
             </ul>
            
@@ -95,7 +95,7 @@ export const Navbar = () => {
           <a href="/ourStory">Our Story</a>
         </li>
         <li>
-          <a href="/FoodWarrior">Food Warrior</a>
+          <a href="/foodworrierpage">Food Warrior</a>
         </li>
         {/* Second Dropdown */}
         <li

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Col, Row } from 'react-bootstrap';
 
 
 export const Container4 = () => {
@@ -10,15 +11,17 @@ export const Container4 = () => {
       ];
   return (
     <div className='container4-wrapper' >
-        <h3 className='container4-heading'>WHAT WE DID SO FAR?</h3>
-        <div className='container4-counter' >
+         <h3 className="container4-heading text-center pt-5 pb-4">WHAT WE DID SO FAR?</h3>
+      <Row className="justify-content-center pb-5">
         {data.map((item, index) => (
-        <div className='d-5' key={index}>
-          <h3>{item.count}</h3>
-          <p> {item.description}</p> 
-        </div>
+          <Col md={2} key={index} className="container4-wrappercounters d-flex flex-column align-items-center">
+            
+            <h3>{item.count}</h3>
+            <p>{item.description}</p>
+            
+          </Col>
         ))}
-        </div>
+      </Row>
         </div>
  )}
   

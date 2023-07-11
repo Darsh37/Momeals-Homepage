@@ -1,15 +1,16 @@
 import React from "react";
-import Stack from "react-bootstrap/Stack";
+import {Stack,Row,Col} from "react-bootstrap";
 import DonationDetails from "./DonationDetails";
 import "./FoodHunger.css";
 
 function Container2() {
   return (
-    <div className="container2-wrapper">
-     
-      <div className="happens-container" >
-      <div className="d-3">
-        <h1 className='d-3' style={{margin:" 1rem 10rem"}}>WHY IT HAPPENS?</h1>
+    <div className="container2-wrapper pt-5">
+     <Row className="d-flex justify-content-center">
+      <Col  lg={8} md={12} xs={12}>
+     <div className="happens container" >
+      <div className="d-">
+        <h1 className='d-3'>WHY IT HAPPENS?</h1>
         <p style={{ fontSize:"18px"}} >
           The issue of widespread malnutrition and hunger is a result of a
           complex web of interconnected factors, including poverty, inequality,
@@ -18,12 +19,12 @@ function Container2() {
           around the world are affected by this problem, preventing them from
           accessing nutritious food.
         </p>
-        <h3 className="d-4" style={{margin:" 2rem 9rem"}}>Main factors why it happens:</h3>
+        <h3 className="d-4">Main factors why it happens:</h3>
       </div>
         <Stack gap={3} >
           <div className="p-2">
             <h3>
-              1.<span style={{ color: "#E6545F", margin:"0.5rem" }}>Poverty</span>
+              1.<span style={{ color: "#E6545F"}}>Poverty</span>
             </h3>
             <p style={{ fontSize:"18px"}}  >
               India has one of the highest rates of poverty in the world, with
@@ -39,7 +40,7 @@ function Container2() {
           <div className="p-2">
             <h3>
               2.
-              <span style={{ color: "#E6545F",margin:"0.5rem" }}>
+              <span style={{ color: "#E6545F"}}>
                 Water Sanitation and Hygiene
               </span>
             </h3>
@@ -55,7 +56,7 @@ function Container2() {
           </div>
           <div className="p-2">
             <h3>
-              3.<span style={{ color: "#E6545F",margin:"0.5rem" }}> Excess Food Wastage</span>
+              3.<span style={{ color: "#E6545F" }}> Excess Food Wastage</span>
               <p style={{ fontSize:"18px"}} >
                 The cycle of food waste, climate change, and hunger intensifies
                 each other. Wasted food requires significant resources such as
@@ -72,7 +73,7 @@ function Container2() {
           </div>
           <div className="p-2">
             <h3>
-              4.<span style={{ color: "#E6545F", margin:"0.5rem" }}>Inequity</span>{" "}
+              4.<span style={{ color: "#E6545F"}}>Inequity</span>{" "}
             </h3>
             <p style={{ fontSize:"18px"}} >
               Access to nutritious food is not equal in an unequal world. Those
@@ -85,9 +86,13 @@ function Container2() {
           
         </Stack>
       </div>
-      <div className="second-col-wrapper">
+      </Col>
+      <Col  lg={3} md={5} xs={12}>
+      <div className="second col-wrapper p-3 p-lg-0 p-md-0">
         <DonationDetails />
       </div>
+      </Col>
+      </Row>
     </div>
   );
 }

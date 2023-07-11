@@ -1,16 +1,17 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+
+
+import {Button,Col,Row,Card,Form} from 'react-bootstrap';
+
+
 
 function Container1() {
   return (
-    <div class="container1-wrapper">
-      <h5 >
-              India, the land of abundant agricultural resources, is facing a
+    <div className="container1-wrapper pt-5 p-4">
+      <Row className="d-flex justify-content-center ">
+        <Col lg={8} md={12} xs={12}>
+        <h5 >
+        India, the land of abundant agricultural resources, is facing a
               startling reality. Despite being the second-largest producer of
               food on the planet, it is ranked a dismal 107th out of 121
               countries in terms of food hunger crises. The situation is
@@ -24,15 +25,15 @@ function Container1() {
               poor infrastructure, and distribution systems. However, we will
               focus on the avoidable factors.
             </h5>
-         
-         <div>
-            <Card
+        </Col>
+       
+        <Col lg={3} md={5} xs={12}>
+        <Card
               style={{
                 boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-                width: "20rem",
-                marginLeft: "10rem",
+               
                 borderRadius: "10px",
-                padding: "0",
+                
               }}
             >
               <Card.Body
@@ -55,7 +56,7 @@ function Container1() {
                 }}
               >
                 <Card.Text
-                  style={{ width:"17rem", textAlign: "center", fontFamily: "Comfortaa" }}
+                  style={{  textAlign: "center", fontFamily: "Comfortaa" }}
                 >
                   Become a food warrior and rescue leftover food and save lives
                   of millions
@@ -93,7 +94,10 @@ function Container1() {
                 </Row>
               </Card.Body>
             </Card>
-            </div>   
+        </Col>
+      </Row>
+                
+                  
     </div>
   );
 }

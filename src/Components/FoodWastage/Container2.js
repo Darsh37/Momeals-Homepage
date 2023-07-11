@@ -1,14 +1,16 @@
 import React from "react";
-import Stack from "react-bootstrap/Stack";
+import {Stack,Row,Col} from "react-bootstrap";
 import "../FoodHunger/FoodHunger.css";
 import DonationDetails from "../FoodHunger/DonationDetails";
 
 export default function Container2() {
   return (
-    <div className="container2-wrapper">
-      <div className="happens-container">
-        <div className="d-3">
-          <h1 className="d-3" style={{ margin: " 1rem 10rem" }}>
+    <div className="container2-wrapper pt-5">
+      <Row className="d-flex justify-content-center">
+      <Col  lg={8} md={12} xs={12}>
+      <div className="happen-container">
+        <div className="d-">
+          <h1 className="d3" >
             WHY IT HAPPENS?
           </h1>
         </div>
@@ -16,7 +18,7 @@ export default function Container2() {
           <div className="p-2">
             <h3>
               1.
-              <span style={{ color: "#E6545F", margin: "0.5rem" }}>
+              <span style={{ color: "#E6545F"}}>
                 Lack of appropriate planning
               </span>
             </h3>
@@ -52,7 +54,7 @@ export default function Container2() {
           <div className="p-2">
             <h3>
               3.
-              <span style={{ color: "#E6545F", margin: "0.5rem" }}>
+              <span style={{ color: "#E6545F"}}>
                 Over-preparation of food in restaurants, hotels, and the
                 foodservices industry
               </span>
@@ -76,7 +78,7 @@ export default function Container2() {
           <div className="p-2">
             <h3>
               4.
-              <span style={{ color: "#E6545F", margin: "0.5rem" }}>
+              <span style={{ color: "#E6545F"}}>
                 {" "}
                 Excess Food Wastage
               </span>
@@ -94,7 +96,7 @@ export default function Container2() {
           <div className="p-2">
             <h3>
               5.
-              <span style={{ color: "#E6545F", margin: "0.5rem" }}>
+              <span style={{ color: "#E6545F" }}>
                 Lack of knowledge about food storage and preservation
               </span>{" "}
             </h3>
@@ -109,9 +111,13 @@ export default function Container2() {
           </div>
         </Stack>
       </div>
-      <div className="second-col-wrapper">
+      </Col>
+      <Col  lg={3} md={5} xs={12}>
+      <div className="second-co-wrapper p-3 p-lg-0 p-md-0">
         <DonationDetails />
       </div>
+      </Col>
+      </Row>
     </div>
   );
 }

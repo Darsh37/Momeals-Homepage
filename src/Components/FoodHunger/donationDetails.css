@@ -1,15 +1,14 @@
 .Donation-container{
    background-color:#EEEEEE;
-   width: 25rem;
-   height: 40rem;
-   padding:2rem;
+  
+
 }
 .donar-card.card{
     background-color:#EEEEEE;
-    width: 18rem !important;
-    height: 6rem !important;
-    display: flex;
-    flex-direction: row;
+    /* width: 18rem !important;
+    height: 6rem !important; */
+    /* display: flex;
+    flex-direction: row; */
     border:none;
     margin-top: 2rem;
     box-shadow: none !important;  
@@ -38,11 +37,10 @@
 .share-cause-Container{
     margin-top: 3rem;
     background-color:#EEEEEE;
-    width: 25rem;
-       height: 9rem;   
+  
 }
 .share-cause-Container h3{
-   padding-left: 2.5rem;  
+   /* padding-left: 2.5rem;   */
 }
 
 .share-cause-list ul{
@@ -51,15 +49,15 @@
 }
 
 .share-cause-list ul li{
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
 }
 
 @media (max-width:360px) {
-    .Donation-container{
+    /* .Donation-container{
         width: 20rem; 
      }
      .share-cause-Container{ 
         width: 20rem; 
         
-    }
+    } */
 }

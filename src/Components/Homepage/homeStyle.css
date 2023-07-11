@@ -53,7 +53,7 @@ align-items: center;
 
 color: #000000;
 }
-.card-para{
+.slogancard-para{
   font-family: 'Comfortaa';
 }
 .header-h1{
@@ -183,9 +183,11 @@ line-height: 40px;
   padding: 25px;
   width: 40%;
 }
-
-.rounded-pill:hover{
+.btn-update:hover,.homejoin-btn:hover,.button-donate:hover,.donateclassright-form .money:hover{
   background-color:#C7F2AB!important;
+}
+.rounded-pill:hover{
+  
   color: black !important;
 }
 .card-img {
@@ -199,10 +201,10 @@ line-height: 40px;
   margin-top: 55px;
   width: 5px;
 } */
-.para-side h3{
+.para-sideh3{
   font-size: 36px;
 }
-.para-side p{
+.para-sidep{
   align-items: flex-start;
   font-weight: 400;
 font-size: 24px;
@@ -326,7 +328,7 @@ line-height: 35px;
   font-weight: 700;
   font-size: 24px;
 }
-.right-form {
+.donateclassright-form {
     height: auto;
     width: 40%;
     
@@ -484,9 +486,9 @@ border-radius: 20px;
 .ball:active {
   cursor: grabbing;
 }
-.card-text{
+/* .card-text{
   width: 200px;
-}
+} */
 
 @media (max-width: 280px){
   .section-cards .img-fluid{
@@ -500,9 +502,9 @@ border-radius: 20px;
     flex-direction: column;
     margin: 0px 15px;
   }
-  .card-text {
+  /* .card-text {
     margin: 0px 5px;
-  }
+  } */
 }
 .para2{
   font-family: 'Comfortaa';
@@ -634,15 +636,18 @@ font-size: 14px;
     flex-direction: column;
     font-family: 'Comfortaa';
   }
+  .slogancard-text{
+    text-align: left;
+  }
  
-  .card-text{
+  /* .card-text{
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     width: 200px;
     
     text-align: left;
-  }
+  } */
   .section-cards .card1{
     display: flex;
   }
@@ -681,7 +686,7 @@ font-size: 14px;
   .faqImg{
    padding: 20px;
   }
-  .left-intro,.right-form{
+  .left-intro,.donateclassright-form{
     width: 100%;
     padding: 20px;
   }
@@ -758,12 +763,12 @@ font-size: 22px;
   .line {
     display: none;
   }
-  .para-side h3 {
+  .para-sideh3 {
     font-weight: 600;
 font-size: 24px;
 text-align: center;
   }
-  .para-side p{
+  .para-sidep{
     font-weight: 400;
     font-size: 14px;
     text-align: center;
@@ -802,6 +807,11 @@ text-align: center;
 }
 
 /* for large devices */
+@media only screen and (min-width: 1024px) {
+  .left-intro ,.donateclassright-form{
+    width: 30%;
+  }
+}
 @media only screen and (min-width: 992px), screen and (min-width: 768px) {
   .capsule{
     padding: 0px 20px;
@@ -809,7 +819,7 @@ text-align: center;
   }
 
   .head-section {
-    padding-top: 200px;
+    padding-top: 150px;
   }
   .home-counter .counter{
     position: absolute;
@@ -847,7 +857,7 @@ right: 0;
   .descript{
     font-size: 18px;
   }
-  .imgs{
+  .capsule-imgs{
     display: none;
   }
   .home-counter .counter {
@@ -886,11 +896,11 @@ right: 0;
 }
 
 @media only screen and (min-width: 768px){
-  .imgs{
+  .capsule-imgs{
     display: none;
   }
  
-  .right-form {
+  .donateclassright-form {
     height: 420px;
    
   }
