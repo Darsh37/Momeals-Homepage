@@ -1,0 +1,110 @@
+
+
+.contactUs-right-side{
+   
+    border-radius: 50px;
+    background: #C7F2AB;
+ 
+
+}
+.contactUs-headerh5{
+    color: #067749;
+    font-family: 'Comfortaa';
+    font-weight: 600;
+}
+.contactUs-p1{
+    color: #484747;
+    font-weight: 400;
+    font-family: 'Inter';
+}
+.contactUs-p2{
+    color: black;
+    font-weight: 600;
+    font-family: 'Inter'; 
+}
+.contactUs-righth3{
+    font-weight: 500;
+    font-family: 'Comfortaa';
+}
+.contactUs-right-side .contact-inp{
+    border-bottom:2px solid #888888;  
+
+}
+
+.contactUs-right-side .contact-inp::placeholder{
+color: black;
+}
+.contactus-rightp,.contact-inp,.contactus-right-radio{
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+
+.contactUs1-btn{
+    
+    border-radius: 20px;
+   width: 100%;
+    background: #1B5240;
+    color:#FFFFFF;
+}
+
+.contact-inp{
+    width: 100%;
+    background: none;
+    border: none;
+    color: #000;
+    margin: 15px 0px;
+    border-bottom: 4px solid black;
+    outline: none; /* Add this line to remove the outline */
+}
+.contact-inp:focus {
+    background: none;
+    outline: none;
+  }
+@media screen and (min-width: 768px) {
+    .contactUs-headerh3{
+        font-size: 32px;
+    }
+    .contactUs-headerh5{
+     font-size: 22px;
+    }
+    .contactUs-p1,.contactUs-p2{
+        font-size: 20px; 
+    }
+    .contactus-rightp,.contact-inp,.contactus-right-radio{
+        font-size: 18px;
+    }
+    
+}
+
+ 
+
+@media screen and (max-width: 600px) {
+    .contactUs-righth3{
+        font-size: 24px;
+    }
+    .contactUs-right-side .contact-inp{
+        font-size: 14px;
+    }
+    .contactUs-headerh5 {
+        font-size: 22px;
+    }
+    .contactUs-p1 ,.contactUs-p2{
+        font-size: 20px;
+    }
+    .contactUs-row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contactus1st-div{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 10px 0px;
+    }
+    .contactUs-container .contactus1st-col,.contctus-imgs{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}

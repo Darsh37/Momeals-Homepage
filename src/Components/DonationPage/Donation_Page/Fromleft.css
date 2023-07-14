@@ -73,7 +73,12 @@
     box-sizing: border-box;
   }
 }
-
+.donation-caption .donate-buttons .fromleftbtn-1:active{
+  background: #067a46 ;
+} 
+.donation-caption .donate-buttons .fromleftbtn-2:active{
+  background: #fd7e14;
+} 
 .donate-buttons .fromleftbtn-1:hover {
   background: #067a46 ;
   box-shadow: none;

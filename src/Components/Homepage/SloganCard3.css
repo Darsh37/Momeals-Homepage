@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap');
+
 @media (max-width: 575.98px) {
   .slogan3card-text2ndp{
       font-size: 18px;
     }
+  
 }
-.slide-contain .slogan3card-text2nd{
+.slogan3card-textpara{
+  font-family: Poppins;
+
+}
+/* .slide-contain .slogan3card-text2nd{
   background-color: #172B0D !important;
-}
+} */
 .slide-contain .slogan3card-text2nd:hover{
   background:#172B0D  !important;
 }
@@ -49,6 +56,9 @@
   .slogan3card-row .slogan3card-text2nd{
       width: 300px;
       height: 350px;
+    }
+    .slogan3card-textpara{
+      font-size: 18px;
     }
 }
 /* slider */

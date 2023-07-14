@@ -31,6 +31,7 @@ export const HomePage = () => {
     { img: img3, count: "120+", description: "Families We Served" },
     { img: img4, count: "50+", description: "Women’s We Empowered" },
   ];
+  const [inputValue, setInputValue] = React.useState("");
 
   const navigate = useNavigate();
   const handleClick = () => {
@@ -56,6 +57,12 @@ export const HomePage = () => {
     // Cleanup the event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+ 
+
+  const handleButtonClick = (amount) => {
+    setInputValue(amount);
+  };
 
   return (
     <div>
@@ -239,7 +246,7 @@ export const HomePage = () => {
             </span>
           </h4>
         </div>
-        <div className="donateclassright-form  mt-lg-4">
+        <div className="donateclassright-form  mt-lg-4 ">
           <div className="donate">
             <h4 className="donatenow">DONATE NOW </h4>
           </div>
@@ -255,17 +262,20 @@ export const HomePage = () => {
               name=""
               placeholder="Your Name"
               className="rounded-pill my-2"
+
             />
             <input
               type="text"
               name=""
               placeholder="Amount Value"
               className="rounded-pill my-2"
+              value={inputValue}
+               onChange={(e) => setInputValue(e.target.value)}
             />
             <div className="button">
-              <button className="rounded-pill money">50 Rs</button>
-              <button className="rounded-pill money">100 Rs</button>
-              <button className="rounded-pill money">500 Rs</button>
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("50 Rs")}>50 Rs</button>
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("100 Rs")}>100 Rs</button>
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("500 Rs")}>500 Rs</button>
             </div>
             <div className="button-sec mb-5">
               <button className=" button-donate rounded-pill p-3">

@@ -10,18 +10,18 @@ const SloganCard4 = () => {
     const data=[
         {
             testminals:"Testimonials",
-            dta:"Momeals has been instrumental in raising awareness of hunger issues within our community! ",
-            name:"Karan K."
+            dta:"Momeals has been instrumental in raising awareness of hunger issues within our community! ",
+            name:"Shyam"
         },
         {
             testminals:"Testimonials",
-            dta:"Thanks to Momeal's field strategy, restaurants, hotels, and occasions are now much more likely to donate leftover food instead of throwing it away!",
-            name:"Shahin K."
+            dta:"Thanks to Momeal's field strategy, restaurants, hotels, and occasions are now much more likely to donate leftover food instead of throwing it away!",
+            name:"Jatin preet"
         },
         {
             testminals:"Testimonials",
-            dta:"I appreciate how quickly Momeal's responds when I submit pickup requests for leftover food! They always do a great job!",
-            name:"Shahin K."
+            dta:"I appreciate how quickly Momeal's responds when I submit pickup requests for leftover food! They always do a great  job!",
+            name:"Harpreet"
         }
     ]
     const sliderRef = React.useRef(null);

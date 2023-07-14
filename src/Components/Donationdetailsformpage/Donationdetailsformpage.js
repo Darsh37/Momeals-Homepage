@@ -2,7 +2,7 @@ import React, { useState ,useEffect} from 'react';
 import {  Button, Row, Col, Card , InputGroup ,Form} from 'react-bootstrap';
 import './Donationdetailsformpage.css';
 import donationdetailsformarrow from '../Images/Arrow 5.png'
-import Donorverifyimg from '../Images/funds donation 1 (1).png'
+import fundsimg from '../Images/funds donation 1 (1).png'
 import { useNavigate } from 'react-router-dom';
 const Donationdetailsformpage = () => {
     useEffect(() => {
@@ -44,7 +44,7 @@ const Donationdetailsformpage = () => {
               <input type="text" id="donationdetailsforminp" placeholder="Your Mobile No." />
               <input type="text" id="donationdetailsforminp" placeholder="City/State" />
               <input type="email" id="donationdetailsforminp" placeholder="Email" />
-              <input type="number" id="donationdetailsforminp" placeholder="Amount" />
+              <input type="text" id="donationdetailsforminp" placeholder="Amount" />
               <div className="donationdetailsforminput-with-dropdown">
                     <InputGroup style={{width:"100%"}}>
                 
@@ -84,8 +84,8 @@ const Donationdetailsformpage = () => {
         
          {/* Spacing */}
          <Col lg={1} md={1} sm={12}></Col>
-         <Col lg={5} md={4} sm={12}>
-       <img className="Donorverifyimg" src={Donorverifyimg} width="400px"/>
+         <Col lg={5} md={4} sm={12} className='d-flex justify-content-center'>
+       <img className="fundsimg" src={fundsimg} width="100%" />
        </Col>
      
       </Row>

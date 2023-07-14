@@ -68,7 +68,7 @@ font-size: 18px;
   .middle-text-container {
       display: flex;
       justify-content: center;
-      margin: 0 250px; /* Adjust the margin as needed */
+     
     }
     
     @media (max-width: 576px) {

@@ -44,13 +44,13 @@ function FoodtypePage() {
         <img className="foodtypearrowimage" src={arrow4} alt="Arrow" />
       </div>
       <center>
-        <p className="foodtypeheader mt-5">Want To Share Food?</p>
-        <p className="foodtypepara mb-3">Choose what type of food you have</p>
+        <p className="foodtypeheader mt-5 mt-lg-1">Want To Share Food?</p>
+        <p className="foodtypepara mb-3 mb-lg-1">Choose what type of food you have</p>
       </center>
       <div className="foodtyperow p-lg-5 p-md-1 ">
-        <Row xs={12} md={12} lg={2} className="d-flex justify-content-center align-items-center pt-lg-5 pt-md-5" style={{ margin: '0px' }}>
+        <Row xs={12} md={12} lg={2} className="d-flex justify-content-center align-items-center pt-lg-2 pt-md-5" style={{ margin: '0px' }}>
           {images.map((image) => (
-            <Col xs={6} sm={6} md={6} lg={3} key={image.id} className="mt-md-5 mb-md-5 mt-lg-5">
+            <Col xs={6} sm={6} md={6} lg={3} key={image.id} className="mt-md-5 mb-md-5 mb-lg-1 mt-lg-5">
               <Card
                 className={`foodtypecard d-flex justify-content-center align-items-center mb-md-5  mt-5 ${activeImage === image.id ? 'active' : ''}`}
                 style={{ border: 'none', background: 'none' }}
@@ -97,7 +97,7 @@ function FoodtypePage() {
           ))}
         </Row>
         <div className="text-center">
-          <Button className="foodtypebtn rounded-pill mt-4 mb-4 mt-md-5 mb-md-5" onClick={handleNextClick}>
+          <Button className="foodtypebtn rounded-pill mt-4 mt-lg-0 mb-4 mt-md-5 mb-md-5" onClick={handleNextClick}>
             Next
           </Button>
         </div>

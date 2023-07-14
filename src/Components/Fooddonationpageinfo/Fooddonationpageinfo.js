@@ -50,13 +50,13 @@ setcooktimedatalist(event.target.value)
       
       <Row id="formpage2row">
       <div >
-        
+      <p className="formpage2h6 mt-1">DONATE FOOD DETAILS</p>
       </div>
         {/* Left column */}
         <Col lg={6} md={6} sm={12}>
-          <div className="card-body mt-4">
+          <div className="card-body ">
             <div className="formpage2form">
-              <p className="formpage2h6">DONATE FOOD DETAILS</p>
+             
               <form className="formpage2form-class">
                 {/* Input fields */}
                 <div className="input-with-dropdown">
@@ -187,7 +187,7 @@ setcooktimedatalist(event.target.value)
                 </Card>
               </Col>
             </div>
-            <h4 className="formpage2heading4">Add the photo of the food<br /> item you want to give.</h4>
+            <h4 className="formpage2heading4">Add the photo of the food item you want to give.</h4>
           </Row>
         </Col>
 

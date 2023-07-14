@@ -58,8 +58,8 @@ const Fooddonarpage = () => {
         
          {/* Spacing */}
          <Col lg={1} md={1} sm={12}></Col>
-         <Col lg={5} md={4} sm={12}>
-       <img className="Donorverifyimg" src={Donorverifyimg} width="400px"/>
+         <Col lg={5} md={6} sm={12} className='fooddonarcolright'>
+       <img className="Donorverifyimg" src={Donorverifyimg} width="100%"/>
        </Col>
      
       </Row>

@@ -4,17 +4,18 @@ import "../layout/Navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { NavLink } from "react-router-dom";
 import MenuIcon from './menu icon 1.png';
+import { NavDropdown } from "react-bootstrap";
 
 export const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleDropdownOpen = () => {
-    setIsDropdownOpen(true);
-  };
+  // const handleDropdownOpen = () => {
+  //   setIsDropdownOpen(true);
+  // };
 
-  const handleDropdownClose = () => {
-    setIsDropdownOpen(false);
-  };
+  // const handleDropdownClose = () => {
+  //   setIsDropdownOpen(false);
+  // };
 
   const [open, setOpen] = useState(false);
   const close = useRef(null);
@@ -37,26 +38,33 @@ export const Navbar = () => {
           <div className="nav-elements d-flex align-items-center">
             <ul className="navbar-nav First-ul gap-xl-4" id="First-ul">
               <li>
-                <NavLink className="nav-link" to="/linchello">Lunchello</NavLink>
+                <NavLink className="nav-link" to="/linchello">Meallo</NavLink>
               </li>
               <li>
                 <NavLink  className="nav-link" to="/ourStory">Our Story</NavLink>
               </li>
-              {/* First Dropdown */}
-              <li
+              <li>
+                  <NavDropdown title="Causes" id="causes-dropdown">
+                  <NavDropdown.Item href="/FoodWastage" id="navdrop">Food Wastage</NavDropdown.Item>
+                  <NavDropdown.Item href="/FoodHunger"  id="navdrop">Food Hunger</NavDropdown.Item>
+                  <NavDropdown.Item href="/causes/women-empowerment" id="navdrop">Women Empowerment</NavDropdown.Item>
+                  </NavDropdown>
+              </li>
+           {/* First Dropdown  */}
+               {/* <li
                 className={`dropdown ${isDropdownOpen ? "active" : ""}`}
                 onMouseEnter={handleDropdownOpen}
                 onMouseLeave={handleDropdownClose}
-              >
-                  <NavLink  className="nav-link" to="/causes">Causes</NavLink>
-                {isDropdownOpen && (
-                  <div className="dropdown-content first-dropdown">
+              >  <NavLink  className="nav-link" to="/causes">Causes</NavLink> 
+                 
+               {isDropdownOpen && (
+                <div className="dropdown-content first-dropdown">
                     <a href="/FoodWastage">Food wastage</a>
                     <a href="/FoodHunger">Food hunger</a>
                     <a href="#">Women Empowerment</a>
-                  </div>
-                )}
-              </li>
+                  </div> 
+                )} 
+              </li>  */}
               <li className="last_editor">
                 <NavLink  className="nav-link" to="/foodworrierpage">Food Warrior</NavLink>
               </li>
@@ -83,13 +91,13 @@ export const Navbar = () => {
       alt="img"
       src="https://staging-beplusthemes.kinsta.cloud/wp-content/uploads/2021/08/ymr-popup-1.png"
     />
-    <div className="sidebar-elements" style={{ textDecoration: "none" }}>
+    <div className="sidebar-elements mt-4 m-lg-3 m-md-2 m-4" style={{ textDecoration: "none" }} >
       <ul style={{ display: "flex", flexDirection: "column", listStyleType: "none" }}>
         <li>
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/linchello">Lunchello</a>
+          <a href="/linchello">Meallo</a>
         </li>
         <li>
           <a href="/ourStory">Our Story</a>
@@ -97,8 +105,15 @@ export const Navbar = () => {
         <li>
           <a href="/foodworrierpage">Food Warrior</a>
         </li>
+        <li className="causes-dropdown">
+                  <NavDropdown title="Causes" id="causes-dropdown">
+                  <NavDropdown.Item href="/FoodWastage" >Food Wastage</NavDropdown.Item>
+                  <NavDropdown.Item href="/FoodHunger">Food Hunger</NavDropdown.Item>
+                  <NavDropdown.Item href="/causes/women-empowerment" >Women<br/> Empowerment</NavDropdown.Item>
+                  </NavDropdown>
+          </li>
         {/* Second Dropdown */}
-        <li
+        {/* <li
           className={`dropdown ${isDropdownOpen ? "active" : ""}`}
           onMouseEnter={handleDropdownOpen}
           onMouseLeave={handleDropdownClose}
@@ -111,18 +126,17 @@ export const Navbar = () => {
               <a href="#">WomenEmpowerment</a>
             </div>
           )}
+        </li> */}
+        
+        <li>
+          <a href="/contactpage">Contact Us</a>
+        </li>
+        
+        <li>
+          <a href="/blogpage">Blogs</a>
         </li>
         <li>
-          <a href="/foodWarrior">About Us</a>
-        </li>
-        <li>
-          <a href="/ourStory">Contact Us</a>
-        </li>
-        <li>
-          <a href="/ourStory">Become A Member</a>
-        </li>
-        <li>
-          <a href="/ourStory">Blogs</a>
+          <a href="/terms and conditionspage">Privacy  And Policies</a>
         </li>
       </ul>
     </div>

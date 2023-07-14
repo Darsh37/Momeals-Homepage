@@ -20,6 +20,9 @@ import ThankU from './Components/ThankU/ThankU';
 import FoodtypePage from './Components/Foodtypepage/FoodtypePage';
 import Donationdetailsformpage from './Components/Donationdetailsformpage/Donationdetailsformpage';
 import FoodworrierHome from './Components/Foodworrierpage/FoodworrierHome';
+import BlogPage from './Components/Blogpage/BlogPage';
+import ContactUs from './Components/ContactUsPage/ContactUs';
+import Main from './Components/Terms conditions/Main/Main';
 
 
 function App() {
@@ -51,7 +54,9 @@ function App() {
           <Route path= '/FoodtypePage' element={<FoodtypePage/>}/>
           <Route path= '/donationdetailsform' element={<Donationdetailsformpage/>}/>
           <Route path= '/foodworrierpage' element={<FoodworrierHome/>}/>
-          
+          <Route path= '/blogpage' element={<BlogPage/>}/>
+          <Route path= '/contactpage' element={<ContactUs/>}/>
+          <Route path= '/terms and conditionspage' element={<Main/>}/>
         </Routes>
         <div className='footer'>
         <Footer/>

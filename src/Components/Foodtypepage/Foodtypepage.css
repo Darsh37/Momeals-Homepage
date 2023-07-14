@@ -52,13 +52,13 @@ height: 50px;
   
   }
 
-  .foodtyperow .btn:hover{
-    background-color: #FD7E14 !important;
+ .foodtype .foodtyperow .foodtypebtn:active{
+    background-color: #FD7E14;
+    box-shadow: none;
   }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .foodtyperow{
-      /* height: 100vh; */
-    }
+  .foodtype .foodtyperow .foodtypebtn:hover{
+    background-color: #FD7E14;
+    box-shadow: none;
   }
 @media screen and (min-width: 768px) {
   .foodtyperow {

@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="row pt-2 d-flex justify-content-evenly pb-4">
-        <div className="col-md-3 col-sm-6  first-div">
+        <div className="col-md-3  text-center mt-sm-3  first-div">
           <h3 className="mb-1 mb-lg-5 mb-md-5 mb-3" style={{ color: "rgb(199, 242, 171)" }}>Momeals</h3>
           <h6>
             Be a part of positive change,
@@ -75,7 +75,7 @@ export const Footer = () => {
           </h6>
          
         </div>
-        <div className="col-md-3 col-sm-6  second-div">
+        <div className="col-md-3  text-center mt-sm-3  second-div">
           <h3 className="mb-1 mb-lg-5 mb-md-5 mb-3"  style={{ color: "rgb(199, 242, 171)" }}>Quick Links</h3>
           
           <h6>
@@ -154,7 +154,7 @@ export const Footer = () => {
             Contact Us
           </h6>
         </div>
-        <div className="col-md-3 col-sm-6  text-center  last-div">
+        <div className="col-md-3 mt-sm-3   text-center  last-div">
           <h3 className="mb-1 mb-lg-5 mb-md-5 mb-3" style={{ color: "rgb(199, 242, 171)" }}>Join The Newsletter</h3>
           <form >
             <input className="p-2 ipt" type="email" placeholder="Your Email here" />
