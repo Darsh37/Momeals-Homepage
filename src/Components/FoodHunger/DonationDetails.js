@@ -2,44 +2,47 @@ import React from "react";
 import rectangle from "../Images/Rectangle 229 (1).png";
 import "./donationDetails.css";
 import Card from "react-bootstrap/Card";
-import WhatsApp from "../Images/whatsapp logo.png"
-import youtube from '../Images/youtube icon.png'
-import instagarm from '../Images/instagram icon.png'
-import twitter from '../Images/twitter icon.png'
+import instagarm from '../Images/fp-insta.png'
+import WhatsApp from "../Images/fp-whatsapp.png"
+import facebook from '../Images/fp-facebook.png'
+import fdi1 from '../Images/fp-img1.png' 
+import fdi2 from '../Images/fp-img2.png' 
+import fdi3 from '../Images/fp-img3.png' 
+import fdi4 from '../Images/fp-img4.png' 
 import { Col, Row } from "react-bootstrap";
 
 const Data = [
   {
     id: 1,
-    img: "img2",
+    imgs: fdi1,
     name: "Drushti",
     Amount: "500",
-    time: "1 hour",
+    time: "1 Hour ago",
     comment: "God bless you",
   },
 
   {
     id: 2,
-    img: "img1",
+    imgs:fdi2,
     name: "Drushti",
     Amount: "200",
-    time: "1 hour",
-    comment: "God bless you",
+    time: "3 Hours ago",
+    comment: "We always pray for you",
   },
   {
     id: 3,
-    img: "img1",
+    imgs: fdi3,
     name: "Drushti",
     Amount: "500",
-    time: "1 hour",
+    time: "1 Hour ago",
     comment: "God bless you",
   },
   {
     id: 4,
-    img: "img1",
+    imgs:fdi4,
     name: "Drushti",
     Amount: "500",
-    time: "1 hour",
+    time: "1 Hour ago",
     comment: "God bless you",
   },
 ];
@@ -52,15 +55,15 @@ function DonationDetails() {
       {Data.map((data, id) => (
         <Card key={id} className="donar-card" >
           <Row>
-          <Col lg={4} xs={4} md={4} className="mt-4">
-          <Card.Img variant="top" src={rectangle}  style={{height:"5rem", width:"5rem"}}/>
+          <Col lg={3} xs={4} md={3} className="mt-4">
+          <Card.Img variant="top" src={data.imgs}/>
           </Col >
-          <Col  lg={6} xs={6}  md={6} style={{textAlign:"left"}}>
+          <Col  lg={8} xs={6}  md={8} style={{textAlign:"left"}}>
           <Card.Body>
             <p className="data-amount">{data.Amount}</p>
             <div className="d-2">
-            <p className="data-name">{data.name}</p>
-            <p className="data-time">{data.time}</p>
+            <p className="data-name ">{data.name}</p>&nbsp;
+            <p className="data-time px-lg-2">{data.time}</p>
             </div>
             <p className="data-comment" style={{color:" #908E8E"}}>{data.comment}</p>
           </Card.Body>
@@ -72,21 +75,19 @@ function DonationDetails() {
         </Card>
       ))}
     </div>
-    <div className='share-cause-Container pt-3 pb-3' style={{borderRadius:"15px"}}>
+    <div className='share-cause-Container pt-3 mb-2 pb-3' style={{borderRadius:"15px"}}>
     <h3 className="text-center">Share Cause</h3>
       <Row className="share-cause-list justify-content-center">
         <Col xs="auto">
           <img src={instagarm} alt="instagarm.png" />
         </Col>
         <Col xs="auto">
-          <img src={WhatsApp} alt="whatsapp.png" />
+          <img src={facebook} alt="whatsapp.png" />
         </Col>
         <Col xs="auto">
-          <img src={twitter} alt="twitter.png" />
+          <img src={WhatsApp} alt="twitter.png" />
         </Col>
-        <Col xs="auto">
-          <img src={youtube} alt="youtube.png" />
-        </Col>
+        
       </Row>
     </div>
     </div>

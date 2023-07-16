@@ -5,8 +5,12 @@ import donationdetailsformarrow from '../Images/Arrow 5.png'
 import fundsimg from '../Images/funds donation 1 (1).png'
 import { useNavigate } from 'react-router-dom';
 const Donationdetailsformpage = () => {
+  const navigatea = useNavigate();
+  const handleClicka = () => {
+    navigatea('/DonationPage');
+  }; 
     useEffect(() => {
-        document.body.classList.add('donationdetailsformcustom-body');
+        document.body.classList.add('donationdetailsformcustom-body'); 
         return () => {
           document.body.classList.remove('donationdetailsformcustom-body');
         };
@@ -24,10 +28,11 @@ const Donationdetailsformpage = () => {
       const paymentChange=(event)=>{
         setpayment(event.target.value)
          }
+        
   return (
     <div className='donationdetailsform'>
       
-    <img className='donationdetailsformarrow' src={donationdetailsformarrow}/>
+    <img className='donationdetailsformarrow' src={donationdetailsformarrow} onClick={handleClicka} />
     
     <div className="container">
       

@@ -130,7 +130,7 @@ font-size: 18px;
     @media (min-width:1025px){
       .slogancard4slider-container {
         margin: 0 auto;
-        max-width: 80%;
+        max-width: 100%;
         position: relative;
       }
       

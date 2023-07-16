@@ -6,10 +6,10 @@ import "./FoodHunger.css";
 function Container2() {
   return (
     <div className="container2-wrapper pt-5">
-     <Row className="d-flex justify-content-center">
-      <Col  lg={8} md={12} xs={12}>
+     <Row className="d-flex justify-content-center px-md-3 px-lg-0">
+      <Col  lg={8} md={7} xs={12}>
      <div className="happens container" >
-      <div className="d-">
+      <div >
         <h1 className='d-3'>WHY IT HAPPENS?</h1>
         <p style={{ fontSize:"18px"}} >
           The issue of widespread malnutrition and hunger is a result of a
@@ -23,10 +23,12 @@ function Container2() {
       </div>
         <Stack gap={3} >
           <div className="p-2">
-            <h3>
-              1.<span style={{ color: "#E6545F"}}>Poverty</span>
+            <h3 className="d-flex">
+              1.<span style={{ color: "#E6545F"}}>
+                <div>Poverty</div>
+              </span>
             </h3>
-            <p style={{ fontSize:"18px"}}  >
+            <p className="px-3" style={{ fontSize:"18px"}}>
               India has one of the highest rates of poverty in the world, with
               over 30% of the population living on less than $1.25 per day.
               Women and children are particularly vulnerable, and 1.4 million
@@ -38,13 +40,14 @@ function Container2() {
             </p>
           </div>
           <div className="p-2">
-            <h3>
-              2.
-              <span style={{ color: "#E6545F"}}>
+            <h3 className="d-flex">
+              2.<span style={{ color: "#E6545F"}}>
+                <div>
                 Water Sanitation and Hygiene
+                </div>
               </span>
             </h3>
-            <p style={{ fontSize:"18px"}} >
+            <p className="px-3"  style={{ fontSize:"18px"}} >
               Inadequate water, sanitation, and hygiene (WASH) services in
               India's health facilities contribute to a high neonatal mortality
               rate, which is currently 24 deaths per 1000 live births in India.
@@ -55,9 +58,10 @@ function Container2() {
             </p>
           </div>
           <div className="p-2">
-            <h3>
-              3.<span style={{ color: "#E6545F" }}> Excess Food Wastage</span>
-              <p style={{ fontSize:"18px"}} >
+            <h3 className="d-flex">
+              3.<span style={{ color: "#E6545F" }}><div>Excess Food Wastage</div></span>
+              </h3>
+              <p className="px-3" style={{ fontSize:"18px"}} >
                 The cycle of food waste, climate change, and hunger intensifies
                 each other. Wasted food requires significant resources such as
                 energy, land, water, and labor to produce, store, harvest,
@@ -69,13 +73,13 @@ function Container2() {
                 and resources, and save enough food to feed 2 billion hungry
                 people.
               </p>
-            </h3>
+            
           </div>
           <div className="p-2">
-            <h3>
-              4.<span style={{ color: "#E6545F"}}>Inequity</span>{" "}
+            <h3 className="d-flex">
+              4.<span style={{ color: "#E6545F"}}><div>Inequity</div></span>
             </h3>
-            <p style={{ fontSize:"18px"}} >
+            <p className="px-3"  style={{ fontSize:"18px"}} >
               Access to nutritious food is not equal in an unequal world. Those
               marginalized within a community - such as women, displaced people,
               refugees, and those with disabilities - face more barriers to

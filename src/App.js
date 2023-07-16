@@ -23,6 +23,7 @@ import FoodworrierHome from './Components/Foodworrierpage/FoodworrierHome';
 import BlogPage from './Components/Blogpage/BlogPage';
 import ContactUs from './Components/ContactUsPage/ContactUs';
 import Main from './Components/Terms conditions/Main/Main';
+import Thankupage1 from './Components/Thankupage1/Thankupage1';
 
 
 function App() {
@@ -57,6 +58,8 @@ function App() {
           <Route path= '/blogpage' element={<BlogPage/>}/>
           <Route path= '/contactpage' element={<ContactUs/>}/>
           <Route path= '/terms and conditionspage' element={<Main/>}/>
+          {/* this below thankyou page connectd to contactpage */}
+          <Route path= '/thankyoupage1' element={<Thankupage1/>}/>
         </Routes>
         <div className='footer'>
         <Footer/>

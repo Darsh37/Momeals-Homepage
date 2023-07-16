@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
 .home-counter {
   position: relative;
 }
@@ -306,9 +305,12 @@ height: 58px;
     padding-top: 9rem;
     width: 100%;
 }
+.donateclassright-form .inputfieldh6{
+  font-family: 'Inter';
+}
 .left-intro {
     color: #fff;
-    width: 40%;
+    /* width: 40%; */
 }
 
 .left-intro h6{
@@ -431,7 +433,7 @@ border-radius: 20px;
   width: 100%;
 }
 .accordian {
-  width: 35%;
+  width: 50%;
 }
 
 .but {
@@ -510,7 +512,7 @@ border-radius: 20px;
   font-family: 'Comfortaa';
 font-style: normal;
 font-weight: 600;
-text-align: center;
+
 font-size: 36px;
 }
 .solid-line {
@@ -666,7 +668,7 @@ font-size: 14px;
   
       flex-wrap: wrap;
       flex-direction: column-reverse;
-      padding: 20px;
+    
   }
   .worrior h6{
     font-family: 'Arvo';
@@ -858,17 +860,17 @@ font-size: 14px;
   .header-right {
     width: 60%;
   }
-  .HowToDo{
-    padding: 38px;
-  }
+ 
  
 }
-
+.section-cards .homesloaganpara{
+  font-family: 'Poppins';
+}
 /* for large devices */
 @media only screen and (min-width: 1024px) {
-  .left-intro ,.donateclassright-form{
+  /* .left-intro ,.donateclassright-form{
     width: 30%;
-  }
+  } */
 }
 @media only screen and (min-width: 992px), screen and (min-width: 768px) {
   .capsule{
@@ -905,10 +907,10 @@ right: 0;
 }
 @media only screen and (min-width: 992px) {
  
-.header-left {
+/* .header-left {
     margin-left: 63px;
     margin-top: 27px;
-  }
+  } */
   .count{
     font-size: 35px;
   }
@@ -938,12 +940,8 @@ right: 0;
     font-size: 34px;
     line-height: 45px;
     }
-  .be-diff{
-    margin: 0px 92px;
-  }
-  .HowToDo{
-    padding: 90px;
-  }
+
+ 
   #left-parah1 {
     font-size: 36px;
 }
@@ -963,13 +961,11 @@ right: 0;
    
   }
 
-  .header-left {
+  /* .header-left {
     margin-left: 63px;
     margin-top: 27px;
-  }
-  .HowToDo{
-    padding: 50px;
-  }
+  } */
+ 
   .p-GC {
     font-family: 'Poppins';
     font-weight: 400;

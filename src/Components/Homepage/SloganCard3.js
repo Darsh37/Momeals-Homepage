@@ -50,10 +50,10 @@ const SloganCard3 = () => {
   };
   
   return (
-    <div className="slide-contain">
+    <div className="slide-contain px-lg-5">
           <Slider {...settings} ref={sliderRef}>
         {data.map((obj, index) => (
-          <div key={index} className="slogan3card-row p-2">
+          <div key={index} className="slogan3card-row p-2 px-lg-4">
             <Card
               className="slogan3card-text2nd m-md-1 m-lg-2 px-5 pt-4"
               id="slogan3card-text2nd"

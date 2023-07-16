@@ -10,6 +10,12 @@ const Fooddonarpage = () => {
   const fooddonarinfoClick = () => {
     navigate('/Thanku');
   }; 
+  //back to fooddonationpage
+  const navigatee = useNavigate();
+  const handleClicke = () => {
+    navigatee('/fooddonationpage');
+  }; 
+
   React.useEffect(() => {
     document.body.classList.add('donarcustom-body');
     return () => {
@@ -19,7 +25,7 @@ const Fooddonarpage = () => {
   return (
     <div className='donarformpage'>
       
-    <img className='donararrowimage' src={arrow4image}/>
+    <img className='donararrowimage' src={arrow4image} onClick={handleClicke}/>
     
     <div className="container">
       

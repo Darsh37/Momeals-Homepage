@@ -62,7 +62,7 @@ const SloganCard4 = () => {
   };
   
   return (
-    <div className="slogancard4slider-container mt-lg-5 mt-md-5 pt-md-5 pt-lg-5 p-3 ">
+    <div className="slogancard4slider-container mt-lg-5 mt-md-5 pt-md-5 pt-lg-5 p-3 px-lg-5">
           <Slider {...settings} ref={sliderRef}>
           {data.map((obj, index) => (
   <div key={index} className="slogancar4-row p-md-5">
@@ -82,7 +82,7 @@ const SloganCard4 = () => {
 ))}
 
        </Slider>
-       <div className="slogancard4sliding-buttons mb-3">
+       <div className="slogancard4sliding-buttons mb-3 px-lg-5 px-md-5">
             <Button className="slogancard4slider-button" id="slogancard4slider-btn" onClick={slidePrev}>
               <FaAngleLeft />
             </Button>

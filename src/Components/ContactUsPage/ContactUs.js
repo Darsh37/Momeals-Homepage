@@ -9,10 +9,12 @@ import { Col, Row } from "react-bootstrap";
 
 function ContactUs() {
   const navigate = useNavigate();
-
+  //redirect to thankupage1
+  const navigate1 = useNavigate();
   const handleNavigate = () => {
     navigate("/");
   };
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -46,6 +48,7 @@ function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    setIsSubmitting(true);
     // Name validation: should not be empty
     if (!formData.name.trim()) {
       alert("Please enter a valid name.");
@@ -84,11 +87,22 @@ function ContactUs() {
           contact_no: "",
           help_us: "",
         });
-      })
+        navigate1('/thankyoupage1');
+      }
+
+      )
+      
       .catch((error) => {
         console.error("Error:", error);
-      });
+      })
+      .finally(() => {
+        // Re-enable the submit button
+        setIsSubmitting(false);
+      })
   };
+
+
+
 
   return (
     <div className="contactUs-container mx-3 mx-md-1 mx-sm-1 ">
@@ -225,8 +239,8 @@ function ContactUs() {
                   </label>
                 </div>
               </div>
-              <button className="contactUs1-btn text-center mt-3 p-2" type="submit">
-                Contact Us
+              <button className="contactUs1-btn text-center mt-3 p-2" type="submit" disabled={isSubmitting}>
+               Submit
               </button>
             </form>
           </div>

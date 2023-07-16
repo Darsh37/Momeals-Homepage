@@ -7,7 +7,7 @@ import {Button,Col,Row,Card,Form} from 'react-bootstrap';
 
 function Container1() {
   return (
-    <div className="container1-wrapper pt-5 p-4">
+    <div className="container1-wrapper pt-5 p-4 p-md-5 px-lg-2">
       <Row className="d-flex justify-content-center ">
         <Col lg={8} md={12} xs={12}>
         <h5 >

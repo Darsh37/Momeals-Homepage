@@ -10,6 +10,11 @@ const FoodDonation = () => {
   const [timeInputValue, setTimeInputValue] = useState('12:00');
   const now = new Date();
   const today = now.toISOString().split('T')[0];
+  //back to foodtype page
+  const navigated = useNavigate();
+  const handleClickd = () => {
+    navigated('/FoodtypePage');
+  }; 
 //donarclick
 const navigate = useNavigate();
 const donarhandleClick = () => {
@@ -35,7 +40,7 @@ const donarhandleClick = () => {
   const cities = ['Hyderabad', 'Agra', 'Bengaluru', 'Kolkata'];
   return (
     <div className='formpage1'>
-    <img className='formpage1arrowimage' src={arrow4image}/>
+    <img className='formpage1arrowimage' src={arrow4image} onClick={handleClickd}/>
     
     <div className="container">
       
@@ -82,7 +87,7 @@ const donarhandleClick = () => {
                 {/* Input fields */}
                
                 <input type="time" id="formpage1inp" className="timeinput" value={timeInputValue} onChange={handleTimeInputChange} placeholder="Preferred Time" />
-                <input type="date" id="formpage1inp" className="date-input" placeholder="Pickup Date" min={today} />
+                <input type="date" id="formpage1inp" className="date-input"  min={today} />
                 <input type="text" id="formpage1inp" className="imp" placeholder="Serving Size" value={sliderValue} />
 
                 {/* Slider */}

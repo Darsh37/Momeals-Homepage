@@ -2,16 +2,11 @@ import React, { useState } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-import img1 from '../Images/Cooked food.jpg';
-import img2 from '../Images/frozen food.jpg';
+import img1 from '../Images/cooked food (2).png';
+import img2 from '../Images/frozen food (2).png';
 import img3 from '../Images/veggies and fruits 1.png';
-import img4 from '../Images/Raw food 1.jpg';
+import img4 from '../Images/Raw food.png';
 import arrow4 from '../Images/foodtypepageArrow.png';
-
-import imga from '../Images/Cooked food active 1.png';
-import imgb from '../Images/frozen food active 1 (1).png';
-import imgc from '../Images/veggies and fruits active 1 (1).png';
-import imgd from '../Images/raw food active 1.png';
 
 import './Foodtypepage.css';
 
@@ -23,6 +18,7 @@ function FoodtypePage() {
     setActiveImage((prevActiveImage) => (prevActiveImage === imageId ? null : imageId));
   };
 
+ 
   const handleNextClick = () => {
     if (activeImage === 'myImage') {
       navigate('/fooddonationfopage');
@@ -30,18 +26,22 @@ function FoodtypePage() {
       navigate('/fooddonationpage');
     }
   };
-
+  //back to donation page
+  const navigateb = useNavigate();
+  const handleClickb = () => {
+    navigateb('/DonationPage');
+  }; 
   const images = [
-    { id: 'myImage', src: img1, title: 'Surplus Food', info: 'Cooked Food', activeSrc: imga },
-    { id: 'myImage1', src: img2, title: 'Frozen Food', info: 'Ready To Eat', activeSrc: imgb },
-    { id: 'myImage2', src: img3, title: 'Raw Veg/ Fruits', info: 'Veggies/ Fruits', activeSrc: imgc },
-    { id: 'myImage3', src: img4, title: 'Wheat, Rice, Pulses', info: 'Raw Products', activeSrc: imgd },
+    { id: 'myImage', src: img1, title: 'Surplus Food', info: 'Cooked Food' },
+    { id: 'myImage1', src: img2, title: 'Frozen Food', info: 'Ready To Eat' },
+    { id: 'myImage2', src: img3, title: 'Raw Veg/ Fruits', info: 'Veggies/ Fruits' },
+    { id: 'myImage3', src: img4, title: 'Wheat, Rice, Pulses', info: 'Raw Products'},
   ];
 
   return (
     <div className="foodtype" id="container">
       <div>
-        <img className="foodtypearrowimage" src={arrow4} alt="Arrow" />
+        <img className="foodtypearrowimage" src={arrow4} alt="Arrow"  onClick={handleClickb}/>
       </div>
       <center>
         <p className="foodtypeheader mt-5 mt-lg-1">Want To Share Food?</p>
@@ -77,7 +77,7 @@ function FoodtypePage() {
                   {activeImage === image.id && (
                     <Card.Img
                       variant="top"
-                      src={image.activeSrc}
+                      src={image.src}
                       alt={image.title}
                       className="foodimgs rounded-circle"
                       style={{

@@ -104,7 +104,7 @@ display: flex !important;
 @media (min-width:1025px){
   .slide-contain {
     margin: 0 auto;
-    max-width: 80%;
+    /* max-width: 80%; */
     position: relative;
   }
   

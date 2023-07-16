@@ -10,11 +10,18 @@ const Fooddonationpageinfo = () => {
   const [timeInputValue, setTimeInputValue] = useState('12:00');
   const now = new Date();
   const today = now.toISOString().split('T')[0];
+  //back to foodtypepage
+  const navigatec = useNavigate();
+  const handleClickc = () => {
+    navigatec('/FoodtypePage');
+  }; 
 //donarclick
 const navigate = useNavigate();
 const donarhandleClick = () => {
   navigate('/fooddonarpage');
 }; 
+
+
   const handleSliderChange = (event) => {
     setSliderValue(parseInt(event.target.value));
   };
@@ -44,7 +51,7 @@ setcooktimedatalist(event.target.value)
 
   return (
     <div className='formpage2'>
-    <img className='formpage2arrowimage' src={arrow4image}/>
+    <img className='formpage2arrowimage' src={arrow4image} onClick={handleClickc}/>
     
     <div className="container">
       
@@ -105,7 +112,7 @@ setcooktimedatalist(event.target.value)
                     </InputGroup>
                 </div>
                 <input type="time" id="formpage2inp" className="timeinput" value={timeInputValue} onChange={handleTimeInputChange} placeholder="Preferred Time" />
-                <input type="date" id="formpage2inp" className="date-input" placeholder="Pickup Date" min={today} />
+                <input type="date" id="formpage2inp" className="date-input"  min={today} />
                 <input type="text" id="formpage2inp" className="imp" placeholder="Serving Size" value={sliderValue} />
 
                 {/* Slider */}

@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import logo from "../layout/logo.png";
 import "../layout/Navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
-import { NavLink } from "react-router-dom";
+import { NavLink ,Link} from "react-router-dom";
 import MenuIcon from './menu icon 1.png';
 import { NavDropdown } from "react-bootstrap";
 
@@ -38,16 +38,16 @@ export const Navbar = () => {
           <div className="nav-elements d-flex align-items-center">
             <ul className="navbar-nav First-ul gap-xl-4" id="First-ul">
               <li>
-                <NavLink className="nav-link" to="/linchello">Meallo</NavLink>
+                <NavLink className="nav-link" id="nav-link" to="/linchello">Meallo</NavLink>
               </li>
               <li>
-                <NavLink  className="nav-link" to="/ourStory">Our Story</NavLink>
+                <NavLink  className="nav-link" id="nav-link" to="/ourStory">Our Story</NavLink>
               </li>
               <li>
-                  <NavDropdown title="Causes" id="causes-dropdown">
-                  <NavDropdown.Item href="/FoodWastage" id="navdrop">Food Wastage</NavDropdown.Item>
-                  <NavDropdown.Item href="/FoodHunger"  id="navdrop">Food Hunger</NavDropdown.Item>
-                  <NavDropdown.Item href="/causes/women-empowerment" id="navdrop">Women Empowerment</NavDropdown.Item>
+                  <NavDropdown title="Causes" >
+                  <NavDropdown.Item ><Link to="/FoodWastage" id="navdrop" >Food Wastage</Link></NavDropdown.Item>
+                  <NavDropdown.Item ><Link to="/FoodHunger" id="navdrop">Food Hunger</Link></NavDropdown.Item>
+                  <NavDropdown.Item ><Link to="/causes/women-empowerment" id="navdrop" >Women<br/> Empowerment</Link></NavDropdown.Item>
                   </NavDropdown>
               </li>
            {/* First Dropdown  */}
@@ -59,14 +59,14 @@ export const Navbar = () => {
                  
                {isDropdownOpen && (
                 <div className="dropdown-content first-dropdown">
-                    <a href="/FoodWastage">Food wastage</a>
-                    <a href="/FoodHunger">Food hunger</a>
-                    <a href="#">Women Empowerment</a>
+                    <Link to="/FoodWastage">Food wastage</Link>
+                    <Link to="/FoodHunger">Food hunger</Link>
+                    <Link to="#">Women Empowerment</Link>
                   </div> 
                 )} 
               </li>  */}
               <li className="last_editor">
-                <NavLink  className="nav-link" to="/foodworrierpage">Food Warrior</NavLink>
+                <NavLink  className="nav-link" id="nav-link" to="/foodworrierpage">Food Warrior</NavLink>
               </li>
             </ul>
            
@@ -94,22 +94,22 @@ export const Navbar = () => {
     <div className="sidebar-elements mt-4 m-lg-3 m-md-2 m-4" style={{ textDecoration: "none" }} >
       <ul style={{ display: "flex", flexDirection: "column", listStyleType: "none" }}>
         <li>
-          <a href="/">Home</a>
+          <Link id="nav-link" to="/">Home</Link>
         </li>
         <li>
-          <a href="/linchello">Meallo</a>
+          <Link id="nav-link" to="/linchello">Meallo</Link>
         </li>
         <li>
-          <a href="/ourStory">Our Story</a>
+          <Link id="nav-link" to="/ourStory">Our Story</Link>
         </li>
         <li>
-          <a href="/foodworrierpage">Food Warrior</a>
+          <Link id="nav-link" to="/foodworrierpage">Food Warrior</Link>
         </li>
         <li className="causes-dropdown">
-                  <NavDropdown title="Causes" id="causes-dropdown">
-                  <NavDropdown.Item href="/FoodWastage" >Food Wastage</NavDropdown.Item>
-                  <NavDropdown.Item href="/FoodHunger">Food Hunger</NavDropdown.Item>
-                  <NavDropdown.Item href="/causes/women-empowerment" >Women<br/> Empowerment</NavDropdown.Item>
+                  <NavDropdown title="Causes">
+                  <NavDropdown.Item ><Link to="/FoodWastage" >Food Wastage</Link></NavDropdown.Item>
+                  <NavDropdown.Item ><Link to="/FoodHunger">Food Hunger</Link></NavDropdown.Item>
+                  <NavDropdown.Item ><Link to="/causes/women-empowerment" >Women<br/> Empowerment</Link></NavDropdown.Item>
                   </NavDropdown>
           </li>
         {/* Second Dropdown */}
@@ -118,25 +118,25 @@ export const Navbar = () => {
           onMouseEnter={handleDropdownOpen}
           onMouseLeave={handleDropdownClose}
         >
-          <a href="/causes">Causes</a>
+          <Link to="/causes">Causes</Link>
           {isDropdownOpen && (
             <div className="dropdown-content second-dropdown">
-              <a href="#">FoodWastage</a>
-              <a href="#">FoodHunger</a>
-              <a href="#">WomenEmpowerment</a>
+              <Link to="#">FoodWastage</Link>
+              <Link to="#">FoodHunger</Link>
+              <Link to="#">WomenEmpowerment</Link>
             </div>
           )}
         </li> */}
         
         <li>
-          <a href="/contactpage">Contact Us</a>
+          <Link id="nav-link" to="/contactpage">Contact Us</Link>
         </li>
         
         <li>
-          <a href="/blogpage">Blogs</a>
+          <Link  id="nav-link" to="/blogpage">Blogs</Link>
         </li>
         <li>
-          <a href="/terms and conditionspage">Privacy  And Policies</a>
+          <Link id="nav-link" to="/terms and conditionspage">Privacy  And Policies</Link>
         </li>
       </ul>
     </div>
