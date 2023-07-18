@@ -105,9 +105,10 @@ function ContactUs() {
 
 
   return (
-    <div className="contactUs-container mx-3 mx-md-1 mx-sm-1 ">
+    <div className="contactUs-container mx-3 mx-md-1 mx-sm-1 pb-md-4 ">
+      <div>  <img className="contactarrow" src={Arrow} alt="" onClick={handleNavigate}></img></div>
       <div className="contactUs-header ">
-        <img src={Arrow} alt="" onClick={handleNavigate}></img>
+      
         <h3 className="contactUs-headerh3 text-center">CONTACT US</h3>
       </div>
       <Row className="mt-5 justify-content-evenly contactUs-row">

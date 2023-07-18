@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
+
 footer {
     background-color: #000;
     box-sizing: border-box;
@@ -6,8 +8,13 @@ footer {
     padding-top: 2rem;
     width: 100%;
 }
-
-
+.footerdivh6{
+    font-family: 'Poppins';
+    line-height: normal;
+}
+.second-div h6{
+    font-family: 'Poppins';
+}
 .footerBorder {
     background-color: #fff;
     height: 1px;
@@ -15,17 +22,41 @@ footer {
 }
 footer form input {
     padding: 0.2rem;
-    width: 60%;
+    /* width: 60%; */
 }
 footer .Subscribe {
     background-color: #c7f2ab;
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
     color: #000;
-    margin-left: 2rem;
+ 
     margin-top: 1rem;
     padding: 0.2rem;
-    width: 50%;
+    /* width: 50%; */
+}
+@media only screen and (min-width: 768px){
+    .footerdiv .last-div{
+        text-align: right;
+    }
+    .footerdiv .first-div{
+      
+        text-align: left;
+      
+    }
+    .footerdiv  .second-div .d-flex,.second-div h3{
+        text-align: left;
+        justify-content: left;
+    }
+}
+footer .first-div,   footer .second-div,   footer .last-div{
+      
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+.second-div .d-flex{
+    justify-content: center;
 }
 @media (max-width: 575.98px) {
     .last-div{
@@ -33,16 +64,19 @@ footer .Subscribe {
         text-align: center;
         align-items: center;
     }
-    footer .first-div,   footer .second-div,   footer .last-div{
+    /* .second-div .d-flex{
+        justify-content: center;
+    } */
+    /* footer .first-div,   footer .second-div,   footer .last-div{
       
         text-align: center;
         align-items: center;
         margin-top: 50px;
         padding: 10px;
-    }
+    } */
     
     .Subscribe{
-        width: 100%;
+        width: 45%;
     }
     footer .Subscribe{
         border-radius: 30px;

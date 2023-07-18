@@ -1,14 +1,17 @@
-.navbar {
-  height: 5rem;
-  border-bottom: solid 1px#000;
+.navbarpage .nav1 {
+  
+  border-bottom: 3px solid #2EB167;;
   justify-content: space-between;
   display: flex;
  
 }
-
+.navbarpage .nav1{
+  padding-top: 0px;
+  padding-bottom: 0;
+}
 .logo-img{
-  width: 144px;
-  height: 80px;
+  width: 187px;
+  /* height: 80px; */
  
 }
 
@@ -21,11 +24,11 @@
 }
 
 
-.nav_style h6{
+/* .nav_style h6{
   color: #000;
     margin-right: 2rem;
     margin-top: 0.5rem;
-}
+} */
 
 
 .First-ul {
@@ -45,21 +48,22 @@
 }
 
 
-.First-ul #nav-link:hover {
+.First-ul #nav-link:hover,#causes:hover {
 border-bottom: solid 2px #2EB167;
 
 }
+
 .First-ul a:active{
 background: none;
 }
-
+/* 
 .hamberger{
   width: 15.625rem;
   position: fixed;
   top: 0;
   left: 50%;
   bottom: 0; 
-}
+} */
 
 
 .sidebar {
@@ -73,7 +77,7 @@ background: none;
   background-color: #ffffff;
   z-index: 1;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
   
 }
  .sidebar.active {
@@ -86,7 +90,7 @@ background: none;
   position: absolute;
   top: 10px;
   right: 10px;
-  cursor: pointer;
+  /* cursor: pointer; */
 } 
 
 .sidebar-elements {
@@ -144,17 +148,11 @@ background: none;
     font-size: 20px;
   }
   .menu-icon2,.First-ul {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (max-width:1214px) {
-  .logo-img{
-    margin-left:0;
-  }
-  
-.d-flex{
-  margin-right: 0px;
-}
+ 
 
 
 .joinUs1{
@@ -169,7 +167,11 @@ background: none;
   /* .navbar ul li{
     margin-right: 37px;
   } */
-  .navbar .menutext,.navbar #First-ul {
+  .navbarpage .navbar{
+    
+      height: 75px;
+  }
+  .navbarpage .nav1 .menutext, .navbarpage .nav1 #First-ul {
 
     font-weight: 500;
   }
@@ -179,11 +181,24 @@ background: none;
  
 
 }
+@media (min-width: 600px) and (max-width: 767px) {
+  .navbarpage .First-ul {
+    display: none; 
+  }
 
+}
+@media (min-width: 1900px) {
+.navbarpage .navbar .col-xxl-5{
+width: 34%;
+}
+}
 @media (max-width: 600px) {
+ .navbarpage .navbar{
+  height: 60px;
+ }
   .menu-icon {
     display: block;
-    cursor: pointer;
+    /* cursor: pointer; */
     
   } 
   
@@ -202,7 +217,7 @@ background: none;
     background-color: #ffffff;
     width: 0px;
     height: calc(100vh - 60px);
-    transition: all  0.3s ease-in-out;
+    /* transition: all  0.3s ease-in-out; */
     overflow: hidden;
     z-index: 2;
     border:solid 1px #000;
@@ -220,35 +235,23 @@ background: none;
   .navbar .First-ul {
     display: none; 
   }
-  .nav-elements form{
-    margin-left: 0;
-  }
+
 
   .nav-elements.active {
-    width: 270px;
+    /* width: 270px; */
     z-index: 2;
   }
   
 
   
 }  @media (max-width: 600px) and (min-width:300px){
- .logo {
-    margin-right: 20px;
-  }
+ 
   .menutext{
     display: none;
    }
 } 
  @media (max-width: 730px) and (min-width:600px){
-  .last_editor a{
-    margin-right: 10px;
-  }
-  .nav-elements ul a{
-    margin-right: 5px;
-  }
-  .nav-elements ul li{
-    margin-right: auto;
-  }
+
   .menutext{
     display: none;
    }
@@ -284,8 +287,15 @@ background: none;
   
   }
 
+  .navbarpage .custom-dropdown-content {
+    
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px 12px;
+    
+  }
+  .navbarpage .custom-dropdown-content :link{
+    padding: 5px 0px;
+  }
  
-.dropdown {
-  position: relative;
-  display: inline-block;
-}

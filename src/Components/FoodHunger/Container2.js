@@ -7,7 +7,7 @@ function Container2() {
   return (
     <div className="container2-wrapper pt-5">
      <Row className="d-flex justify-content-center px-md-3 px-lg-0">
-      <Col  lg={8} md={7} xs={12}>
+      <Col  lg={6} xl={7}  md={7} xs={12}>
      <div className="happens container" >
       <div >
         <h1 className='d-3'>WHY IT HAPPENS?</h1>
@@ -91,7 +91,7 @@ function Container2() {
         </Stack>
       </div>
       </Col>
-      <Col  lg={3} md={5} xs={12}>
+      <Col  lg={5} xl={4}  xs={12}>
       <div className="second col-wrapper p-3 p-lg-0 p-md-0">
         <DonationDetails />
       </div>

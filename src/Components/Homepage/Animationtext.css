@@ -1,0 +1,60 @@
+/* Animationtext.css */
+
+/* Style for the main container */
+.animatecontainertext{
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the animated text */
+  .animated-text {
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+  }
+ 
+  /* Style for the animated image */
+  .animated-image {
+    overflow: hidden;
+  }
+  
+  /* Style for the donate button */
+  .animatecontainer .homebtn-2{
+    box-shadow: none;
+    border: none;
+    width: 138px;
+    border-radius: 25px;
+    height: 50px;
+  font-size: 18px;
+  background: #FD7E14 ;
+  }
+  .animatecontainer .homebtn-2:hover{
+    background: rgb(199, 242, 171) ;
+    box-shadow: none;
+  }
+  @media only screen and (min-width: 1024px) {
+   .animatecontainer .Animated-Image{
+    width: 480px;
+    height: 300px;
+
+   }
+  }
+  @media (max-width: 575.98px)  {
+   .animatecontainer .homebtnrow ,.animated-text2 ,.animatecontainertext{
+        text-align: center;
+        justify-content: center ;
+        align-items: center ;
+    }
+  }
+  @media (max-width: 767px) {
+    .animatecontainer {
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  
+    .animatecontainer .Animated-Image{
+        width: 100%;
+    }
+  }

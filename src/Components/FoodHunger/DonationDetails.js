@@ -15,7 +15,7 @@ const Data = [
   {
     id: 1,
     imgs: fdi1,
-    name: "Drushti",
+    name: "Drishti",
     Amount: "500",
     time: "1 Hour ago",
     comment: "God bless you",
@@ -24,24 +24,24 @@ const Data = [
   {
     id: 2,
     imgs:fdi2,
-    name: "Drushti",
-    Amount: "200",
+    name: "Paras",
+    Amount: "2000",
     time: "3 Hours ago",
     comment: "We always pray for you",
   },
   {
     id: 3,
     imgs: fdi3,
-    name: "Drushti",
-    Amount: "500",
+    name: "Jas",
+    Amount: "1000",
     time: "1 Hour ago",
     comment: "God bless you",
   },
   {
     id: 4,
     imgs:fdi4,
-    name: "Drushti",
-    Amount: "500",
+    name: "Kirat",
+    Amount: "1000",
     time: "1 Hour ago",
     comment: "God bless you",
   },
@@ -58,10 +58,10 @@ function DonationDetails() {
           <Col lg={3} xs={4} md={3} className="mt-4">
           <Card.Img variant="top" src={data.imgs}/>
           </Col >
-          <Col  lg={8} xs={6}  md={8} style={{textAlign:"left"}}>
+          <Col  lg={8} xs={8}  md={8} style={{textAlign:"left"}}>
           <Card.Body>
             <p className="data-amount">{data.Amount}</p>
-            <div className="d-2">
+            <div className="d-flex flex-wrap ">
             <p className="data-name ">{data.name}</p>&nbsp;
             <p className="data-time px-lg-2">{data.time}</p>
             </div>

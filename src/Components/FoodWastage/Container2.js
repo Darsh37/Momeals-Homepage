@@ -7,7 +7,7 @@ export default function Container2() {
   return (
     <div className="container2-wrapper pt-5">
       <Row className="d-flex justify-content-center">
-      <Col  lg={8} md={6} xs={12}>
+      <Col  lg={6} xl={7} md={6} xs={12}>
       <div className="happen-container">
         <div className="d-">
           <h1 className="d3" >
@@ -113,7 +113,7 @@ export default function Container2() {
         </Stack>
       </div>
       </Col>
-      <Col  lg={3} md={5} xs={12}>
+      <Col  lg={5} xl={4} md={5} xs={12}>
       <div className="second-co-wrapper p-3 p-lg-0 p-md-0">
         <DonationDetails />
       </div>

@@ -34,6 +34,9 @@ font-size: 16px;
   .header1{
     display: none;
   }
+  .bottomnavbardiv{
+    display: none;
+  }
 }
 .Apppage{
   overflow: hidden;

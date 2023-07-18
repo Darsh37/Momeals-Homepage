@@ -21,8 +21,22 @@
     
     
 }
-.blog-btnrow .blog-btns:hover{
+.blog-btnrow .blog-btns{
+    background: white;
+}
+.blog-page .readblog:focus{
+    outline: none;
+    box-shadow: none;
+} 
+.blog-btnrow .blog-btns:hover,.blog-btnrow .blog-btns:focus{
     background: #C7F2AB;
+     outline: none;
+    box-shadow: none;
+}
+.blog-page .blog-btnrow .blog-btns:active{
+    background: #C7F2AB;
+    outline: none;
+    box-shadow: none;
 }
 .blog-page .btn-num:active{
     background: #C7F2AB !important;

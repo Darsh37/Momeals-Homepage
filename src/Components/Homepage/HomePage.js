@@ -23,6 +23,7 @@ import arrow2 from "../Images/arrow-2.png";
 import SloganCard3 from "./SloganCard3";
 import SloganCard4 from "./SloganCard4";
 import { useNavigate } from "react-router-dom";
+import Animationtext from "./Animationtext";
 
 export const HomePage = () => {
   const data = [
@@ -66,9 +67,12 @@ export const HomePage = () => {
 
   return (
     <div>
-      <section className="home-section mb-md-5 pb-md-5 d-flex justify-content-between p-md-3 p-lg-5 align-items-center">
-        <div className="header-left p-lg-5 p-md-3">
-          <h6 className="header-title ml-lg-5 mt-3 mb-4">
+        {/* <section className="home-section mb-md-5 pb-md-5 d-flex justify-content-between px-md-3 p-md-4 pt-xl-0 px-lg-5 align-items-center"> */}
+
+      <section className="home-sectio mb-md-5 pb-md-5 ">
+        <Animationtext/>
+        {/* <div className="header-left px-lg-5 px-md-3">
+          <h6 className="header-title ml-lg-5 mt-4 mb-4">
             Powered By Human To Empower Humans
           </h6>
           <h1
@@ -107,9 +111,9 @@ export const HomePage = () => {
           </Row>
          
         </div>
-        <div className="header-right mb-3">
+        <div className="header-right mb-3 mt-4">
           <img src={MOMEALS} alt="header-img" className="img-fluid img" />
-        </div>
+        </div> */}
       </section>
       <div className="home-counter pt-lg-4 pt-md-3 ">
         <div
@@ -230,13 +234,14 @@ export const HomePage = () => {
           <button className="btn-join">JOIN</button>
         </div>
       </div>
-      <div className="DonateNow d-flex justify-content-evenly p-md-5 p-lg-5 pt-lg-5 pt-md-5 align-items-center">
-        <div className="left-intro mt-4 px-lg-5">
+      <Row className="DonateNow d-flex justify-content-evenly px-4 pb-3 pb-lg-2 pb-md-2  p-md-5 p-lg-5 pt-lg-5 pt-md-5 align-items-center">
+        <Col md={5} lg={4} className="left-intro mt-4 mt-lg-5 px-lg-4 pt-md-5">
+        {/* <div className="left-intro mt-4 px-lg-5"> */}
           <h6>
             {" "}
             <img src={heart} alt="" width={40} /> DONATE NOW
           </h6>
-          <h1 className="mt-4">
+          <h1 className="mt-3">
             Be A Happy Helping Hand For Homeless and Hopeless.
           </h1>
           <h4 className="mt-4 mb-5" style={{ color: "#C7F2AB" }}>
@@ -245,8 +250,11 @@ export const HomePage = () => {
               Help us save lives and create a world free from hunger
             </span>
           </h4>
-        </div>
-        <div className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 ">
+        {/* </div> */}
+        </Col>
+        <Col lg={2}  md={1}></Col>
+        <Col md={6}  lg={4} className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 px-lg-5">
+        {/* <div className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 "> */}
           <div className="donate">
             <h4 className="donatenow">DONATE NOW </h4>
           </div>
@@ -284,8 +292,9 @@ export const HomePage = () => {
               </button>
             </div>
           </div>
-        </div>
-      </div>
+        {/* </div> */}
+        </Col>
+      </Row>
       <div>
         <SloganCard4 />
         <div className="Good-change pt-5 pb-4 p-3">

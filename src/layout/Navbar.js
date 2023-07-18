@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import logo from "../layout/logo.png";
+import logo from "../Components/Images/momealslogo.png";
 import "../layout/Navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { NavLink ,Link} from "react-router-dom";
@@ -7,15 +7,15 @@ import MenuIcon from './menu icon 1.png';
 import { NavDropdown } from "react-bootstrap";
 
 export const Navbar = () => {
-  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // const handleDropdownOpen = () => {
-  //   setIsDropdownOpen(true);
-  // };
+  const handleDropdownOpen = () => {
+    setIsDropdownOpen(true);
+  };
 
-  // const handleDropdownClose = () => {
-  //   setIsDropdownOpen(false);
-  // };
+  const handleDropdownClose = () => {
+    setIsDropdownOpen(false);
+  };
 
   const [open, setOpen] = useState(false);
   const close = useRef(null);
@@ -24,27 +24,36 @@ export const Navbar = () => {
     setOpen(false);
   };
 
-  const handleOpen = () => {
+  const handleOpen = (event) => {
+    if (event.target.id === "causes") {
+      // Prevent toggling the sidebar if the Causes dropdown is clicked
+      return;
+    }
     setOpen(!open);
   };
 
   return (
-    <>
-      <nav className="navbar  navbar-expand-sm bg-light  justify-content-between px-lg-5 px-md-3 nav1">
+    <div >
+      <div className="navbarpage ">
+        
+      <nav className="navbar   navbar-expand-sm bg-light  justify-content-between px-xl-5 px-xxl-5 px-lg-3 px-md-2  nav1">
         {/* <div className="navbar ml-auto main_navbar"> */}
-          <NavLink className="logo m-0" to="/">
+          <div className="col-lg-3 col-xl-3  col-xxl-3 px-0">
+          <NavLink className="logo " to="/">
             <img src={logo} alt="coolwiilogo" className="logo-img" id="logo-img"/>
           </NavLink>
-          <div className="nav-elements d-flex align-items-center">
-            <ul className="navbar-nav First-ul gap-xl-4" id="First-ul">
+          </div>
+         
+          <div className="nav-elements d-flex  col-lg-5 col-md-6  col-xxl-5">
+            <ul className="navbar-nav First-ul gap-xl-3 "  id="First-ul">
               <li>
-                <NavLink className="nav-link" id="nav-link" to="/linchello">Meallo</NavLink>
+                <NavLink className="nav-link" id="nav-link" to="/meallopage">Meallo</NavLink>
               </li>
               <li>
                 <NavLink  className="nav-link" id="nav-link" to="/ourStory">Our Story</NavLink>
               </li>
               <li>
-                  <NavDropdown title="Causes" >
+                  <NavDropdown title="Causes" id="causes" >
                   <NavDropdown.Item ><Link to="/FoodWastage" id="navdrop" >Food Wastage</Link></NavDropdown.Item>
                   <NavDropdown.Item ><Link to="/FoodHunger" id="navdrop">Food Hunger</Link></NavDropdown.Item>
                   <NavDropdown.Item ><Link to="/causes/women-empowerment" id="navdrop" >Women<br/> Empowerment</Link></NavDropdown.Item>
@@ -74,7 +83,7 @@ export const Navbar = () => {
           <div className="d-flex align-items-center icons m-0">
           <div ref={close} onClick={handleOpen}>
           <div className="menu-icon2">
-          <span className="menutext">Menu</span> <img src={MenuIcon} alt="menu-icon" />
+          <span className="menutext">Menu</span> <img className="mx-1 mx-lg-0 mx-md-0" src={MenuIcon} alt="menu-icon" />
           </div>
           <div className={`sidebar ${open && "active"}`}>
     <div className="sidebar-toggle">
@@ -97,7 +106,7 @@ export const Navbar = () => {
           <Link id="nav-link" to="/">Home</Link>
         </li>
         <li>
-          <Link id="nav-link" to="/linchello">Meallo</Link>
+          <Link id="nav-link" to="/meallopage">Meallo</Link>
         </li>
         <li>
           <Link id="nav-link" to="/ourStory">Our Story</Link>
@@ -105,28 +114,33 @@ export const Navbar = () => {
         <li>
           <Link id="nav-link" to="/foodworrierpage">Food Warrior</Link>
         </li>
-        <li className="causes-dropdown">
+        {/* <li className="causes-dropdown">
                   <NavDropdown title="Causes">
                   <NavDropdown.Item ><Link to="/FoodWastage" >Food Wastage</Link></NavDropdown.Item>
                   <NavDropdown.Item ><Link to="/FoodHunger">Food Hunger</Link></NavDropdown.Item>
                   <NavDropdown.Item ><Link to="/causes/women-empowerment" >Women<br/> Empowerment</Link></NavDropdown.Item>
                   </NavDropdown>
-          </li>
+          </li> */}
+          
         {/* Second Dropdown */}
-        {/* <li
+        <li
           className={`dropdown ${isDropdownOpen ? "active" : ""}`}
           onMouseEnter={handleDropdownOpen}
           onMouseLeave={handleDropdownClose}
         >
           <Link to="/causes">Causes</Link>
+          
           {isDropdownOpen && (
-            <div className="dropdown-content second-dropdown">
-              <Link to="#">FoodWastage</Link>
-              <Link to="#">FoodHunger</Link>
-              <Link to="#">WomenEmpowerment</Link>
+           
+            <div className="custom-dropdown-content ">
+               <NavDropdown.Item><Link to="/FoodWastage">FoodWastage</Link><br/></NavDropdown.Item>
+               <NavDropdown.Item><Link to="/FoodHunger">FoodHunger</Link><br/> </NavDropdown.Item>
+               <NavDropdown.Item><Link to="/causes/women-empowerment">WomenEmpowerment</Link><br/> </NavDropdown.Item>
             </div>
+           
           )}
-        </li> */}
+        
+        </li>
         
         <li>
           <Link id="nav-link" to="/contactpage">Contact Us</Link>
@@ -147,6 +161,7 @@ export const Navbar = () => {
           
         {/* </div> */}
       </nav>
-    </>
+    </div>
+    </div>
   );
 };

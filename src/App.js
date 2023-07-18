@@ -24,6 +24,8 @@ import BlogPage from './Components/Blogpage/BlogPage';
 import ContactUs from './Components/ContactUsPage/ContactUs';
 import Main from './Components/Terms conditions/Main/Main';
 import Thankupage1 from './Components/Thankupage1/Thankupage1';
+import Meallo from './Components/Meallo/Meallo';
+import BottomNavbar from './layout/Bottomnavbar';
 
 
 function App() {
@@ -60,9 +62,13 @@ function App() {
           <Route path= '/terms and conditionspage' element={<Main/>}/>
           {/* this below thankyou page connectd to contactpage */}
           <Route path= '/thankyoupage1' element={<Thankupage1/>}/>
+          <Route path= '/meallopage' element={<Meallo/>}/>
         </Routes>
-        <div className='footer'>
+        <div className='pb-3 pb-lg-0 pb-md-0'>
         <Footer/>
+        </div>
+        <div className='bottomnavbardiv'>
+        <BottomNavbar/>
         </div>
       </BrowserRouter>
     </div>

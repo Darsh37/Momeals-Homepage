@@ -41,7 +41,7 @@ const BlogPage = () => {
         {
           id: 1,
           image: img1,
-          title: 'How MAUC tape is effective in tracing malnutrition?',
+          title: 'Zero-Waste Hacks : Practical Tips and Tricks to Reduce Waste',
           date: '23 May 2023',
           likes: 0,
       isLiked: false,
@@ -50,7 +50,7 @@ const BlogPage = () => {
         {
           id: 2,
           image: img2,
-          title: 'How MAUC tape is effective in tracing malnutrition?',
+          title: '5 ways to utilize leftover food at home instead of throwing it.',
           date: '23 May 2023',
           likes: 0,
       isLiked: false,
@@ -137,11 +137,11 @@ const BlogPage = () => {
                     
                     <div className="blog-btnrow d-flex flex-wrap justify-content-center align-items-center gap-3">
                        
-                    <Button  className='blog-btns' variant='outlined' style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>ALL</Button>
-                    <Button  className='blog-btns' variant='outlined' style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>TIPS</Button>
-                    <Button  className='blog-btns' variant='outlined' style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>SOCIAL</Button>
-                    <Button  className='blog-btns' variant='outlined' style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>STORY</Button>
-                    <Button  className='blog-btns' variant='outlined' style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>HELP</Button>
+                    <Button  className='blog-btns'  style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>ALL</Button>
+                    <Button  className='blog-btns'  style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>TIPS</Button>
+                    <Button  className='blog-btns'  style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>SOCIAL</Button>
+                    <Button  className='blog-btns'  style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>STORY</Button>
+                    <Button  className='blog-btns'  style={{ border: "1px solid black", color: "black", width: "100px", borderRadius: "30px" }}>HELP</Button>
                     </div>
                    
 
@@ -159,7 +159,7 @@ const BlogPage = () => {
                     <p className='desc-date-name'><span className="desc-date">23 May 2023,</span>  <span className='desc-name'>By Shahinpreet</span></p>
                     <p className="desc-text">Worried about food wastage, here’s top 10 effective ways to use your leftover next day and this not only save your money but also enhance your cooking skills....</p>
                     <div className="desc-options">
-                        <Button variant='outlined' style={{ borderRadius: "20px", border: "1px solid black", color: "black", backgroundColor: "#DDECFF" }}>READ MORE</Button>
+                        <Button className='readblog' style={{ borderRadius: "20px", border: "1px solid black", color: "black", backgroundColor: "#DDECFF" }}>READ MORE</Button>
                        
                             {firstusstate.map((item) => (
                                 (
@@ -201,7 +201,7 @@ const BlogPage = () => {
               </Typography>
               <div className="desc-options mt-3">
                 <Button
-                  variant="outlined"
+                className='readblog' 
                   style={{ borderRadius: '20px', border: '1px solid black', color: 'black', backgroundColor: '#DDECFF' }}
                 >
                   READ MORE

@@ -1,5 +1,10 @@
 
-
+.contactUs-container .contactarrow{
+    border: 1px solid black;
+border-radius: 25px;
+padding: 6px;
+margin: 10px 0px 0px 16px;
+}
 .contactUs-right-side{
    
     border-radius: 50px;

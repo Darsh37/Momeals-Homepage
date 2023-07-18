@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 import img1 from '../Images/cooked food (2).png';
 import img2 from '../Images/frozen food (2).png';
-import img3 from '../Images/veggies and fruits 1.png';
-import img4 from '../Images/Raw food.png';
+import img3 from '../Images/Fruits and Veges 1.png';
+import img4 from '../Images/Raw food (2).png';
 import arrow4 from '../Images/foodtypepageArrow.png';
 
 import './Foodtypepage.css';
