@@ -48,8 +48,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 1.2rem;
 line-height: 1.37rem;
-display: flex;
-align-items: center;
+
 
 color: #000000;
 }
@@ -965,11 +964,11 @@ right: 0;
     height: 420px;
    
   }
-
-  /* .header-left {
-    margin-left: 63px;
-    margin-top: 27px;
-  } */
+  .header-title{
+  
+    font-size: 24px;
+  
+  }
  
   .p-GC {
     font-family: 'Poppins';

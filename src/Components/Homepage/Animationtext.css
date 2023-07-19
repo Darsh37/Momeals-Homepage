@@ -1,4 +1,6 @@
 /* Animationtext.css */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap');
+
 
 /* Style for the main container */
 .animatecontainertext{
@@ -46,6 +48,16 @@
         justify-content: center ;
         align-items: center ;
     }
+  }
+  @media (min-width: 768px) {
+.animatecontainer .animatecontainertext h2,.animated-text{
+  font-size: 48px;
+}
+.animatecontainer .animated-text2 h3{
+  font-family: 'Poppins';
+  font-size: 36px;
+}
+
   }
   @media (max-width: 767px) {
     .animatecontainer {

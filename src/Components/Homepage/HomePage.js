@@ -70,6 +70,11 @@ export const HomePage = () => {
         {/* <section className="home-section mb-md-5 pb-md-5 d-flex justify-content-between px-md-3 p-md-4 pt-xl-0 px-lg-5 align-items-center"> */}
 
       <section className="home-sectio mb-md-5 pb-md-5 ">
+     
+      <h6 className="header-title text-center  mt-5 mb-4">
+            Powered By Human To Empower Humans
+          </h6>
+      
         <Animationtext/>
         {/* <div className="header-left px-lg-5 px-md-3">
           <h6 className="header-title ml-lg-5 mt-4 mb-4">
