@@ -23,6 +23,7 @@ import arrow2 from "../Images/arrow-2.png";
 import SloganCard3 from "./SloganCard3";
 import SloganCard4 from "./SloganCard4";
 import { useNavigate } from "react-router-dom";
+import Animationtext from "./Animationtext";
 
 export const HomePage = () => {
   const data = [
@@ -31,6 +32,7 @@ export const HomePage = () => {
     { img: img3, count: "120+", description: "Families We Served" },
     { img: img4, count: "50+", description: "Women’s We Empowered" },
   ];
+  const [inputValue, setInputValue] = React.useState("");
 
   const navigate = useNavigate();
   const handleClick = () => {
@@ -57,11 +59,20 @@ export const HomePage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+ 
+
+  const handleButtonClick = (amount) => {
+    setInputValue(amount);
+  };
+
   return (
     <div>
-      <section className="home-section mb-md-5 pb-md-5 d-flex justify-content-evenly align-items-center">
-        <div className="header-left">
-          <h6 className="header-title ml-lg-5 mt-3 mb-4">
+        {/* <section className="home-section mb-md-5 pb-md-5 d-flex justify-content-between px-md-3 p-md-4 pt-xl-0 px-lg-5 align-items-center"> */}
+
+      <section className="home-sectio mb-md-5 pb-md-5 ">
+        <Animationtext/>
+        {/* <div className="header-left px-lg-5 px-md-3">
+          <h6 className="header-title ml-lg-5 mt-4 mb-4">
             Powered By Human To Empower Humans
           </h6>
           <h1
@@ -100,9 +111,9 @@ export const HomePage = () => {
           </Row>
          
         </div>
-        <div className="header-right mb-3">
+        <div className="header-right mb-3 mt-4">
           <img src={MOMEALS} alt="header-img" className="img-fluid img" />
-        </div>
+        </div> */}
       </section>
       <div className="home-counter pt-lg-4 pt-md-3 ">
         <div
@@ -130,7 +141,7 @@ export const HomePage = () => {
       <div style={{ background: "black", color: "white" }}>
         <div className="head-section d-flex justify-content-center ">
           <div className="title text-center">
-            <p className="text1 ">
+            <p className="text1  px-md-5 ">
               {" "}
               <img className="section-img" src={heart} alt="" /> Building a
               Better World: <br />
@@ -146,39 +157,39 @@ export const HomePage = () => {
           <div className="section-cards ">
             <SloganCard
               destination="/FoodWastage"
-              para={<div style={{ maxWidth: '200px' }}>Collect Eatable Leftover Foods from Eateries.</div>}
+              para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Collect Eatable Leftover Foods from Eateries.</div>}
               card="card1"
-              slogan="FOOD WASTAGE"
+              slogan={<div style={{ color: '#4ECD99' }}>ZERO FOOD WASTAGE</div>}
               src={m1}
             />
             <SloganCard
               destination="/FoodHunger"
-              para={<div style={{ maxWidth: '200px' }}>Feed Homeless and Malnutrition Childrens For Free.</div>}
+              para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Feed Homeless and Malnutrition Childrens For Free.</div>}
               card="card2"
-              slogan="FOOD HUNGER"
+              slogan={<div style={{ color: '#FCAD30' }}>ZERO FOOD HUNGER</div>}
               src={m2}
             />
             <SloganCard
-              para={<div style={{ maxWidth: '200px' }}>Empowering Homeless and Unemployed women's.</div>}
+              para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Empowering Homeless and Unemployed women's.</div>}
               card="card3"
-              slogan="EMPOWERMENT"
+              slogan={<div style={{ color: '#FCC0C5' }}>EMPOWERMENT</div>}
               src={m3}
             />
           </div>
         </div>
       </div>
 
-      <div className="pb-5 p-3" style={{ background: "#c7f2ab" }}>
-        <p className="m-lg-5 para2">
+      <div className="pb-5 p-3 px-md-5 px-lg-3" style={{ background: "#c7f2ab" }}>
+        <p className="m-lg-5 para2 text-left px-lg-4 px-md-2 px-2">
           MAKE A LASTING IMPRESSION ON INDIVIDUALS AND COMMUNITIES WITH MOMEALS'
           ETHICAL PRACTICES.
         </p>
         <SloganCard3 />
       </div>
 
-      <div className="be-diff p-lg-5 p-md-5 pb-lg-0 p-4">
-        <div className="para-side m-lg-5 mt-1 m-md-5 m-xs-2">
-          <h3 className="para-sideh3">Be Different, Make Difference.</h3>
+      <div className="be-diff p-lg-5 pb-lg-0 p-4 p-md-5 px-md-5 ">
+        <div className="para-side m-lg-5  mt-1 m-xs-2">
+          <h3 className="para-sideh3">Be Different, Make <span style={{color:"#067749"}}>Difference.</span></h3>
           <p className="para-sidep mt-3">
             At Momeals we believe in making an impactful difference in people’s
             lives through tackling both hunger and reducing food waste
@@ -197,8 +208,8 @@ export const HomePage = () => {
       </div>
       <div className="solid-line"></div>
 
-      <div className="HowToDo ">
-        <div className="left-para">
+      <div className="HowToDo p-lg-5 p-4 px-md-5">
+        <div className="left-para  m-lg-5 ">
           <h5>How We Do ?</h5>
           <h1>
             Build A Visionary and Sustainable Food Waste System That Benefits
@@ -212,7 +223,7 @@ export const HomePage = () => {
             <li className="list">Partners with Cooks</li>
           </ul>
         </div>
-        <div className="right-img pb-5">
+        <div className="right-img pb-5 ">
           <img src={factory} className="img-fluid" alt="hwd" />
         </div>
       </div>
@@ -223,13 +234,14 @@ export const HomePage = () => {
           <button className="btn-join">JOIN</button>
         </div>
       </div>
-      <div className="DonateNow">
-        <div className="left-intro mt-4">
+      <Row className="DonateNow d-flex justify-content-evenly px-4 pb-3 pb-lg-2 pb-md-2  p-md-5 p-lg-5 pt-lg-5 pt-md-5 align-items-center">
+        <Col md={5} lg={4} className="left-intro mt-4 mt-lg-5 px-lg-4 pt-md-5">
+        {/* <div className="left-intro mt-4 px-lg-5"> */}
           <h6>
             {" "}
             <img src={heart} alt="" width={40} /> DONATE NOW
           </h6>
-          <h1 className="mt-4">
+          <h1 className="mt-3">
             Be A Happy Helping Hand For Homeless and Hopeless.
           </h1>
           <h4 className="mt-4 mb-5" style={{ color: "#C7F2AB" }}>
@@ -238,14 +250,17 @@ export const HomePage = () => {
               Help us save lives and create a world free from hunger
             </span>
           </h4>
-        </div>
-        <div className="donateclassright-form  mt-lg-4">
+        {/* </div> */}
+        </Col>
+        <Col lg={2}  md={1}></Col>
+        <Col md={6}  lg={4} className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 px-lg-5">
+        {/* <div className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 "> */}
           <div className="donate">
             <h4 className="donatenow">DONATE NOW </h4>
           </div>
           <div className="inputfield ">
             <h6
-              className="mb-3"
+              className="mb-3 inputfieldh6"
               style={{ textAlign: "center", color: "white" }}
             >
               Every Bite Counts and every contribution can make an Impact
@@ -255,17 +270,20 @@ export const HomePage = () => {
               name=""
               placeholder="Your Name"
               className="rounded-pill my-2"
+
             />
             <input
               type="text"
               name=""
               placeholder="Amount Value"
               className="rounded-pill my-2"
+              value={inputValue}
+               onChange={(e) => setInputValue(e.target.value)}
             />
             <div className="button">
-              <button className="rounded-pill money">50 Rs</button>
-              <button className="rounded-pill money">100 Rs</button>
-              <button className="rounded-pill money">500 Rs</button>
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("50 Rs")}>50 Rs</button>
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("100 Rs")}>100 Rs</button>
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("500 Rs")}>500 Rs</button>
             </div>
             <div className="button-sec mb-5">
               <button className=" button-donate rounded-pill p-3">
@@ -274,8 +292,9 @@ export const HomePage = () => {
               </button>
             </div>
           </div>
-        </div>
-      </div>
+        {/* </div> */}
+        </Col>
+      </Row>
       <div>
         <SloganCard4 />
         <div className="Good-change pt-5 pb-4 p-3">
@@ -288,10 +307,7 @@ export const HomePage = () => {
                 </h1>
                 <Col xs={12} md={8} xl={6}>
                   <p className="p-GC pt-3">
-                    We are community of like minded human beings born with only
-                    purpose of feeding every human for three times in a day. By
-                    Reducing Food Wastage. We can achieve this. Lets Work
-                    Together, Lets feed the World together.
+                  "We are a community of like-minded individuals united by the sole purpose of providing three meals a day to every person. Our mission is to combat food wastage, and by doing so, we can achieve this goal. Let's join forces and work together to feed the world."
                   </p>
                 </Col>
               </Row>
@@ -312,11 +328,14 @@ export const HomePage = () => {
             <h2 className="text-center update mt-3">
               Our Latest Blogs and Updates
             </h2>
+           <div className="mx-lg-5 mx-md-5 mt-5 px-lg-5">
+           <ImgMediaCard />
+           </div>
           </div>
         </div>
 
-        <ImgMediaCard />
-        <div className="but mt-4 mb-4">
+        
+        <div className="but  mb-4">
           <button
             className="btn-update rounded-pill"
             style={{ color: "white" }}

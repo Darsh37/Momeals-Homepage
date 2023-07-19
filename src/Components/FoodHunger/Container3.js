@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 function Container3() {
   return (
     <div className="container3-wrapper">
-     <Row className="align-items-center">
+     <Row className="align-items-center px-lg-5">
         <Col className="p-5">
           <p className="container3-wrapperp">
             Hunger is a predictable, preventable, and treatable issue that requires

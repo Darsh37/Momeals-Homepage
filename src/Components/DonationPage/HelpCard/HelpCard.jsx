@@ -28,7 +28,7 @@ function HelpCard() {
         <Col xs={12} lg={12} xl={6} md={12} className="help_right">
           <div className="cards_help">
             
-            <Card className="inner_card p-3">
+            <Card className="inner_card p-3 inner-hcard1" id="inner-card1" >
               <Card.Title className="helpcard-title">Therapeutic Food</Card.Title>
               <div>
               <Card.Text className="helpcard-text mt-3">
@@ -40,11 +40,11 @@ function HelpCard() {
               </div>
               <div className="color-line1"></div>
             </Card>
-            <Card className="inner_card p-3">
+            <Card className="inner_card p-3 inner-hcard2" id="inner-card2">
               <Card.Title className="helpcard-title">Malnutrition Testing</Card.Title>
               <div>
               <Card.Text  className="helpcard-text  mt-3">
-                Trace Malnutrition Children’s and provide them MAUC Tape to test it on their own.
+                Trace Malnutrition Children's and provide them MAUC Tape to test it on their own.
               </Card.Text>
               </div>
               <div className="arrow arrow2">
@@ -52,7 +52,7 @@ function HelpCard() {
               </div>
               <div className="color-line2"></div>
             </Card>
-            <Card className="inner_card p-3">
+            <Card className="inner_card p-3 inner-hcard3" id="inner-card">
               <Card.Title className="helpcard-title">Education Facilities</Card.Title>
               <div>
               <Card.Text  className="helpcard-text  mt-3">

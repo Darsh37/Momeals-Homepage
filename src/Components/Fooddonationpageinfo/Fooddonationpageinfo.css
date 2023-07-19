@@ -81,7 +81,7 @@ font-weight: 400;
   }
   
   .formpage2 .formpage2heading4 {
-    display: block;
+    /* display: block; */
     font-family: Arvo;
     font-weight: 400;
     font-size: 25px;

@@ -10,18 +10,18 @@ const SloganCard4 = () => {
     const data=[
         {
             testminals:"Testimonials",
-            dta:"Momeals has been instrumental in raising awareness of hunger issues within our community! ",
-            name:"Karan K."
+            dta:"Momeals has been instrumental in raising awareness of hunger issues within our community! ",
+            name:"Shyam"
         },
         {
             testminals:"Testimonials",
-            dta:"Thanks to Momeal's field strategy, restaurants, hotels, and occasions are now much more likely to donate leftover food instead of throwing it away!",
-            name:"Shahin K."
+            dta:"Thanks to Momeal's field strategy, restaurants, hotels, and occasions are now much more likely to donate leftover food instead of throwing it away!",
+            name:"Jatin preet"
         },
         {
             testminals:"Testimonials",
-            dta:"I appreciate how quickly Momeal's responds when I submit pickup requests for leftover food! They always do a great job!",
-            name:"Shahin K."
+            dta:"I appreciate how quickly Momeal's responds when I submit pickup requests for leftover food! They always do a great  job!",
+            name:"Harpreet"
         }
     ]
     const sliderRef = React.useRef(null);
@@ -62,7 +62,7 @@ const SloganCard4 = () => {
   };
   
   return (
-    <div className="slogancard4slider-container mt-lg-5 mt-md-5 pt-md-5 pt-lg-5 p-3 ">
+    <div className="slogancard4slider-container mt-lg-5 mt-md-5 pt-md-5 pt-lg-5 p-3 px-lg-5">
           <Slider {...settings} ref={sliderRef}>
           {data.map((obj, index) => (
   <div key={index} className="slogancar4-row p-md-5">
@@ -82,7 +82,7 @@ const SloganCard4 = () => {
 ))}
 
        </Slider>
-       <div className="slogancard4sliding-buttons mb-3">
+       <div className="slogancard4sliding-buttons mb-3 px-lg-5 px-md-5">
             <Button className="slogancard4slider-button" id="slogancard4slider-btn" onClick={slidePrev}>
               <FaAngleLeft />
             </Button>

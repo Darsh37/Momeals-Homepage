@@ -10,11 +10,18 @@ const Fooddonationpageinfo = () => {
   const [timeInputValue, setTimeInputValue] = useState('12:00');
   const now = new Date();
   const today = now.toISOString().split('T')[0];
+  //back to foodtypepage
+  const navigatec = useNavigate();
+  const handleClickc = () => {
+    navigatec('/FoodtypePage');
+  }; 
 //donarclick
 const navigate = useNavigate();
 const donarhandleClick = () => {
   navigate('/fooddonarpage');
 }; 
+
+
   const handleSliderChange = (event) => {
     setSliderValue(parseInt(event.target.value));
   };
@@ -44,19 +51,19 @@ setcooktimedatalist(event.target.value)
 
   return (
     <div className='formpage2'>
-    <img className='formpage2arrowimage' src={arrow4image}/>
+    <img className='formpage2arrowimage' src={arrow4image} onClick={handleClickc}/>
     
     <div className="container">
       
       <Row id="formpage2row">
       <div >
-        
+      <p className="formpage2h6 mt-1">DONATE FOOD DETAILS</p>
       </div>
         {/* Left column */}
         <Col lg={6} md={6} sm={12}>
-          <div className="card-body mt-4">
+          <div className="card-body ">
             <div className="formpage2form">
-              <p className="formpage2h6">DONATE FOOD DETAILS</p>
+             
               <form className="formpage2form-class">
                 {/* Input fields */}
                 <div className="input-with-dropdown">
@@ -105,7 +112,7 @@ setcooktimedatalist(event.target.value)
                     </InputGroup>
                 </div>
                 <input type="time" id="formpage2inp" className="timeinput" value={timeInputValue} onChange={handleTimeInputChange} placeholder="Preferred Time" />
-                <input type="date" id="formpage2inp" className="date-input" placeholder="Pickup Date" min={today} />
+                <input type="date" id="formpage2inp" className="date-input"  min={today} />
                 <input type="text" id="formpage2inp" className="imp" placeholder="Serving Size" value={sliderValue} />
 
                 {/* Slider */}
@@ -187,7 +194,7 @@ setcooktimedatalist(event.target.value)
                 </Card>
               </Col>
             </div>
-            <h4 className="formpage2heading4">Add the photo of the food<br /> item you want to give.</h4>
+            <h4 className="formpage2heading4">Add the photo of the food item you want to give.</h4>
           </Row>
         </Col>
 

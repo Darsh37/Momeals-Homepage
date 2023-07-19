@@ -4,9 +4,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Button, Col, Row, Container } from 'react-bootstrap';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import SelectTypeOfFood1 from '../Images/Select Type Of Food 2 (1).png'
-import SelectTypeOfFood2 from '../Images/Food Details Form 1 (1).png'
-import SelectTypeOfFood3 from '../Images/Food Details Form 1 (1).png'
+import SelectTypeOfFood1 from '../Images/Select Type Of Food 2 (2).png'
+import SelectTypeOfFood2 from '../Images/Food Details Form 1 (2).png'
+import SelectTypeOfFood3 from '../Images/User Verification Step 3 1.png'
 import './containerb.css';
 
 function Containerb() {

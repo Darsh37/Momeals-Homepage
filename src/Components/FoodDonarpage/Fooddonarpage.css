@@ -89,9 +89,13 @@ font-weight: 400;
     .donarformpage #donarrow{
       margin: 0px 15px;
      }
-   .Donorverifyimg{
-    display: none;
-   }
+ .donarformpage .fooddonarcolright{
+  display: flex;
+  justify-content: right;
+ }
+ .Donorverifyimg{
+  width: 50%;
+ }
    
   }
  

@@ -35,7 +35,11 @@
   font-weight: 500;
   font-size: 32px;
 }
-
+@media screen and (min-width:575.98px) and (max-width: 998px) {
+  .heroCarouselacarouselpage {
+    display: none ;
+  }
+}
 @media (max-width: 575.98px) {
   .heroCarouselacarouselpage {
     display: none;

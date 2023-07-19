@@ -7,11 +7,11 @@ import arrow from '../Images/arrow-icon.png';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import '../Homepage/SloganCard3.css'
 const SloganCard3 = () => {
-    const data=[
-        {dta:"Donate and Save Lives"},
-        {dta:"Become Food Warrior"},
-        {dta:"Eat Together,Share Together"}
-    ]
+  const data = [
+    { dta: "Donate and Save Lives",txt:"We ensure that donations made by you utilize in betterment of lives.", background: "#172B0D" },
+    { dta: "Become Food Warrior", txt:"You can take a charge to save food from getting thrown away in trash.",background: "#2D3F24" },
+    { dta: "Eat Together, Share Together",txt:"Don’t just taste food alone, share it with others too.", background: "#44543C" }
+  ];
     const sliderRef = React.useRef(null);
     const settings = {
       // dots: true,
@@ -50,16 +50,26 @@ const SloganCard3 = () => {
   };
   
   return (
-    <div className="slide-contain">
+    <div className="slide-contain px-lg-5">
           <Slider {...settings} ref={sliderRef}>
         {data.map((obj, index) => (
-          <div key={index} className="slogan3card-row p-2">
+          <div key={index} className="slogan3card-row  px-lg-4">
             <Card
-              className="slogan3card-text2nd m-md-1 m-lg-2 p-sm-2"
+              className="slogan3card-text2nd m-md-1 m-lg-2 px-5 pt-4"
               id="slogan3card-text2nd"
-              style={{ background: "#172B0D", position: "relative"}}
+              style={{background: obj.background, position: "relative"}}
             >
-              <p className="slogan3card-text2ndp m-3" style={{ color: "white" }}>{obj.dta}</p>
+              
+             <Card.Title className='mb-0'>
+             <div>
+             <p className="slogan3card-text2ndp " style={{ color: "white" }}>{obj.dta}</p>
+             </div>
+             </Card.Title>
+            <Card.Text>
+          <div>
+          <p className="slogan3card-textpara" style={{ color: "white" }}>{obj.txt}</p>
+          </div>
+            </Card.Text>
               <div style={{ position: "absolute", bottom: "0px", right: "10px" }}>
                 <img src={arrow} alt="Arrow Icon" />
               </div>
@@ -69,7 +79,7 @@ const SloganCard3 = () => {
           
         ))}
        </Slider>
-       <div className="slide-buts p-2 ">
+       <div className="slide-buts p-2 mt-2 ">
             <Button className="slider-butn"  id="slid-btns" onClick={slidePrev}>
               <FaAngleLeft />
             </Button>

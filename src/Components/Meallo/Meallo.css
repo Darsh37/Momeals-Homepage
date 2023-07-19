@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
+
+.meallocustom{
+    background: #DDECFF;/* Replace with your desired background color */
+ 
+    overflow: hidden;
+  }
+  .mealloh2{
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+.mealloh3,.meallocustom .meallobtn{
+    font-family: 'Comfortaa';
+    font-weight: 700;
+}
+.meallofooter{
+    font-family: 'Inter';
+
+}
+  @media screen and (min-width: 768px) {
+    .meallocustom .line1,.meallocustom .line2{
+        width: 60%;
+    }
+    .melloimg{
+        width:300px;
+    }
+    .mealloh2{
+  
+    font-size: 30px;
+
+    }
+    .mealloh3{
+       
+        font-size: 60px;
+    
+    }
+    .meallocustom .meallobtn{
+        width: 318px;
+       
+        font-size: 36px;
+        border-radius: 50px;
+    }
+    .meallofooter{
+        font-size: 24px;
+    }
+  
+  }
+  @media (max-width: 575.98px){
+   .meallofooter p{
+    justify-content: center;
+   }
+    
+    .melloimg{
+        width:50%;
+    }
+    .meallocustom .line1,.meallocustom .line2{
+        width: 100%;
+    }
+    .meallofooter{
+        font-size: 15px;
+    }
+  }

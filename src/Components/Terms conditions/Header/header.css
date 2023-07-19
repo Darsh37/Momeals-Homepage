@@ -1,0 +1,42 @@
+.termsheader-Section{
+    width: 100vw;
+    height: 280px;
+    background: var(--light-green-b-ackground, #C7F2AB);
+    
+}
+.termsheader-Section .termsheader{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    top: 4rem;  
+}
+.termsheader-Section .termsheaderh1{
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.updateTime{
+    background-color: palevioletred;
+    width: 268px;
+    height: 33px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    margin-top: 23px;
+    border-radius: 20px;
+    background: var(--green-button, #1B5240);
+}
+.updateTime .updateTimep{
+    color: #FFF;
+    text-align: center;
+ 
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+   
+}

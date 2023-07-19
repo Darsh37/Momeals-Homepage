@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 
 export const Container3 = () => {
   return (
-    <div className="container3-wrapper">
+    <div className="container3-wrapper px-lg-4">
      <Row>
       <Col className="p-5">
       <p>

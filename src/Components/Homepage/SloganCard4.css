@@ -68,7 +68,7 @@ font-size: 18px;
   .middle-text-container {
       display: flex;
       justify-content: center;
-      margin: 0 250px; /* Adjust the margin as needed */
+     
     }
     
     @media (max-width: 576px) {
@@ -130,7 +130,7 @@ font-size: 18px;
     @media (min-width:1025px){
       .slogancard4slider-container {
         margin: 0 auto;
-        max-width: 80%;
+        max-width: 100%;
         position: relative;
       }
       

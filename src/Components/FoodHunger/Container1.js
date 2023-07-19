@@ -8,8 +8,8 @@ import "./FoodHunger.css"
 function Container1() {
   return (
     <div className="container1-wrapper pt-5 p-4">
-      <Row className="d-flex justify-content-center ">
-        <Col lg={8} md={12} xs={12}>
+      <Row className="d-flex justify-content-center px-md-2 px-lg-0">
+        <Col lg={8} md={7} xs={12} >
         <h5 >
               Every year, hunger claims the lives of approximately 25 lakh
               individuals in India. Shockingly, this figure is five times

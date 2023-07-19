@@ -10,9 +10,9 @@ import { Col, Row } from "react-bootstrap";
 function FoodHunger() {
   return (
     <div className="foodhunger-main-container">
-      <Row className="d-flex justify-content-center pt-4 pb-2 p-5">
-        <Col className="p-5 pt-4 pb-2">
-        <h1> Food Hunger</h1>
+      <Row className="d-flex justify-content-center pt-4 pb-2 px-5 ">
+        <Col className=" pb-2 px-lg-5">
+        <h1 className=" text-left food-hungerh1"> Food Hunger</h1>
         </Col>
       </Row>
 

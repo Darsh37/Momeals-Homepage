@@ -102,7 +102,12 @@
     background-color: #FD7E14 !important;
     color: white !important;
   }
-  
+@media screen and (min-width: 1900px) { 
+  .containera-wrapper .containerapart1-list.right-side {
+    float: none;
+    margin: 50px 100px;
+  }
+  }
   @media only screen and (min-width: 992px), screen and (min-width: 768px) {
     .containerapart1-list.right-side {
       float: right;
