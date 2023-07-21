@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
+
+.storyanimation-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .storycontent-wrapper {
+    background: #F9FAF9;
+    height: 100vh;
+  }
+  .storyintro{
+    color: white;
+  }
+  .storyleft-side,
+  .storyright-side {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .storyleft-side {
+    left: 0;
+    background: #C7F2AB;
+/* Set your desired left side background color */
+  }
+  
+  .storyright-side {
+    right: 0;
+    background: #172B0D; /* Set your desired right side background color */
+  }
+  
+  .open .storyleft-side {
+    transform: translateX(-100%);
+  }
+  
+  .open .storyright-side {
+    transform: translateX(100%);
+  }
+  
+  
+  .storyleft-side,.storyright-side{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+  }
+  .storyleft-side{
+    text-align: right;
+  }
+  .storyfull span{
+    color: red;
+    font-weight: 400;
+}
+
+.storyparent_container{
+    align-items: center;
+   
+    width: 100%;
+  
+    margin-left: auto;
+    margin-right: auto;
+ 
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* .storybrake{
+    border: 3px solid #067749;
+    width: 20%;
+    height: 0px;
+    margin-left: 360px;
+} */
+.storyheading {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .storyheading::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+/* src/App.css */
+.green-tab-content{
+    background-color: #D2D6D0;;
+    font-family: 'Inter';
+    font-size: 28px;
+  }
+ 
+ 
+  /* Set tab text color to white */
+  .tabs .nav-link{
+    color: white !important;
+    border: none !important;
+  }
+  .sm-tabs-section{
+    background-color: #D2D6D0;;
+  }
+  @media only screen and (min-width: 998px){
+    .sm-tabs-section{
+        display: none;
+    }
+   
+  }
+  @media only screen and (min-width: 1200px){
+    .storysection-cards .storysection-cards-class {
+        width: 100%;
+        height: 450px;
+    }
+  }
+  @media only screen and (min-width: 768px){
+   
+    .storycontent-wrapper h2{
+        font-size: 60px;
+    }
+    .storyparagraph{
+        font-size: 25px;
+    }
+    .storyend_line{
+        font-size: 28px;
+    }
+    .sm-tabs-section{
+        font-size: 1.2rem;
+    }
+    .storypara-2{
+       
+        font-size: 1.5rem;
+      }
+  }
+  .storyparagraph ,  .storyend_line{
+    font-family: 'Inter';
+  }
+  .storypage .storycontent-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+ 
+  @media (max-width: 576px) {
+    .storypage .storyright-content h2,.storypage .storyleft-content h2{
+        font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 998px){
+.tabs-section{
+    display: none;
+}
+  }
+  .tabs-section .tabs{
+    background-color: #067749;
+  }
+  .tabs .nav-link{
+    font-size: 48px;
+    font-weight: 700;
+  }
+  /* Show green underline for the active tab */
+ .tabs .nav-link.active {
+    background-color: #067749 !important;
+    border-bottom: 5px solid white !important;
+    opacity: .8 !important;
+ }
+
+ .storypara-2{
+    background: #F9FAF9;
+  
+  }
+
+.storysection-cards .storysection-cards-class .storycard-title{
+text-transform: uppercase;
+}

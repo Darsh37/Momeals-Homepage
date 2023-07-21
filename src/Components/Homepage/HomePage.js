@@ -71,7 +71,7 @@ export const HomePage = () => {
 
       <section className="home-sectio mb-md-5 pb-md-5 ">
      
-      <h6 className="header-title text-center  mt-5 mb-4">
+      <h6 className="header-title text-center  mt-5 mb-3 px-lg-2 px-md-2 px-3">
             Powered By Human To Empower Humans
           </h6>
       
@@ -196,14 +196,7 @@ export const HomePage = () => {
         <div className="para-side m-lg-5  mt-1 m-xs-2">
           <h3 className="para-sideh3">Be Different, Make <span style={{color:"#067749"}}>Difference.</span></h3>
           <p className="para-sidep mt-3">
-            At Momeals we believe in making an impactful difference in people’s
-            lives through tackling both hunger and reducing food waste
-            efficiently at the same time. Our team works diligently with passion
-            for excellence when it comes providing quality service for all
-            customers while remaining conscious of our environmental impact at
-            every step of the way. Together we can make sure that no one goes
-            hungry while also helping reduce unnecessary wastage of precious
-            resources like food!
+          At Momeals, we strive to make a meaningful impact by combating hunger and reducing food waste simultaneously. Our dedicated team delivers top-notch service while staying environmentally conscious at every step. Together, let's ensure no one goes hungry and minimize wastage of precious food resources.
           </p>
           <img className="img-arrow mt-3" src={arrow2} />
           <div className="d-flex justify-content-center">

@@ -208,8 +208,8 @@ line-height: 40px;
   font-weight: 400;
 font-size: 24px;
   text-align: justify;
+  font-family: 'Poppins';
  
-  font-family: 'Comfortaa';
 }
 .btn-diff:hover{
 background-color: #C7F2AB;
@@ -519,6 +519,11 @@ font-size: 36px;
   border:5px solid #067749;
   background: #067749;
 }
+@media (max-width: 767.98px){
+  .capsule{
+    border-bottom: solid 3px #C7F2AB; 
+  }
+}
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .worrior .btn-join {
@@ -567,8 +572,8 @@ font-size: 36px;
     padding: 10px;
     justify-content: center !important;
     width: auto;
-    background: #C7F2AB;
-
+    background: #067A46;
+   color: white;
     border-radius: 0; 
   }
   .text1{
@@ -586,10 +591,8 @@ font-size: 14px;
 }
   .capsule{
     width: 100%;
-    border-radius: 50px;
-    border: solid 1px #000; 
-    color: #000;
-    background-color: #fff;
+    border-bottom: solid 3px #C7F2AB; 
+   
     margin: 10px 20px;
     display: flex;
   }
@@ -824,7 +827,8 @@ text-align: center;
     padding: 10px;
     justify-content: center !important;
     width: auto;
-    background: #C7F2AB;
+    background: #067A46;
+   
 
     border-radius: 0; 
   }
@@ -843,10 +847,7 @@ font-size: 14px;
 }
   .capsule{
     width: 100%;
-    border-radius: 50px;
-    border: solid 1px #000; 
-    color: #000;
-    background-color: #fff;
+    color: white;
     margin: 10px 20px;
     display: flex;
   }

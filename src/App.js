@@ -3,10 +3,7 @@ import './App.css';
 import { Header } from './layout/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { HomePage } from './Components/Homepage/HomePage';
-import { LunchelloPage } from './Pages/LunchelloPage';
-import { OurStoryPage } from './Pages/OurStoryPage';
-import { CausesPage } from './Pages/CausesPage';
-import { FoodWarriorPage } from './Pages/FoodWarriorPage';
+
 import { Navbar } from './layout/Navbar';
 import { Footer } from './layout/Footer';
 import FoodWastage from './Components/FoodWastage/FoodWastage';
@@ -26,7 +23,7 @@ import Main from './Components/Terms conditions/Main/Main';
 import Thankupage1 from './Components/Thankupage1/Thankupage1';
 import Meallo from './Components/Meallo/Meallo';
 import BottomNavbar from './layout/Bottomnavbar';
-
+import Ourstory from './Components/Ourstorypage/Ourstory';
 
 function App() {
   return (
@@ -43,10 +40,9 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path='/' element={<HomePage/>} />
-          <Route path='/linchello' element={<LunchelloPage/>}/>
-          <Route path='/OurStory' element={<OurStoryPage/>}/>
-          <Route path='/Causes' element={<CausesPage/>}/>
-          <Route path='/FoodWarrior' element={<FoodWarriorPage/>}/>
+         
+          <Route path= '/Ourstory' element={<Ourstory/>}/>
+        
           <Route path= '/FoodWastage' element={<FoodWastage/>}/>
           <Route path= '/FoodHunger' element={<FoodHunger/>}/>
           <Route path= '/DonationPage' element={<DonationPage/>}/>
@@ -63,6 +59,7 @@ function App() {
           {/* this below thankyou page connectd to contactpage */}
           <Route path= '/thankyoupage1' element={<Thankupage1/>}/>
           <Route path= '/meallopage' element={<Meallo/>}/>
+         
         </Routes>
         <div className='pb-3 pb-lg-0 pb-md-0'>
         <Footer/>

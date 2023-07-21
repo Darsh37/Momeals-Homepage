@@ -13,7 +13,7 @@
     overflow: hidden;
     text-align: center;
     align-items: center;
-    padding: 15px;
+    /* padding: 15px; */
   }
  
   /* Style for the animated image */
@@ -24,29 +24,65 @@
   /* Style for the donate button */
   .animatecontainer .homebtn-2{
     box-shadow: none;
-    border: none;
+    border: 2px solid #FD7E14;
     width: 138px;
+    color: black;
     border-radius: 25px;
     height: 50px;
   font-size: 18px;
-  background: #FD7E14 ;
+  background: white ;
   }
-  .animatecontainer .homebtn-2:hover{
-    background: rgb(199, 242, 171) ;
-    box-shadow: none;
-  }
-  @media only screen and (min-width: 1024px) {
-   .animatecontainer .Animated-Image{
-    width: 480px;
-    height: 300px;
+  .animatecontainer .homebtn-2:focus-visible,
+  .animatecontainer  .homebtn-2:active {
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid #FD7E14 !important;
 
-   }
   }
-  @media (max-width: 575.98px)  {
-   .animatecontainer .homebtnrow ,.animated-text2 ,.animatecontainertext{
+  
+  .animatecontainer .homebtn-2:hover {
+    background: white ;
+    box-shadow: none;
+    color: black;
+    border: 2px solid #FD7E14;
+  }
+  @media only screen and (min-width: 1025px){
+    #animatebtn2{
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 998px){
+    .animatecontainer .Animated-Image{
+      width: 480px;
+      height: 300px;
+  
+     }
+ 
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1025px){
+    #animatebtn1{
+      display: none;
+    }
+  }
+  @media (max-width: 998px)  {
+   .animatecontainer .homebtnrow ,.animated-text2 ,.animatecontainertext,.next-col{
         text-align: center;
         justify-content: center ;
         align-items: center ;
+    }
+    .animatecontainer .next-col{
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+ 
+  }
+  @media (max-width: 768px) {
+    .animatecontainer .Animated-Image{
+      width: 100%;
+    }
+    #animatebtn1{
+      display: none;
     }
   }
   @media (min-width: 768px) {
@@ -58,15 +94,9 @@
   font-size: 36px;
 }
 
+/* .animatecontainer .Animated-Image{
+  width: 100%;
+} */
+
   }
-  @media (max-width: 767px) {
-    .animatecontainer {
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: center !important;
-    }
   
-    .animatecontainer .Animated-Image{
-        width: 100%;
-    }
-  }

@@ -50,13 +50,13 @@ export const Navbar = () => {
                 <NavLink className="nav-link" id="nav-link" to="/meallopage">Meallo</NavLink>
               </li>
               <li>
-                <NavLink  className="nav-link" id="nav-link" to="/ourStory">Our Story</NavLink>
+                <NavLink  className="nav-link" id="nav-link" to="/Ourstory">Our Story</NavLink>
               </li>
               <li>
                   <NavDropdown title="Causes" id="causes" >
                   <NavDropdown.Item ><Link to="/FoodWastage" id="navdrop" >Food Wastage</Link></NavDropdown.Item>
                   <NavDropdown.Item ><Link to="/FoodHunger" id="navdrop">Food Hunger</Link></NavDropdown.Item>
-                  <NavDropdown.Item ><Link to="/causes/women-empowerment" id="navdrop" >Women<br/> Empowerment</Link></NavDropdown.Item>
+                  <NavDropdown.Item ><Link to="/#" id="navdrop" >Women<br/> Empowerment</Link></NavDropdown.Item>
                   </NavDropdown>
               </li>
            {/* First Dropdown  */}
@@ -109,7 +109,7 @@ export const Navbar = () => {
           <Link id="nav-link" to="/meallopage">Meallo</Link>
         </li>
         <li>
-          <Link id="nav-link" to="/ourStory">Our Story</Link>
+          <Link id="nav-link" to="/Ourstory">Our Story</Link>
         </li>
         <li>
           <Link id="nav-link" to="/foodworrierpage">Food Warrior</Link>
@@ -135,7 +135,7 @@ export const Navbar = () => {
             <div className="custom-dropdown-content ">
                <NavDropdown.Item><Link to="/FoodWastage">FoodWastage</Link><br/></NavDropdown.Item>
                <NavDropdown.Item><Link to="/FoodHunger">FoodHunger</Link><br/> </NavDropdown.Item>
-               <NavDropdown.Item><Link to="/causes/women-empowerment">WomenEmpowerment</Link><br/> </NavDropdown.Item>
+               <NavDropdown.Item><Link to="/#">WomenEmpowerment</Link><br/> </NavDropdown.Item>
             </div>
            
           )}

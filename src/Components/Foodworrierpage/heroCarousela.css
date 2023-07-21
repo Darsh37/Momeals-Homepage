@@ -1,6 +1,7 @@
+
 .heroCarousela-heading .heroCarouselah5 {
   max-width: 100%;
-  text-align: center;
+
   font-size: 48px;
   font-family: Comfortaa;
   font-weight: 700;
@@ -31,7 +32,7 @@
   border-radius: 35px;
   color: #FFFFFF;
   margin: 0 auto;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 32px;
 }
@@ -70,8 +71,8 @@
 }
 
 .heroCarouselaFoodwarriorpage #heroCarouselabtn {
-  width: 129px;
-  height: 40px;
+  /* width: 129px;
+  height: 40px; */
   border-radius: 30px;
   font-size: 14px;
   font-family: Poppins;
@@ -87,11 +88,21 @@
 }
 
 @media (min-width: 1200px) {
+  .fwcarousel-page .carousel-caption {
+    position: absolute;
+  text-align: left;
+  right: 0;
+  left: 0;
+  }
   .heroCarouselacarouselpage {
     display: block;
   }
   .heroCarouselaFoodwarriorpage {
     display: none;
+  }
+  .fwcarousel-page .heroCarousela-background{
+    justify-content: left;
+     align-items: left;
   }
 }
 
@@ -100,6 +111,6 @@
     top: 20%;
   }
   .heroCarousela-heading #heroCarouselabtn {
-    padding: 11px 52px;
+    width: 271px;
   }
 }

@@ -34,7 +34,7 @@ margin: 0px;
 font-weight: 400;
 
 }
-.inner-hcard1:hover{
+/* .inner-hcard1:hover{
 background-color: #ED4B4B;
 color: white;
 }
@@ -45,7 +45,7 @@ color: white;
 .inner-hcard3:hover{
   background-color: #FD7E14;
 color: white;
-}
+} */
 .inner_card .helpcard-text {
   margin: 0px;
   font-family: 'Poppins' !important;
@@ -85,7 +85,8 @@ color: white;
 .help_container .arrow {
   height: 25px;
   width: 25px;
-  background-color: #D9D9D9;
+  background-color: white;
+  color: black;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -99,6 +100,7 @@ color: white;
   position: absolute;
   bottom: 0;
   left: 40px;
+  background-color: white;
 }
 
 .help_container .arrow1,
@@ -114,17 +116,21 @@ color: white;
   gap: 10px;
 }
 
-.color-line1 {
+.cards_help .inner-hcard1 {
   background-color: #ED4B4B;
+  color: white;
 }
 
-.color-line2 {
+.cards_help .inner-hcard2 {
   background-color: #067749;
+  color: white;
 }
 
-.color-line3 {
+.cards_help .inner-hcard3{
   background-color: #FD7E14;
+  color: white;
 }
+
 @media (min-width: 992px){
   .help_container {
     margin-right: 10px;
