@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
-
+/* Styling for the footer */
 footer {
     background-color: #000;
     box-sizing: border-box;
@@ -7,48 +6,40 @@ footer {
     height: auto;
     padding-top: 2rem;
     width: 100%;
-}
-.footerdivh6{
+  }
+  
+  /* Styling for footer text */
+  .footerdivh6 {
     font-family: 'Poppins';
     line-height: normal;
-}
-.second-div h6{
+  }
+  
+  .second-div h6 {
     font-family: 'Poppins';
-}
-.footerBorder {
+  }
+  
+  /* Styling for the footer border */
+  .footerBorder {
     background-color: #fff;
     height: 1px;
     width: 100%;
-}
-footer form input {
+  }
+  
+  /* Styling for the newsletter subscription form input */
+  footer form input {
     padding: 0.2rem;
-    /* width: 60%; */
-}
-footer .Subscribe {
+  }
+  
+  /* Styling for the subscribe button */
+  footer .Subscribe {
     background-color: #c7f2ab;
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
     color: #000;
- 
     margin-top: 1rem;
     padding: 0.2rem;
-    /* width: 50%; */
-}
-@media only screen and (min-width: 768px){
-    .footerdiv .last-div{
-        text-align: right;
-    }
-    .footerdiv .first-div{
-      
-        text-align: left;
-      
-    }
-    .footerdiv  .second-div .d-flex,.second-div h3{
-        text-align: left;
-        justify-content: left;
-    }
-}
-footer .first-div,   footer .second-div,   footer .last-div{
+  }
+  footer .first-div,   footer .second-div,   footer .last-div{
       
     text-align: center;
     align-items: center;
@@ -57,28 +48,44 @@ footer .first-div,   footer .second-div,   footer .last-div{
 }
 .second-div .d-flex{
     justify-content: center;
+    text-align: center;
 }
-@media (max-width: 575.98px) {
-    .last-div{
-        order: -1;
-        text-align: center;
-        align-items: center;
+  /* Media query for medium screens */
+  @media only screen and (min-width: 768px) {
+    /* Align the last column to the right */
+    .footerdiv .last-div {
+      text-align: right;
     }
-    /* .second-div .d-flex{
-        justify-content: center;
-    } */
-    /* footer .first-div,   footer .second-div,   footer .last-div{
-      
-        text-align: center;
-        align-items: center;
-        margin-top: 50px;
-        padding: 10px;
-    } */
-    
-    .Subscribe{
-        width: 45%;
+  
+    /* Align the first column to the left */
+    .footerdiv .first-div {
+      text-align: left;
     }
-    footer .Subscribe{
-        border-radius: 30px;
+  
+    /* Align text and links to the left in the second column */
+    .footerdiv .second-div .d-flex, .second-div h3 {
+      text-align: left;
+      justify-content: left;
     }
-}
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 575.98px) {
+    /* Order the last column first and center its content */
+    .last-div {
+      order: -1;
+      text-align: center;
+      align-items: center;
+    }
+  
+    /* Adjust the width of the subscribe button */
+    .Subscribe {
+      width: 45%;
+    }
+  
+    /* Add border-radius to the subscribe button */
+    footer .Subscribe {
+      border-radius: 30px;
+    }
+  }
+  

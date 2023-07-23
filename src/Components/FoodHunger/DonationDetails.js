@@ -50,8 +50,10 @@ const Data = [
 function DonationDetails() {
   return (
     <div className="">
+      {/* Donation Details Section */}
     <div className="Donation-container p-3">
         <h3 className="mt-3">RECENT DONATION</h3>
+         {/* Displaying each donation card using map */}
       {Data.map((data, id) => (
         <Card key={id} className="donar-card" >
           <Row>
@@ -75,6 +77,7 @@ function DonationDetails() {
         </Card>
       ))}
     </div>
+     {/* Share Cause Section */}
     <div className='share-cause-Container pt-3 mb-2 pb-3' style={{borderRadius:"15px"}}>
     <h3 className="text-center">Share Cause</h3>
       <Row className="share-cause-list justify-content-center">

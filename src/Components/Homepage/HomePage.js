@@ -1,4 +1,15 @@
-import * as React from "react";
+// Importing necessary dependencies and components
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import Animationtext from "./Animationtext";
+import SloganCard3 from "./SloganCard3";
+import SloganCard4 from "./SloganCard4";
+import { SloganCard, SloganCard2, SloganCard2Carousel } from "./SloganCard";
+import { Accordian } from "./Accordian";
+import ImgMediaCard from "./ImgMediaCard";
+
+// Importing images and styles
 import "../Homepage/homeStyle.css";
 import box from "../Images/Donate.png";
 import m1 from "../Images/foodwastage1.png";
@@ -9,38 +20,35 @@ import be from "../Images/Be.png";
 import MOMEALS from "../Images/MOMEALS Hero Image 1.png";
 import faq from "../Images/faq.png";
 import factory from "../Images/Final_illustration_transparent.png";
-import { SloganCard } from "./SloganCard";
-import { SloganCard2, SloganCard2Carousel } from "./SloganCard2";
-import { Accordian } from "./Accordian";
-import ImgMediaCard from "./ImgMediaCard";
-import { useState, useEffect } from "react";
 import img1 from "../Images/img1.png";
 import img2 from "../Images/img2.png";
 import img3 from "../Images/img3.png";
 import img4 from "../Images/img4.png";
-import { Container, Row, Col, Button } from "react-bootstrap";
 import arrow2 from "../Images/arrow-2.png";
-import SloganCard3 from "./SloganCard3";
-import SloganCard4 from "./SloganCard4";
-import { useNavigate } from "react-router-dom";
-import Animationtext from "./Animationtext";
 
+// Define the HomePage component
 export const HomePage = () => {
+  // Data for the counters
   const data = [
     { img: img1, count: "245+", description: "KG Of Food We Saved" },
-    { img: img2, count: "150+", description: "Childrens We Fed" },
+    { img: img2, count: "150+", description: "Children We Fed" },
     { img: img3, count: "120+", description: "Families We Served" },
-    { img: img4, count: "50+", description: "Women’s We Empowered" },
+    { img: img4, count: "50+", description: "Women We Empowered" },
   ];
-  const [inputValue, setInputValue] = React.useState("");
 
+  // State to manage the input value for donation amount
+  const [inputValue, setInputValue] = useState("");
+
+  // Using React Router's `useNavigate` hook to handle navigation
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate('/DonationPage');
-  }; 
+    navigate("/DonationPage");
+  };
 
+  // State to determine if the current view is mobile or not
   const [isMobileView, setIsMobileView] = useState(true);
 
+  // useEffect hook to check the window size and determine mobile view
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -59,72 +67,25 @@ export const HomePage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
- 
-
+  // Handle the donation amount button click
   const handleButtonClick = (amount) => {
     setInputValue(amount);
   };
 
   return (
     <div>
-        {/* <section className="home-section mb-md-5 pb-md-5 d-flex justify-content-between px-md-3 p-md-4 pt-xl-0 px-lg-5 align-items-center"> */}
-
-      <section className="home-sectio mb-md-5 pb-md-5 ">
-     
-      <h6 className="header-title text-center  mt-5 mb-3 px-lg-2 px-md-2 px-3">
-            Powered By Human To Empower Humans
-          </h6>
-      
-        <Animationtext/>
-        {/* <div className="header-left px-lg-5 px-md-3">
-          <h6 className="header-title ml-lg-5 mt-4 mb-4">
-            Powered By Human To Empower Humans
-          </h6>
-          <h1
-            className="header-h1"
-            style={{
-              fontWeight: 600,
-              fontStyle: "normal",
-            }}
-          >
-            For Every Meal You
-            <br /> Order from Us,
-            <br />
-            We Will Feed An <br />
-            Orphan For <span style={{ color: "#dd4747" }}>Free.</span>
-          </h1>
-          <Row className="justify-content-center justify-content-sm-start btnrow mt-4 ">
-            <Col className="col-auto">
-              <Button className="btn-1 " style={{ background: " #FFA500" }}>
-                ORDER NOW
-              </Button>
-            </Col>
-            <Col className="col-auto">
-              <Button
-                onClick={handleClick}
-                className="btn-2"
-                style={{
-                  background: "white",
-                  color: "black",
-                  border: "1px solid black",
-                  
-                }}
-              >
-                DONATE
-              </Button>
-            </Col>
-          </Row>
-         
-        </div>
-        <div className="header-right mb-3 mt-4">
-          <img src={MOMEALS} alt="header-img" className="img-fluid img" />
-        </div> */}
+      {/* Section with animation text */}
+      <section className=" mb-md-5 pb-md-5 ">
+          {/* headerh6 */}
+        <h6 className="header-title text-center  mt-5 mb-3 px-lg-2 px-md-2 px-3">
+          Powered By Human To Empower Humans
+        </h6>
+        <Animationtext />
       </section>
+
+      {/* Counter section */}
       <div className="home-counter pt-lg-4 pt-md-3 ">
-        <div
-          className="d-flex justify-content-around  counter"
-          id="counter-home"
-        >
+        <div className="d-flex justify-content-around  counter" id="counter-home">
           {data.map((item, index) => (
             <div className="capsule" key={index}>
               <img
@@ -143,6 +104,7 @@ export const HomePage = () => {
         </div>
       </div>
 
+      {/* Section with three cards */}
       <div style={{ background: "black", color: "white" }}>
         <div className="head-section d-flex justify-content-center ">
           <div className="title text-center">
@@ -160,6 +122,7 @@ export const HomePage = () => {
 
         <div className="mand-v pb-5">
           <div className="section-cards ">
+            {/* SloganCard component with different data */}
             <SloganCard
               destination="/FoodWastage"
               para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Collect Eatable Leftover Foods from Eateries.</div>}
@@ -167,6 +130,7 @@ export const HomePage = () => {
               slogan={<div style={{ color: '#4ECD99' }}>ZERO FOOD WASTAGE</div>}
               src={m1}
             />
+            {/* SloganCard component with different data */}
             <SloganCard
               destination="/FoodHunger"
               para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Feed Homeless and Malnutrition Childrens For Free.</div>}
@@ -174,6 +138,7 @@ export const HomePage = () => {
               slogan={<div style={{ color: '#FCAD30' }}>ZERO FOOD HUNGER</div>}
               src={m2}
             />
+            {/* SloganCard component with different data */}
             <SloganCard
               para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Empowering Homeless and Unemployed women's.</div>}
               card="card3"
@@ -184,19 +149,22 @@ export const HomePage = () => {
         </div>
       </div>
 
+      {/* Ethical practices section */}
       <div className="pb-5 p-3 px-md-5 px-lg-3" style={{ background: "#c7f2ab" }}>
         <p className="m-lg-5 para2 text-left px-lg-4 px-md-2 px-2">
           MAKE A LASTING IMPRESSION ON INDIVIDUALS AND COMMUNITIES WITH MOMEALS'
           ETHICAL PRACTICES.
         </p>
+        {/* SloganCard3 component */}
         <SloganCard3 />
       </div>
 
+      {/* Be different, make a difference section */}
       <div className="be-diff p-lg-5 pb-lg-0 p-4 p-md-5 px-md-5 ">
         <div className="para-side m-lg-5  mt-1 m-xs-2">
           <h3 className="para-sideh3">Be Different, Make <span style={{color:"#067749"}}>Difference.</span></h3>
           <p className="para-sidep mt-3">
-          At Momeals, we strive to make a meaningful impact by combating hunger and reducing food waste simultaneously. Our dedicated team delivers top-notch service while staying environmentally conscious at every step. Together, let's ensure no one goes hungry and minimize wastage of precious food resources.
+            At Momeals, we strive to make a meaningful impact by combating hunger and reducing food waste simultaneously. Our dedicated team delivers top-notch service while staying environmentally conscious at every step. Together, let's ensure no one goes hungry and minimize wastage of precious food resources.
           </p>
           <img className="img-arrow mt-3" src={arrow2} />
           <div className="d-flex justify-content-center">
@@ -204,27 +172,7 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="solid-line"></div>
-
-      <div className="HowToDo p-lg-5 p-4 px-md-5">
-        <div className="left-para  m-lg-5 ">
-          <h5>How We Do ?</h5>
-          <h1>
-            Build A Visionary and Sustainable Food Waste System That Benefits
-            All.
-          </h1>
-          <ul>
-            <li className="list">Quick Recovery of food</li>
-            <li className="list">Homeless no more hopeless</li>
-            <li className="list">Feeding Missions</li>
-            <li className="list">Nature Friendly</li>
-            <li className="list">Partners with Cooks</li>
-          </ul>
-        </div>
-        <div className="right-img pb-5 ">
-          <img src={factory} className="img-fluid" alt="hwd" />
-        </div>
-      </div>
+      {/* main-worrior section */}
       <div className="main-worrior">
         <div className="worrior p-5">
           <h6>BE A FOOD WORRIOR AND SAVE LIVES</h6>
@@ -232,9 +180,9 @@ export const HomePage = () => {
           <button className="btn-join">JOIN</button>
         </div>
       </div>
+      {/* Section for donation form */}
       <Row className="DonateNow d-flex justify-content-evenly px-4 pb-3 pb-lg-2 pb-md-2  p-md-5 p-lg-5 pt-lg-5 pt-md-5 align-items-center">
-        <Col md={5} lg={4} className="left-intro mt-4 mt-lg-5 px-lg-4 pt-md-5">
-        {/* <div className="left-intro mt-4 px-lg-5"> */}
+        <Col md={5} lg={4} className="left-intro mt-4 mt-lg-5  pt-md-5">
           <h6>
             {" "}
             <img src={heart} alt="" width={40} /> DONATE NOW
@@ -248,11 +196,9 @@ export const HomePage = () => {
               Help us save lives and create a world free from hunger
             </span>
           </h4>
-        {/* </div> */}
         </Col>
         <Col lg={2}  md={1}></Col>
         <Col md={6}  lg={4} className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 px-lg-5">
-        {/* <div className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 "> */}
           <div className="donate">
             <h4 className="donatenow">DONATE NOW </h4>
           </div>
@@ -268,7 +214,6 @@ export const HomePage = () => {
               name=""
               placeholder="Your Name"
               className="rounded-pill my-2"
-
             />
             <input
               type="text"
@@ -276,7 +221,7 @@ export const HomePage = () => {
               placeholder="Amount Value"
               className="rounded-pill my-2"
               value={inputValue}
-               onChange={(e) => setInputValue(e.target.value)}
+              onChange={(e) => setInputValue(e.target.value)}
             />
             <div className="button">
               <button className="rounded-pill money"  onClick={() => handleButtonClick("50 Rs")}>50 Rs</button>
@@ -290,9 +235,10 @@ export const HomePage = () => {
               </button>
             </div>
           </div>
-        {/* </div> */}
         </Col>
       </Row>
+
+      {/* Good change section */}
       <div>
         <SloganCard4 />
         <div className="Good-change pt-5 pb-4 p-3">
@@ -305,7 +251,7 @@ export const HomePage = () => {
                 </h1>
                 <Col xs={12} md={8} xl={6}>
                   <p className="p-GC pt-3">
-                  "We are a community of like-minded individuals united by the sole purpose of providing three meals a day to every person. Our mission is to combat food wastage, and by doing so, we can achieve this goal. Let's join forces and work together to feed the world."
+                    "We are a community of like-minded individuals united by the sole purpose of providing three meals a day to every person. Our mission is to combat food wastage, and by doing so, we can achieve this goal. Let's join forces and work together to feed the world."
                   </p>
                 </Col>
               </Row>
@@ -315,6 +261,8 @@ export const HomePage = () => {
             <button className="b-GC rounded-pill homejoin-btn">JOIN US</button>
           </div>
         </div>
+
+        {/* Blogs section */}
         <div className="blogs pt-5 pb-5">
           <div className="intro mt-2">
             <h4
@@ -326,29 +274,29 @@ export const HomePage = () => {
             <h2 className="text-center update mt-3">
               Our Latest Blogs and Updates
             </h2>
-           <div className="mx-lg-5 mx-md-5 mt-5 px-lg-5">
-           <ImgMediaCard />
-           </div>
+            {/* ImgMediaCard component */}
+            <div className="mx-lg-5 mx-md-5 mt-5 px-lg-5">
+              <ImgMediaCard />
+            </div>
           </div>
         </div>
 
-        
+        {/* Button to view more */}
         <div className="but  mb-4">
-          <button
-            className="btn-update rounded-pill"
-            style={{ color: "white" }}
-          >
+          <button className="btn-update rounded-pill" style={{ color: "white" }}>
             VIEW MORE
           </button>
         </div>
       </div>
 
-      <div className="wrapper p-md-5">
+      {/* FAQ section */}
+      <div className="wrapper px-lg-3 px-xl-3 pt-2 pb-2 px-md-5 px-3">
         <div className="accordian">
           <h5 className="mt-5">
             FREQUENTLY ASKED <span style={{ color: "blue" }}>QUESTIONS</span>
           </h5>
           <br />
+          {/* Accordian component with different data */}
           <Accordian
             head="What services does Momeals provide?"
             para="We provide innovative services that focus on hunger awareness, food bank management, donation collection, waste reduction measures, and volunteer recruitment."

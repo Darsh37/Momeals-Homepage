@@ -1,149 +1,124 @@
-.storycardsslider-container{
-    background: #C3C8C0;
+/* Styling for the storycardsslider-container */
+.storycardsslider-container {
+  background: #C3C8C0;
 }
-.storycards-row .storycards-3rd{
-    box-shadow: none ;
-    border: none;
-    color: black;
-    width: 100% ;
-    background: none;
-    height: auto ;
-    }
-    .storycards .storycards-3rd:hover{
-      background: none !important;
-    }
-    @media (max-width: 575.98px) {
-         .storycards-3rdmiddle-text-container {
-          margin: 0; /* Remove the left and right margin for small screens */
-        }
-        #storycards-3rdcardpara1{
-          color: #000;
 
-  
-  
-        }
-        #storycards-3rdcardpara2{
-         
-  font-size: 18px;
-  
-        }
-          #storycards-3rdcardpara3{
-            font-size: 16px;
-          
-           color: #000;
-          
-          }
-    }
-    
-    
-    
-  #storycards-3rdcardpara1,#storycards-3rdcardpara3{
-    font-family: Poppins;
-    font-weight: 700;
-    color: #000;
-  
+/* Styling for the testimonial rows and cards */
+.storycards-row .storycards-3rd {
+  box-shadow: none;
+  border: none;
+  color: black;
+  width: 100%;
+  background: none;
+  height: auto;
+}
+
+/* Remove background on hover for the testimonial cards */
+.storycards .storycards-3rd:hover {
+  background: none !important;
+}
+
+/* Media query for small screens */
+@media (max-width: 575.98px) {
+  .storycards-3rdmiddle-text-container {
+    margin: 0; /* Remove the left and right margin for small screens */
   }
-  #storycards-3rdcardpara2{
-    font-family: 'Comfortaa';
-    font-weight: 700;
+  #storycards-3rdcardpara1 {
     color: #000;
-    font-size: 24px;
   }
-    @media only screen and (min-width: 992px) {
-     
-        .storycards-row .storycards-3rd{
-          width:100%;
-          
-        }
-        .storycards-row{
-          padding:0px 40px;
-        }
-    }
-    @media only screen and (min-width: 768px){
-       #storycards-3rdcardpara1{
-        font-family: 'Poppins';
+  #storycards-3rdcardpara2 {
+    font-size: 18px;
+  }
+  #storycards-3rdcardpara3 {
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+/* Styling for testimonial headings and content */
+#storycards-3rdcardpara1,
+#storycards-3rdcardpara3 {
+  font-family: Poppins;
+  font-weight: 700;
+  color: #000;
+}
+
+#storycards-3rdcardpara2 {
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+}
+
+/* Media query for medium screens */
+@media only screen and (min-width: 992px) {
+  .storycards-row .storycards-3rd {
+    width: 100%;
+  }
+  .storycards-row {
+    padding: 0px 40px;
+  }
+}
+
+/* Media query for large screens */
+@media only screen and (min-width: 768px) {
+  #storycards-3rdcardpara1 {
+    font-family: 'Poppins';
     font-weight: 700;
-  
-    }
-    #storycards-3rdcardpara2{
-        font-family: 'Poppins';
-        font-weight: 700;
+  }
+  #storycards-3rdcardpara2 {
+    font-family: 'Poppins';
+    font-weight: 700;
     font-size: 48px;
-   
     justify-content: center;
     text-align: left;
-    }
-    .storycards-3rdmiddle-text-container {
-        display: flex;
-        justify-content: center;
-       
-      }
-      
-     
-      
-    #storycards-3rdcardpara3{
-        font-family: 'Poppins';
+  }
+  .storycards-3rdmiddle-text-container {
+    display: flex;
+    justify-content: center;
+  }
+  #storycards-3rdcardpara3 {
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    
     line-height: 36px;
-    }
-    
-    }
-    
-    /* slider */
-    @media (min-width: 992px) {
-       .storycards-buttons #storycards-btn{
-          visibility: visible !important;
-        }
-      }
-      .slick-prev,.slick-next{
-      display: none !important;
-      }
-     .storycards-buttons #storycards-btn {
-    
-        border: none !important;
-        color: #000000 !important;
-        font-size: 24px !important;
-       
-        border-radius: 50% !important;
-        width: 40px !important;
-        height: 40px !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        /* border: 2px solid #000000 !important; */
-       
-      
-      
-        background: #FFFFFF !important;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
-      display: flex !important;
-      }
-      .storycards-buttons{
-        display: flex !important;
-      }
-      
-      
-      /* .slider-button:hover {
-        background: #ECECEC !important;
-        box-shadow: none !important;
-      }
-       */
-      
-      @media (min-width:1025px){
-        .storycardsslider-container {
-          margin: 0 auto;
-          max-width: 100%;
-          position: relative;
-        }
-        
-       
-      }
-      
-      
-      
-      
-      
-      
-        
+  }
+}
+
+/* Slider buttons styling */
+@media (min-width: 992px) {
+  .storycards-buttons #storycards-btn {
+    visibility: visible !important;
+  }
+}
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.storycards-buttons #storycards-btn {
+  border: none !important;
+  color: #000000 !important;
+  font-size: 24px !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: #FFFFFF !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  display: flex !important;
+}
+.storycards-buttons {
+  display: flex !important;
+}
+
+/* Media query for large screens */
+@media (min-width: 1025px) {
+  .storycardsslider-container {
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+  }
+}

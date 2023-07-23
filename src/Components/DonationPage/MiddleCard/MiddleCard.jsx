@@ -1,3 +1,4 @@
+// Importing necessary modules and components
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,6 +12,7 @@ import { Row, Col, Card, Button } from "react-bootstrap";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 function MiddleCard() {
+  // State to store data for the cards
   const [data] = useState([
     {
       heading: "MALNUTRITION CHILDREN’S",
@@ -31,7 +33,10 @@ function MiddleCard() {
     },
   ]);
 
+  // Create a reference for the slider
   const sliderRef = useRef(null);
+
+  // Slider settings
   const settings = {
     dots: true,
     infinite: true,
@@ -60,50 +65,54 @@ function MiddleCard() {
       },
     ],
   };
-  
 
+  // Function to go to the next slide
   const slideNext = () => {
     sliderRef.current.slickNext();
   };
 
+  // Function to go to the previous slide
   const slidePrev = () => {
     sliderRef.current.slickPrev();
   };
 
+  // JSX content of the component
   return (
     <div className="middle-container">
       <center>
-        <div className="work-header ">
-          <Row >
-          <h1 className="pt-5 work-headerh1">For Whom We Work</h1>
+        {/* Header */}
+        <div className="work-header">
+          <Row>
+            <h1 className="pt-5 work-headerh1">For Whom We Work</h1>
           </Row>
           <br />
           <Row className="m-2">
-            <Col >
-            <p className="work-headerp">
-            We Work Selflessly to help homeless people, malnutrition
-            children’s and unemployed women’s seeking support
-          </p>
+            <Col>
+              <p className="work-headerp">
+                We Work Selflessly to help homeless people, malnutrition
+                children’s and unemployed women’s seeking support
+              </p>
             </Col>
           </Row>
         </div>
+        {/* Slider */}
         <div className="middle-containerslider-container">
           <Slider {...settings} ref={sliderRef}>
             {data.map((dta, id) => (
               <div className="helpingcards" key={id}>
-                <Card  className="middle-container-card card-spacing mt-5">
-                  <Card.Body className="d-flex flex-column middle-containercard-body ">
-                    
-                      <Card.Title  className="middle-containerheading">{dta.heading}</Card.Title>
-                      <div className=" mt-3">
-                        <div className="position-absolute left-0 middle-containercard-line"></div>
-                      </div>
-                      <div className="mb-5" style={{marginBottom:"50px"}}>
-                        <Card.Text  variant="top" className=" mt-4 middle-containercard-text ">
-                          {dta.para}
-                        </Card.Text>
-                      </div>
-                   
+                <Card className="middle-container-card card-spacing mt-5">
+                  <Card.Body className="d-flex flex-column middle-containercard-body">
+                    <Card.Title className="middle-containerheading">
+                      {dta.heading}
+                    </Card.Title>
+                    <div className=" mt-3">
+                      <div className="position-absolute left-0 middle-containercard-line"></div>
+                    </div>
+                    <div className="mb-5" style={{ marginBottom: "50px" }}>
+                      <Card.Text variant="top" className="mt-4 middle-containercard-text">
+                        {dta.para}
+                      </Card.Text>
+                    </div>
                     <div className="mt-5">
                       <Card.Img
                         variant="top"
@@ -117,6 +126,7 @@ function MiddleCard() {
               </div>
             ))}
           </Slider>
+          {/* Slider buttons */}
           <div className="middle-containerslider-buttons">
             <button className="middle-containerslider-button" onClick={slidePrev}>
               <FaAngleLeft />
@@ -126,11 +136,13 @@ function MiddleCard() {
             </button>
           </div>
         </div>
+        {/* Button */}
         <Button className="mt-5 " id="member_but">
           Become A Member
         </Button>
       </center>
 
+      {/* HelpCard component */}
       <div className="mt-5">
         <HelpCard />
       </div>

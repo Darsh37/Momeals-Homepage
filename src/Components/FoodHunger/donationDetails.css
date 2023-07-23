@@ -1,63 +1,43 @@
-.Donation-container{
-   background-color:#EEEEEE;
-  
+/* Styling for DonationDetails.js component */
 
-}
-.donar-card.card{
-    background-color:#EEEEEE;
-    /* width: 18rem !important;
-    height: 6rem !important; */
-    /* display: flex;
-    flex-direction: row; */
-    border:none;
+/* Styling for the container that holds the donation cards */
+.Donation-container {
+    background-color: #EEEEEE;
+  }
+  
+  /* Styling for each donation card */
+  .donar-card.card {
+    background-color: #EEEEEE;
+    border: none;
     margin-top: 2rem;
-    box-shadow: none !important;  
-    
-}
-.d-2{
-    display: flex;
-    margin: 0;
-   
-}
-
-.data-amount{
-    color: #FD7E14;
-    margin: 0;
-}
-
-.data-time{
-    margin: 0;
-    color: #D90000;
-}
-   
-.data-comment{
-    margin: 0;
-}
-
-.share-cause-Container{
-    margin-top: 3rem;
-    background-color:#EEEEEE;
+    box-shadow: none !important;
+  }
   
-}
-.share-cause-Container h3{
-   /* padding-left: 2.5rem;   */
-}
-
-.share-cause-list ul{
+  /* Styling for the amount of donation */
+  .data-amount {
+    color: #FD7E14; /* Orange color for the donation amount */
+    margin: 0;
+  }
+  
+  /* Styling for the time of the donation */
+  .data-time {
+    margin: 0;
+    color: #D90000; /* Red color for the time of the donation */
+  }
+  
+  /* Styling for the comment of the donation */
+  .data-comment {
+    margin: 0;
+  }
+  
+  /* Styling for the container that holds the share cause icons */
+  .share-cause-Container {
+    margin-top: 3rem;
+    background-color: #EEEEEE;
+  }
+  
+  /* Styling for the list of share cause icons */
+  .share-cause-list ul {
     display: flex;
     list-style-type: none;
-}
-
-.share-cause-list ul li{
-    /* margin: 0.5rem; */
-}
-
-@media (max-width:360px) {
-    /* .Donation-container{
-        width: 20rem; 
-     }
-     .share-cause-Container{ 
-        width: 20rem; 
-        
-    } */
-}
+  }

@@ -1,61 +1,79 @@
-@media (max-width: 575.98px) {
-    #containerc-para2{
+/* CSS for Containerc Component */
+
+/* Styling for smaller screens (max-width: 575.98px) */
+
+@media (max-width: 767px) {
+    /* Hide the second paragraph for smaller screens */
+    #containerc-para2 {
         display: none;
     }
-    #containercdonor{
+    /* Adjust font size and text alignment for containercdonor */
+    #containercdonor {
         font-size: 22px;
-     text-align: center;
+        text-align: center;
     }
-    #containerc-para1,#containerc-para2{
+    /* Adjust font size for both paragraphs on smaller screens */
+    #containerc-para1,
+    #containerc-para2 {
         font-size: 16px;
     }
-    .containercimg{
+    /* Adjust image size for smaller screens */
+    .containercimg {
         width: 250px;
         height: 250px;
-    
     }
-  }
- .containerc{
+}
+
+/* Styling for containerc */
+.containerc {
     background: #DDECFF;
- }
+}
 
-
- 
- @media only screen and (min-width: 768px){
-    #containerc-para1{
+/* Styling for screens with a minimum width of 768px */
+@media only screen and (min-width: 768px) {
+    /* Hide the first paragraph for larger screens */
+    #containerc-para1 {
         display: none;
     }
-    #containerc-para1,#containerc-para2{
+    /* Adjust font size and text alignment for both paragraphs on larger screens */
+    #containerc-para1,
+    #containerc-para2 {
         font-size: 24px;
         text-align: left;
-     }
-     
- #containercdonor{
-    font-size: 32px;
-    text-align: left;
-    
- }
- .containercimg{
-    width: 354px;
+    }
 
-}
-    
- }
- 
-  @media (min-width:1024px) {
-#containerccol1,#containerccol2{
-    width: 50% ;
-    margin: 0 auto;
-}
-.order-lg-1,.order-lg-2{
-    padding: 0px 88px !important;
-}
-#containerccol2{
-    margin-top: 10px;
-    padding-top: 50px;
-  }
+    /* Adjust font size and text alignment for containercdonor on larger screens */
+    #containercdonor {
+        font-size: 32px;
+        text-align: left;
+    }
 
-#containerc-para1{
-    display: none;
+    /* Adjust image size for larger screens */
+    .containercimg {
+        width: 354px;
+    }
 }
-  }
+
+/* Styling for screens with a minimum width of 1024px */
+@media (min-width: 1024px) {
+    /* Divide the columns equally on larger screens */
+    #containerccol1,
+    #containerccol2 {
+        width: 50%;
+        margin: 0 auto;
+    }
+    /* Adjust padding for larger screens */
+    .order-lg-1,
+    .order-lg-2 {
+        padding: 0px 88px !important;
+    }
+    /* Adjust margin and padding for containerccol2 on larger screens */
+    #containerccol2 {
+        margin-top: 10px;
+        padding-top: 50px;
+    }
+    /* Hide the first paragraph for larger screens */
+    #containerc-para1 {
+        display: none;
+    }
+}

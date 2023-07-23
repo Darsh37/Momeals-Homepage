@@ -1,52 +1,47 @@
-.Img-card{
-    display: flex;
- 
-    /* justify-content: center;
-    align-items: center; */
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
+/* Styling for elements with class .Img-card */
+.Img-card {
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
+/* Media query for devices with minimum width of 768px */
 @media only screen and (min-width: 768px){
-    #img-cards{
-        height: 350px;
-    }
+  /* Styling for elements with id #img-cards */
+  #img-cards {
+    height: 350px;
+  }
 }
 
+/* Media query for devices with minimum width of 768px */
 @media only screen and (min-width: 768px){
- #card-typo{
+  /* Styling for elements with id #card-typo */
+  #card-typo {
     font-weight: 400;
-font-size: 20px ;
-   } 
+    font-size: 20px;
+  } 
 }
 
-/* slider */
-/* @media (min-width: 992px) {
-    .slider-butn{
-      visibility: hidden !important;
-    }
-  } */
-  .slide-contain .slick-prev,.slick-next{
+/* Styling for slider buttons */
+.slide-contain .slick-prev, .slick-next {
   display: none !important;
-  }
- .img-grid-buttons .img-grid-button{
-  
-    border: none !important;
-    color: #000000 !important;
-    font-size: 24px !important;
-   /* padding: 10px; */
-    border-radius: 50% !important;
-    width: 40px !important;
-    height: 40px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important; 
-    background: #FFFFFF !important;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
 
-  }
-  .img-grid .img-grid-buttons{
-    display: flex !important;
-  }
-  
+/* Styling for elements with class .img-grid-button */
+.img-grid-buttons .img-grid-button {
+  border: none !important;
+  color: #000000 !important;
+  font-size: 24px !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important; 
+  background: #FFFFFF !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Styling for elements with class .img-grid .img-grid-buttons */
+.img-grid .img-grid-buttons {
+  display: flex !important;
+}

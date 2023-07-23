@@ -11,14 +11,16 @@ import arrow4 from '../Images/foodtypepageArrow.png';
 import './Foodtypepage.css';
 
 function FoodtypePage() {
+  // State to keep track of the active image
   const [activeImage, setActiveImage] = useState(null);
   const navigate = useNavigate();
 
+  // Function to handle click on an image card
   const handleClick = (imageId) => {
     setActiveImage((prevActiveImage) => (prevActiveImage === imageId ? null : imageId));
   };
 
- 
+  // Function to handle click on the "Next" button
   const handleNextClick = () => {
     if (activeImage === 'myImage') {
       navigate('/fooddonationfopage');
@@ -26,11 +28,14 @@ function FoodtypePage() {
       navigate('/fooddonationpage');
     }
   };
-  //back to donation page
+
+  // Function to navigate back to the DonationPage
   const navigateb = useNavigate();
   const handleClickb = () => {
     navigateb('/DonationPage');
-  }; 
+  };
+
+  // Array of images with their details
   const images = [
     { id: 'myImage', src: img1, title: 'Surplus Food', info: 'Cooked Food' },
     { id: 'myImage1', src: img2, title: 'Frozen Food', info: 'Ready To Eat' },
@@ -48,6 +53,7 @@ function FoodtypePage() {
         <p className="foodtypepara mb-3 mb-lg-1">Choose what type of food you have</p>
       </center>
       <div className="foodtyperow p-lg-5 p-md-1 ">
+        {/* Rendering image cards */}
         <Row xs={12} md={12} lg={2} className="d-flex justify-content-center align-items-center pt-lg-2 pt-md-5" style={{ margin: '0px' }}>
           {images.map((image) => (
             <Col xs={6} sm={6} md={6} lg={3} key={image.id} className="mt-md-5 mb-md-5 mb-lg-1 mt-lg-5">
@@ -56,6 +62,7 @@ function FoodtypePage() {
                 style={{ border: 'none', background: 'none' }}
                 onClick={() => handleClick(image.id)}
               >
+                {/* Conditional rendering of image based on the active state */}
                 <div
                   style={{ width: '140px' }}
                   className={`d-flex justify-content-center align-items-center ${activeImage === image.id ? 'border  rounded-circle' : ''}`}

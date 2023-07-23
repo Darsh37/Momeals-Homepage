@@ -2,11 +2,8 @@
     width: 100%;
     height: auto;
 }
-.containerdjoinbtn:hover{
-    background-color: #FD7E14 !important;
-    color: white !important;
+ /* {Paragraph} */
 
-}
 .containerd-wrapper .containerdp{
     text-align: center;
     max-width: 50%;
@@ -20,6 +17,7 @@
     color: #000000;
 }
 
+/* //joinus button */
 .containerd-wrapper .containerdjoinbtn{
     width: 183px;
     height: 60px;
@@ -33,8 +31,14 @@
     line-height: 25px;
     color: #FFFFFF;
 }
+.containerdjoinbtn:hover{
+    background-color: #FD7E14 !important;
+    color: white !important;
+
+}
 
 @media (max-width:923px){
+     /* {Paragraph} width*/
     .containerd-wrapper .containerdp{
         max-width: 95%;
      

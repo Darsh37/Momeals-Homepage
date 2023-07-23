@@ -1,59 +1,74 @@
+/* ContactUs.css */
 
-.contactUs-container .contactarrow{
+/* Styles for the back button */
+.contactUs-container .contactarrow {
     border: 1px solid black;
-border-radius: 25px;
-padding: 6px;
-margin: 10px 0px 0px 16px;
-}
-.contactUs-right-side{
-   
+    border-radius: 25px;
+    padding: 6px;
+    margin: 10px 0px 0px 16px;
+  }
+  
+  /* Styles for the right-side container */
+  .contactUs-right-side {
     border-radius: 50px;
-    background: #C7F2AB;
- 
-
-}
-.contactUs-headerh5{
+    background: #c7f2ab;
+  }
+  
+  /* Styles for the subheading in contact details section */
+  .contactUs-headerh5 {
     color: #067749;
     font-family: 'Comfortaa';
     font-weight: 600;
-}
-.contactUs-p1{
+  }
+  
+  /* Styles for paragraph 1 in contact details section */
+  .contactUs-p1 {
     color: #484747;
     font-weight: 400;
     font-family: 'Inter';
-}
-.contactUs-p2{
+  }
+  
+  /* Styles for paragraph 2 in contact details section */
+  .contactUs-p2 {
     color: black;
     font-weight: 600;
-    font-family: 'Inter'; 
-}
-.contactUs-righth3{
+    font-family: 'Inter';
+  }
+  
+  /* Styles for the subheading in right-side container */
+  .contactUs-righth3 {
     font-weight: 500;
     font-family: 'Comfortaa';
-}
-.contactUs-right-side .contact-inp{
-    border-bottom:2px solid #888888;  
-
-}
-
-.contactUs-right-side .contact-inp::placeholder{
-color: black;
-}
-.contactus-rightp,.contact-inp,.contactus-right-radio{
+  }
+  
+  /* Styles for form input fields */
+  .contactUs-right-side .contact-inp {
+    border-bottom: 2px solid #888888;
+  }
+  
+  /* Styles for form input placeholders */
+  .contactUs-right-side .contact-inp::placeholder {
+    color: black;
+  }
+  
+  /* Styles for paragraphs and radio buttons */
+  .contactus-rightp,
+  .contact-inp,
+  .contactus-right-radio {
     font-family: 'Inter';
     font-weight: 400;
-}
-
-
-.contactUs1-btn{
-    
+  }
+  
+  /* Styles for the submit button */
+  .contactUs1-btn {
     border-radius: 20px;
-   width: 100%;
-    background: #1B5240;
-    color:#FFFFFF;
-}
-
-.contact-inp{
+    width: 100%;
+    background: #1b5240;
+    color: #ffffff;
+  }
+  
+  /* Styles for form input fields (default styles) */
+  .contact-inp {
     width: 100%;
     background: none;
     border: none;
@@ -61,55 +76,73 @@ color: black;
     margin: 15px 0px;
     border-bottom: 4px solid black;
     outline: none; /* Add this line to remove the outline */
-}
-.contact-inp:focus {
+  }
+  
+  /* Styles for form input fields when focused */
+  .contact-inp:focus {
     background: none;
     outline: none;
   }
-@media screen and (min-width: 768px) {
-    .contactUs-headerh3{
-        font-size: 32px;
+  
+  /* Media query for screens with min-width 768px */
+  @media screen and (min-width: 768px) {
+    /* Increase font size for the contact header */
+    .contactUs-headerh3 {
+      font-size: 32px;
     }
-    .contactUs-headerh5{
-     font-size: 22px;
-    }
-    .contactUs-p1,.contactUs-p2{
-        font-size: 20px; 
-    }
-    .contactus-rightp,.contact-inp,.contactus-right-radio{
-        font-size: 18px;
-    }
-    
-}
-
- 
-
-@media screen and (max-width: 600px) {
-    .contactUs-righth3{
-        font-size: 24px;
-    }
-    .contactUs-right-side .contact-inp{
-        font-size: 14px;
-    }
+    /* Increase font size for the subheading in contact details section */
     .contactUs-headerh5 {
-        font-size: 22px;
+      font-size: 22px;
     }
-    .contactUs-p1 ,.contactUs-p2{
-        font-size: 20px;
+    /* Increase font size for paragraphs in contact details section */
+    .contactUs-p1,
+    .contactUs-p2 {
+      font-size: 20px;
     }
-    .contactUs-row{
-        display: flex;
-        flex-direction: column-reverse;
+    /* Increase font size for paragraphs and radio buttons in right-side container */
+    .contactus-rightp,
+    .contact-inp,
+    .contactus-right-radio {
+      font-size: 18px;
     }
-    .contactus1st-div{
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 10px 0px;
+  }
+  
+  /* Media query for screens with max-width 600px */
+  @media screen and (max-width: 600px) {
+    /* Increase font size for the subheading in right-side container */
+    .contactUs-righth3 {
+      font-size: 24px;
     }
-    .contactUs-container .contactus1st-col,.contctus-imgs{
-        display: flex;
-        justify-content: center;
-        text-align: center;
+    /* Decrease font size for form input fields in right-side container */
+    .contactUs-right-side .contact-inp {
+      font-size: 14px;
     }
-    
-}
+    /* Increase font size for the subheading in contact details section */
+    .contactUs-headerh5 {
+      font-size: 22px;
+    }
+    /* Increase font size for paragraphs in contact details section */
+    .contactUs-p1,
+    .contactUs-p2 {
+      font-size: 20px;
+    }
+    /* Reverse the order of rows in contact details and form section */
+    .contactUs-row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    /* Reverse the order of social media icons and contact details in the first column */
+    .contactus1st-div {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 10px 0px;
+    }
+    /* Center align the first column and social media icons on smaller screens */
+    .contactUs-container .contactus1st-col,
+    .contctus-imgs {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  

@@ -1,51 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap');
+/* HelpCard.css */
 
+/* Styles for the container of the help card */
 .help_container {
   background: #C7F2AB;
   padding: 0 50px;
 }
-.p_heading{
-  font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 18px;
-}
-.h1_heading{
-  font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-}
-.p_low_heading{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
-}
-/* Rest of the CSS code */
 
+/* Styles for the 'One Hand For Others' heading */
+.p_heading {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+/* Styles for the main heading */
+.h1_heading {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+/* Styles for the low-level heading */
+.p_low_heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+/* Styles for the inner card title */
 .inner_card .helpcard-title {
   font-family: 'Comfortaa' !important;
-margin: 0px;
+  margin: 0px;
   font-size: 24px;
   text-align: left;
-font-weight: 400;
+  font-weight: 400;
+}
 
-}
-/* .inner-hcard1:hover{
-background-color: #ED4B4B;
-color: white;
-}
-.inner-hcard2:hover{
-  background-color: #067749;
-color: white;
-}
-.inner-hcard3:hover{
-  background-color: #FD7E14;
-color: white;
-} */
+/* Styles for the inner card text */
 .inner_card .helpcard-text {
   margin: 0px;
   font-family: 'Poppins' !important;
@@ -56,8 +52,7 @@ color: white;
   text-align: left;
 }
 
-
-
+/* Styles for the 'Help them' button */
 .but_help {
   background-color: orange;
   border-radius: 15px;
@@ -68,10 +63,13 @@ color: white;
   font-size: x-large;
   box-shadow: 2px 2px 2px 0 rgb(119, 112, 112);
 }
-.but_help:hover{
-  background-color: #067A46 ;
 
+/* Styles for the hover state of the 'Help them' button */
+.but_help:hover {
+  background-color: #067A46 ;
 }
+
+/* Styles for the inner cards */
 .inner_card {
   position: relative;
   width: 350px !important;
@@ -82,6 +80,7 @@ color: white;
   font-family: 'Comfortaa';
 }
 
+/* Styles for the arrow icon on the cards */
 .help_container .arrow {
   height: 25px;
   width: 25px;
@@ -92,6 +91,7 @@ color: white;
   right: 10px;
 }
 
+/* Styles for the color lines on the cards */
 .color-line1,
 .color-line2,
 .color-line3 {
@@ -103,6 +103,7 @@ color: white;
   background-color: white;
 }
 
+/* Styles for the arrow position on card 1, 2, and 3 */
 .help_container .arrow1,
 .help_container .arrow2,
 .help_container .arrow3 {
@@ -110,32 +111,39 @@ color: white;
   right: 10px;
 }
 
+/* Styles for the container of the cards */
 .cards_help {
   display: flex;
   top: 20px;
   gap: 10px;
 }
 
+/* Styles for the inner card 1 */
 .cards_help .inner-hcard1 {
   background-color: #ED4B4B;
   color: white;
 }
 
+/* Styles for the inner card 2 */
 .cards_help .inner-hcard2 {
   background-color: #067749;
   color: white;
 }
 
-.cards_help .inner-hcard3{
+/* Styles for the inner card 3 */
+.cards_help .inner-hcard3 {
   background-color: #FD7E14;
   color: white;
 }
 
-@media (min-width: 992px){
+/* Media query for larger screens */
+@media (min-width: 992px) {
   .help_container {
     margin-right: 10px;
   }
 }
+
+/* Media query for small and medium-sized screens in portrait orientation */
 @media (max-width: 768px) {
   .help_container {
     flex-direction: column;
@@ -145,7 +153,6 @@ color: white;
 
   .inner_card {
     width: 100% !important;
-
   }
 
   .help_left,
@@ -169,11 +176,15 @@ color: white;
     left: 50px;
     top: initial;
   }
-  .h1_heading{
+
+  /* Adjust the main heading size for smaller screens */
+  .h1_heading {
     font-size: 25px;
     font-family: 600;
   }
 }
+
+/* Media query for medium-sized screens in portrait orientation */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .cards_help {
     flex-direction: row !important;
@@ -182,6 +193,7 @@ color: white;
   }
 }
 
+/* Media query for screens with max-width 1024px */
 @media (max-width: 1024px) {
   .help_container {
     height: auto !important;
@@ -201,18 +213,4 @@ color: white;
     width: 100% !important;
     max-width: 400px !important;
   }
-
- 
-}
-
-/* .help_container .card:hover {
-  background-color: #D55342;
-}
-
-.help_container .card:hover .helpcard-title,
-.card:hover .help {
-  color: white !important;
-} */
-.inner_card .help {
-  width:100% !important;
 }

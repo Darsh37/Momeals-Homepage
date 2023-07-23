@@ -1,112 +1,81 @@
-.foodhunger-main-container{
+/* Styling for FoodHunger.js component */
+
+/* Styling for the main container that holds all sections */
+.foodhunger-main-container {
     width: 100%;
     height: auto;
 }
-.container1-wrapper{
+
+/* Styling for the wrapper container of Container1 */
+.container1-wrapper {
     display: flex;
-    background:#DDECFF;
-   /* padding: 2rem 5rem; */
-  
+    background: #DDECFF;
 }
 
-.container4-wrapper{
+/* Styling for the wrapper container of Container4 */
+.container4-wrapper {
     color: #FFFFFF;
     background: #067749;
-    
 }
-.container4-heading{
 
+/* Styling for the heading in Container4 */
+.container4-heading {
     font-size: 35px;
- 
 }
 
-
-.container4-counter h3{
+/* Styling for the counter headings in Container4 */
+.container4-counter h3 {
     text-align: left;
-} 
+}
 
-/* .d-5{ 
-    text-align: left;
-    margin: 1rem;
-    border-right: 3px solid #FF9E00;
-} */
-
-
-.container3-wrapper{ 
+/* Styling for the wrapper container of Container3 */
+.container3-wrapper {
     background: #CBF5E6;
-  
 }
-.container3-wrapperp{
-  
-    font-weight: 100; 
+
+/* Styling for the paragraph in Container3 */
+.container3-wrapper p {
+    font-weight: 100;
     font-size: 20px;
-  
     background: #CBF5E6;
- 
 }
-/* .sponsor-card{
-    margin-left: 1rem;
-} */
-.container4-wrapper .container4-wrappercounters:not(:last-child){
-    border-right: 2px solid orange  !important;
-  }
 
-@media (min-width:780px){
-    .container3-wrapperp{
+/* Styling for the individual counters in Container4 */
+.container4-wrapper .container4-wrappercounters:not(:last-child) {
+    border-right: 2px solid orange !important;
+}
+
+/* Media query for screens with a minimum width of 780px */
+@media (min-width: 780px) {
+    /* Add any specific styles for larger screens here */
+    .container3-wrapper p {
         border-left: 2px solid #0448BC;
-        padding: 0px 30px
+        padding: 0px 30px;
     }
 }
-@media (max-width: 575.98px){
-    .container1-wrapper,.container2-wrapper,.container3-wrapper,.container4-wrapper{
+
+/* Media query for screens with a maximum width of 575.98px (small screens) */
+@media (max-width: 575.98px) {
+    /* Add any specific styles for small screens here */
+    .container1-wrapper, .container2-wrapper, .container3-wrapper, .container4-wrapper {
         text-align: center;
     }
-    .food-hungerh1{
+    .food-hungerh1 {
         text-align: center;
     }
 }
-@media (max-width:360px) {
- 
-   
+
+/* Media query for screens with a maximum width of 360px */
+@media (max-width: 360px) {
+    /* Add any specific styles for screens with a maximum width of 360px here */
     .container1-wrapper h5 {
         font-size: 15px;
-
     }
-    /* .card{
-        width:18rem !important;
-        margin-left: 0 !important;
-    }
-    .card-text{
-        width: 15rem !important;
-    } */
- 
-   
-    /* .d-3{
-        margin: 0rem !important;
-    }
-    .d-4{
-       margin: 0rem !important;
-    } */
-    
-      
-    .container3-wrapperp{
-       
-        font-weight: 100; 
+    .container3-wrapper p {
+        font-weight: 100;
         font-size: 17px;
-    
-      
     }
-  
-    .container4-heading{
-    
+    .container4-heading {
         font-size: 30px;
     }
-
-    /* .d-5{
-        width: 13rem;
-        border-right: none;
-        border-bottom: 3px solid #FF9E00;
-    } */
-
-
 }

@@ -1,56 +1,76 @@
-import React, { useState ,useEffect} from 'react';
-import {  Button, Row, Col, Card , InputGroup ,Form} from 'react-bootstrap';
+// Donationdetailsformpage.js
+
+import React, { useState, useEffect } from 'react';
+import { Button, Row, Col, Form, InputGroup } from 'react-bootstrap';
 import './Donationdetailsformpage.css';
-import donationdetailsformarrow from '../Images/Arrow 5.png'
-import fundsimg from '../Images/funds donation 1 (1).png'
+import donationdetailsformarrow from '../Images/Arrow 5.png';
+import fundsimg from '../Images/funds donation 1 (1).png';
 import { useNavigate } from 'react-router-dom';
+
 const Donationdetailsformpage = () => {
+  // React Router navigation hook
   const navigatea = useNavigate();
+
+  // Function to navigate back to the previous page (DonationPage)
   const handleClicka = () => {
     navigatea('/DonationPage');
-  }; 
-    useEffect(() => {
-        document.body.classList.add('donationdetailsformcustom-body'); 
-        return () => {
-          document.body.classList.remove('donationdetailsformcustom-body');
-        };
-      }, []);
-      //payment method
-      const paymentMethods = [
-        'Credit Card',
-        'Debit Card',
-        'PayPal',
-        'Google Pay',
-        'Bank Transfer',
-        
-      ];
-      const [payment,setpayment]=useState('')
-      const paymentChange=(event)=>{
-        setpayment(event.target.value)
-         }
-        
+  };
+
+  // useEffect to add and remove CSS class to the body element
+  useEffect(() => {
+    document.body.classList.add('donationdetailsformcustom-body');
+    return () => {
+      document.body.classList.remove('donationdetailsformcustom-body');
+    };
+  }, []);
+
+  // Payment method options
+  const paymentMethods = [
+    'Credit Card',
+    'Debit Card',
+    'PayPal',
+    'Google Pay',
+    'Bank Transfer',
+  ];
+
+  // State for selected payment method
+  const [payment, setPayment] = useState('');
+
+  // Function to handle payment method selection
+  const paymentChange = (event) => {
+    setPayment(event.target.value);
+  };
+
   return (
     <div className='donationdetailsform'>
-      
-    <img className='donationdetailsformarrow' src={donationdetailsformarrow} onClick={handleClicka} />
-    
-    <div className="container">
-      
-      <Row id="donationdetailsformrow ">
-      
-        {/* Left column */}
-        <p className="donationdetailsformh6 mt-3">DONATION  DETAILS</p>
-        <Col lg={6} md={5} sm={12}>
-          <div className="card-body ">
-            <div className="form">
-              
-              <form className="donationdetailsformform-class">
-              <input type="text" id="donationdetailsforminp" placeholder="Your Name" />
-              <input type="text" id="donationdetailsforminp" placeholder="Your Mobile No." />
-              <input type="text" id="donationdetailsforminp" placeholder="City/State" />
-              <input type="email" id="donationdetailsforminp" placeholder="Email" />
-              <input type="text" id="donationdetailsforminp" placeholder="Amount" />
-              <div className="donationdetailsforminput-with-dropdown">
+      {/* Back button */}
+      <img
+        className='donationdetailsformarrow'
+        src={donationdetailsformarrow}
+        onClick={handleClicka}
+      />
+
+      <div className='container'>
+        <Row id='donationdetailsformrow '>
+          {/* Left column */}
+          <p className='donationdetailsformh6 mt-3'>DONATION DETAILS</p>
+          <Col lg={6} md={5} sm={12}>
+            <div className='card-body'>
+              <div className='form'>
+                <form className='donationdetailsformform-class'>
+                  {/* Form input fields */}
+                  <input type='text' id='donationdetailsforminp' placeholder='Your Name' />
+                  <input
+                    type='text'
+                    id='donationdetailsforminp'
+                    placeholder='Your Mobile No.'
+                  />
+                  <input type='text' id='donationdetailsforminp' placeholder='City/State' />
+                  <input type='email' id='donationdetailsforminp' placeholder='Email' />
+                  <input type='text' id='donationdetailsforminp' placeholder='Amount' />
+
+                  {/* Payment method dropdown */}
+                  <div className="donationdetailsforminput-with-dropdown">
                     <InputGroup style={{width:"100%"}}>
                 
                   <select id="donationdetailsforminp"  className="donationdetailsformdropdown-select" onChange={paymentChange}>
@@ -69,34 +89,35 @@ const Donationdetailsformpage = () => {
                     </span>
                     </InputGroup>
                 </div>
-               <Form.Group className="mt-4 " controlId="donationdetailsformcheckbox" id="donationdetailsformcheckbox">
+                <Form.Group className="mt-4 " controlId="donationdetailsformcheckbox" id="donationdetailsformcheckbox">
                <Form.Check inline className="donationdetailsformcheckinfo" label="By checking the box below, you acknowledge that you have read, understood, and agree to abide by the terms and conditions outlined above." />
                </Form.Group>
-               {/* Submit button */}
-               <Row className="justify-content-center justify-content-sm-start btnrow">
-               <Col className="col-auto">
-               <div className="text-center mt-5 mb-4">
-          <Button className="donationdetailsformbtn-submit w-10 h-90" id="donationdetailsformbtn" >Proceed</Button>
-        </div>
-               </Col>
-          
-               </Row>
-     
-              </form>
-            </div>
-          </div>
-        </Col>
-        
-         {/* Spacing */}
-         <Col lg={1} md={1} sm={12}></Col>
-         <Col lg={5} md={4} sm={12} className='d-flex justify-content-center'>
-       <img className="fundsimg" src={fundsimg} width="100%" />
-       </Col>
-     
-      </Row>
-    </div>
-    </div>
-  )
-}
 
-export default Donationdetailsformpage
+                  {/* Submit button */}
+                  <Row className='justify-content-center justify-content-sm-start btnrow'>
+                    <Col className='col-auto'>
+                      <div className='text-center mt-5 mb-4'>
+                        <Button className='donationdetailsformbtn-submit w-10 h-90' id='donationdetailsformbtn'>
+                          Proceed
+                        </Button>
+                      </div>
+                    </Col>
+                  </Row>
+                </form>
+              </div>
+            </div>
+          </Col>
+
+          {/* Spacing */}
+          <Col lg={1} md={1} sm={12}></Col>
+          {/* Right column with image */}
+          <Col lg={5} md={4} sm={12} className='d-flex justify-content-center'>
+            <img className='fundsimg' src={fundsimg} width='100%' alt='Funds Donation' />
+          </Col>
+        </Row>
+      </div>
+    </div>
+  );
+};
+
+export default Donationdetailsformpage;

@@ -1,9 +1,10 @@
+// Import required libraries and components
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import {Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Typography from '@mui/material/Typography';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Slider from "react-slick";
@@ -11,9 +12,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../Homepage/ImgMediaCard.css';
 
+// Import the card image
 import cardImg from "../Images/card-img.png";
 
 function ImgMediaCard() {
+  // Card data
   const cardItems = [
     {
       id: 1,
@@ -53,6 +56,9 @@ function ImgMediaCard() {
     },
   ];
 
+  // Settings for the slider
+ 
+
 
   const sliderRef = React.useRef(null);
   const settings = {
@@ -83,26 +89,34 @@ function ImgMediaCard() {
       },
     ],
   };
+  // Function to slide to the next item
   const slideNext = () => {
     sliderRef.current.slickNext();
   };
 
+  // Function to slide to the previous item
   const slidePrev = () => {
     sliderRef.current.slickPrev();
   };
 
   return (
     <div className='img-grid'>
+      {/* Slider component */}
       <Slider {...settings} ref={sliderRef}>
         {cardItems.map((card) => (
+          // Individual card item
           <div key={card.id} className='Img-card'>
             <Card
               className='img-card'
               id="img-cards"
               sx={{ margin: '0 30px', background: "#CFE1FF", position: "relative" }}
             >
+              {/* Card image */}
               <CardMedia component="img" alt="green iguana" height="140" image={card.image} />
+
+              {/* Card content */}
               <CardContent className="mb-3 " sx={{ fontFamily: 'Poppins', fontWeight: 400 }}>
+                {/* Card text */}
                 <Typography
                   sx={{
                     fontWeight: 400, fontSize: 24,
@@ -111,6 +125,8 @@ function ImgMediaCard() {
                     }
                   }}>{card.copy}</Typography>
               </CardContent>
+
+              {/* Card name */}
               <div className='mt-5' >
                 <CardActions style={{ position: "absolute", bottom: "0px", right: "10px" }}>
                   <Typography
@@ -130,11 +146,13 @@ function ImgMediaCard() {
           </div>
         ))}
       </Slider>
+
+      {/* Buttons to navigate the slider */}
       <div className="img-grid-buttons mb-3 mt-3 p-2 px-lg-5 px-md-5">
-        <Button className="img-grid-button " id="img-grid-btn" onClick={slidePrev}>
+        <Button className="img-grid-button" id="img-grid-btn" onClick={slidePrev}>
           <FaAngleLeft />
         </Button>
-        <Button className="img-grid-button"  id="img-grid-btn" onClick={slideNext}>
+        <Button className="img-grid-button" id="img-grid-btn" onClick={slideNext}>
           <FaAngleRight />
         </Button>
       </div>

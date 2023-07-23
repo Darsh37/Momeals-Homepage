@@ -1,102 +1,108 @@
 /* Animationtext.css */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap');
 
-
 /* Style for the main container */
-.animatecontainertext{
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Style for the animated text */
-  .animated-text {
-    overflow: hidden;
-    text-align: center;
-    align-items: center;
-    /* padding: 15px; */
-  }
- 
-  /* Style for the animated image */
-  .animated-image {
-    overflow: hidden;
-  }
-  
-  /* Style for the donate button */
-  .animatecontainer .homebtn-2{
-    box-shadow: none;
-    border: 2px solid #FD7E14;
-    width: 138px;
-    color: black;
-    border-radius: 25px;
-    height: 50px;
+.animatecontainertext {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the animated text */
+.animated-text {
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+
+/* Style for the animated image */
+.animated-image {
+  overflow: hidden;
+}
+
+/* Style for the donate button */
+.animatecontainer .homebtn-2 {
+  box-shadow: none;
+  border: 2px solid #FD7E14;
+  width: 138px;
+  color: black;
+  border-radius: 25px;
+  height: 50px;
   font-size: 18px;
-  background: white ;
-  }
-  .animatecontainer .homebtn-2:focus-visible,
-  .animatecontainer  .homebtn-2:active {
-    background-color: white !important;
-    color: black !important;
-    border: 2px solid #FD7E14 !important;
-
-  }
-  
-  .animatecontainer .homebtn-2:hover {
-    background: white ;
-    box-shadow: none;
-    color: black;
-    border: 2px solid #FD7E14;
-  }
-  @media only screen and (min-width: 1025px){
-    #animatebtn2{
-      display: none;
-    }
-  }
-  @media only screen and (min-width: 998px){
-    .animatecontainer .Animated-Image{
-      width: 480px;
-      height: 300px;
-  
-     }
- 
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1025px){
-    #animatebtn1{
-      display: none;
-    }
-  }
-  @media (max-width: 998px)  {
-   .animatecontainer .homebtnrow ,.animated-text2 ,.animatecontainertext,.next-col{
-        text-align: center;
-        justify-content: center ;
-        align-items: center ;
-    }
-    .animatecontainer .next-col{
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: center !important;
-    }
- 
-  }
-  @media (max-width: 768px) {
-    .animatecontainer .Animated-Image{
-      width: 100%;
-    }
-    #animatebtn1{
-      display: none;
-    }
-  }
-  @media (min-width: 768px) {
-.animatecontainer .animatecontainertext h2,.animated-text{
-  font-size: 48px;
-}
-.animatecontainer .animated-text2 h3{
-  font-family: 'Poppins';
-  font-size: 36px;
+  background: white;
 }
 
-/* .animatecontainer .Animated-Image{
-  width: 100%;
-} */
+.animatecontainer .homebtn-2:focus-visible,
+.animatecontainer .homebtn-2:active {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid #FD7E14 !important;
+}
 
+.animatecontainer .homebtn-2:hover {
+  background: white;
+  box-shadow: none;
+  color: black;
+  border: 2px solid #FD7E14;
+}
+
+/* Media query for screen width 1025px and above */
+@media only screen and (min-width: 1025px) {
+  #animatebtn2 {
+    display: none;
   }
-  
+}
+
+/* Media query for screen width 998px and above */
+@media only screen and (min-width: 998px) {
+  .animatecontainer .Animated-Image {
+    width: 480px;
+    height: 300px;
+  }
+}
+
+/* Media query for screen width between 768px and 1025px */
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  #animatebtn1 {
+    display: none;
+  }
+}
+
+/* Media query for screen width below 998px */
+@media (max-width: 998px) {
+  .animatecontainer .homebtnrow,
+  .animated-text2,
+  .animatecontainertext,
+  .next-col {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .animatecontainer .next-col {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+/* Media query for screen width below 768px */
+@media (max-width: 768px) {
+  .animatecontainer .Animated-Image {
+    width: 100%;
+  }
+  #animatebtn1 {
+    display: none;
+  }
+}
+
+/* Media query for screen width 768px and above */
+@media (min-width: 768px) {
+  .animatecontainer .animatecontainertext h2,
+  .animated-text {
+    font-size: 48px;
+  }
+  .animatecontainer .animated-text2 h3 {
+    font-family: 'Poppins';
+    font-size: 36px;
+  }
+}

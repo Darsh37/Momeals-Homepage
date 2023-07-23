@@ -1,5 +1,7 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
 
+/* Home Counter Section */
 .home-counter {
   position: relative;
 }
@@ -13,28 +15,9 @@
   border-top-left-radius: 28px;
   border-bottom-left-radius: 28px;
   width: 50%;
-
 }
 
-.btnrow .btn-1,.btnrow  .btn-2{
-  box-shadow: none;
-  border: none;
-  width: 138px;
-  border-radius: 25px;
-  height: 50px;
-font-size: 18px;
-}
-.btnrow .btn-1:hover{
-  background:#D9D9D9 !important;
-  box-shadow: none;
-  border: #000;
-  color: black;
-}
-.btnrow .btn-2:hover{
-  background: rgb(199, 242, 171) !important;
-  box-shadow: none;
-}
-
+/* Counter Headline */
 .counter .head-line {
   background-color: orange;
   height: 6.25rem;
@@ -42,74 +25,81 @@ font-size: 18px;
   width: 0.188rem;
 }
 
-.header-title{
-font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 400;
-font-size: 1.2rem;
-line-height: 1.37rem;
-
-
-color: #000000;
+/* Header Title Styles */
+.header-title {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.37rem;
+  color: #000000;
 }
-.slogancard-para{
+
+/* Slogan Card Paragraph */
+.slogancard-para {
   font-family: 'Comfortaa';
 }
-.header-h1{
-  line-height: 47px;
- 
+
+/* Header Content Styles */
+.header-content {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.9rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
-.header-content{
-font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 700;
-font-size: 2.5rem;
-line-height: 3.9rem;
-display: flex;
-align-items: center;
-color: #000000;
-}
-.descript{
+
+/* Description Styles */
+.descript {
   font-family: sans-serif;
   font-size: 12px;
 }
-.count{
+
+/* Count Styles */
+.count {
   font-size: 15px;
 }
+
+/* Main Section - Mand-v Styles */
 .mand-v {
-  /* margin-top: 60px; */
   background-color: black;
   display: flex;
   flex-direction: column;
   color: white;
   flex-wrap: wrap;
- 
 }
+
 .mand-v .title {
-  /* margin-top: 10rem; */
   display: flex;
   justify-content: center;
 }
-.text1{
-  font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 40px;
 
+/* Text 1 */
+.text1 {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
 }
-.text2{
+
+/* Text 2 */
+.text2 {
   font-family: 'Comfortaa';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 35px;
- text-align: center;
- display: flex;
- justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
+/* Section Cards */
 .mand-v .section-cards {
- 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -117,24 +107,30 @@ line-height: 40px;
   margin-right: 20px;
   margin-left: 20px;
 }
+
+/* Card Styles */
 .section-cards .card1,
 .section-cards .card2,
 .section-cards .card3 {
   background-color: #000;
   height: 15%;
   margin-bottom: 2.5rem;
-  /* width: 15%; */
   text-align: center;
-
 }
+
+/* Card Bottom */
 .card-botton {
-  /* border: 10px solid red; */
   background-image: url("../Images/helpinghands.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 60vh;
 }
+/* Be different h3 */
+.be-diff .para-sideh3{
+  font-size: 36px;
+}
+/* Card Headline */
 .cardh3 {
   background-color: #c7f2ab;
   border-bottom-left-radius: 60px;
@@ -149,6 +145,8 @@ line-height: 40px;
   z-index: 1;
   margin-top: -10px;
 }
+
+/* Rounded Paragraph */
 .para-round {
   align-items: center;
   background-color: #fff;
@@ -168,13 +166,15 @@ line-height: 40px;
   width: 50px;
   z-index: 1;
 }
+
+/* Card Bottom Section */
 .cardbottom {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-
+/* Image Side Styles */
 .img-side {
   align-items: center;
   display: flex;
@@ -182,260 +182,126 @@ line-height: 40px;
   padding: 25px;
   width: 40%;
 }
-.btn-update:hover,.homejoin-btn:hover,.button-donate:hover,.donateclassright-form .money:hover{
-  background-color:#C7F2AB!important;
-}
-.rounded-pill:hover{
-  
-  color: black !important;
-}
-.card-img {
-  height: 100%;
-  width: 100%;
+
+/* Hover Styles */
+.btn-update:hover,
+.homejoin-btn:hover,
+.button-donate:hover,
+.donateclassright-form .money:hover {
+  background-color: #c7f2ab !important;
 }
 
-/* .line {
-  background-color: grey;
-  height: 20rem;
-  margin-top: 55px;
-  width: 5px;
-} */
-.para-sideh3{
-  font-size: 36px;
+/* Hover Rounded Pill */
+.rounded-pill:hover {
+  color: black !important;
 }
-.para-sidep{
-  align-items: flex-start;
-  font-weight: 400;
-font-size: 24px;
-  text-align: justify;
-  font-family: 'Poppins';
- 
+
+/* Button Different Styles */
+.btn-diff:hover {
+  background-color: #c7f2ab;
+  color: black;
 }
-.btn-diff:hover{
-background-color: #C7F2AB;
-color: black;
-}
+
+/* Button Different */
 .btn-diff {
-  background-color: #067749;;
+  background-color: #067749;
   border: none;
   border-radius: 20px;
   color: #fff;
   width: 121px;
   height: 40px;
   font-weight: 400;
-font-size: 14px;
+  font-size: 14px;
 }
 
+/* How To Do Section */
 .HowToDo {
-    align-items: center;
-    background-color: #c7f2ab;
-    display: flex;
-    justify-content: space-between;
-    
-    
-  }
-  ul  .list{
-    font-weight: 400;
-font-size: 24px;
-  }
-  .left-para h5{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-  }
-  .left-para h1{
-    font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-  }
-  .main-worrior{
-    position: relative;
-  }
-  .worrior {
-    align-items: center;
-    background-color: #ed4b4b;
-    border-radius: 90px 0px 0px 90px;
-    color: #fff;
-    display: flex;
-    height: 10rem;
-    justify-content: space-evenly;
-    /* margin-left: 35rem;
-    margin-top: -50px; */
-    position: absolute;
-    top: -80px;
-    right: 0px;
-    z-index: 1;
-    width: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  background-color: #c7f2ab;
+  display: flex;
+  justify-content: space-between;
 }
-.worrior h6{
+
+/* How To Do List Styles */
+ul .list {
   font-weight: 400;
- 
+  font-size: 24px;
+}
+
+/* Left Paragraph Styles */
+.left-para h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+/* Left Paragraph Header 1 Styles */
+.left-para h1 {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+/* Be different section para */
+.para-sidep {
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  font-family: 'Poppins';
+}
+/* Main Warrior Section */
+.main-worrior {
+  position: relative;
+}
+
+/* Worrior Section Styles */
+.worrior {
+  align-items: center;
+  background-color: #ed4b4b;
+  border-radius: 90px 0px 0px 90px;
+  color: #fff;
+  display: flex;
+  height: 10rem;
+  justify-content: space-evenly;
+  position: absolute;
+  top: -80px;
+  right: 0px;
+  z-index: 1;
+  width: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Worrior Paragraph Styles */
+.worrior h6 {
+  font-weight: 400;
   line-height: 40px;
   font-family: 'Comfortaa';
 }
-.worrior .btn-join:hover{
-  background-color: #C7F2AB;
+
+/* Worrior Button Styles */
+.worrior .btn-join:hover {
+  background-color: #c7f2ab;
   color: black;
 }
+
+/* Worrior Join Button Styles */
 .worrior .btn-join {
-   
-    border: none;
-    color: #ed4b4b;
-    font-family: 'Arvo';
-    font-weight: 400;
-    font-size: 24px;
-    padding: 10px;
-    text-decoration: none;
-    background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 40px;
-width: 183px;
-height: 58px;
-}
-.DonateNow {
-    background-color: #067749;
-    display: flex;
-  
-    justify-content: space-around;
-    
-   
-    padding-top: 9rem;
-
-}
-.donateclassright-form .inputfieldh6{
-  font-family: 'Inter';
-}
-.left-intro {
-    color: #fff;
-    /* width: 40%; */
-}
-
-.left-intro h6{
-  font-family: 'Comfortaa';
-font-style: normal;
-
-font-size: 24px;
-}
-.left-intro h1{
-
- 
-font-size: 23px;
-line-height: 35px;
-}
-.left-intro h4{
-  font-family: 'Poppins';
-  font-weight: 700;
+  border: none;
+  color: #ed4b4b;
+  font-family: 'Arvo';
+  font-weight: 400;
   font-size: 24px;
+  padding: 10px;
+  text-decoration: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  width: 183px;
+  height: 58px;
 }
-.donateclassright-form {
-    height: auto;
-    width: 40%;
-    
-}
-
-.donatenow {
-    align-items: center;
-    background-color: #fff;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    display: flex;
-    height: 70px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    justify-content: center;
-    margin-bottom: -10px;
-    text-align: center;
-
-}
-.inputfield {
-    background-color: #ed4b4b;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    /* padding: 10% -20px 10% 10%; */
-  
-    padding: 30px;
-
-}
-input{
-    border: none;
-    padding: 10px;
-}
-.inputfield .button {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-.money {
-    background: none;
-    border: 0.2px solid #fff;
-    color: #fff;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    padding: 2px;
-    width: 80px;
-}
-.button-sec {
-    background: none;
-    display: flex;
-    justify-content: center;
-
-}
-.button-donate {
-    border: none;
-    color: #ed4b4b;
-    width: 171px;
-   
-    background-color: white;
-  
-    font-size: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-   font-family: 'Comfortaa';
-}
-.Good-change {
-    background-color: #000;
-    color: #fff;
-    height: auto;
-   
-    padding-top: 40px;
-    text-align: center;
-}
-
-.btn-GC {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-.b-GC {
-    background-color:#067749;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    width: 10rem;
-    font-family: 'Poppins';
-  
-    font-size: 20px;
-    line-height: 30px;
- 
-}
-
-.wrapper {
-  align-items: center;
-  background-color: #eaeaea;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-.accordian {
-  width: 50%;
-}
-
+/* view more btn */
 .but {
   display: flex;
   justify-content: center;
@@ -448,6 +314,159 @@ border-radius: 20px;
   width: 10rem;
 }
 
+/* Donate Now Section */
+.DonateNow {
+  background-color: #067749;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 9rem;
+}
+
+
+/* Donate Class Right Form Styles */
+.donateclassright-form .inputfieldh6 {
+  font-family: 'Inter';
+}
+
+/* Left Introduction Styles */
+.left-intro {
+  color: #fff;
+}
+
+.left-intro h6 {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.left-intro h1 {
+  font-size: 23px;
+  line-height: 35px;
+}
+
+.left-intro h4 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Donate Class Right Form Styles */
+.donateclassright-form {
+  height: auto;
+  width: 40%;
+}
+
+/* Donate Now Styles */
+.donatenow {
+  align-items: center;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  height: 70px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  justify-content: center;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+.button-sec {
+  background: none;
+  display: flex;
+  justify-content: center;
+}
+/* Input Field Styles */
+.inputfield {
+  background-color: #ed4b4b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.DonateNow input {
+  border: none;
+  padding: 10px;
+}
+
+/* Button Section Styles */
+.inputfield .button {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* Money Input Styles */
+.money {
+  background: none;
+  border: 0.2px solid #fff;
+  color: #fff;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 2px;
+  width: 80px;
+}
+
+/* Button Donate Styles */
+.button-donate {
+  border: none;
+  color: #ed4b4b;
+  width: 171px;
+  background-color: white;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Comfortaa';
+}
+ /* Ethical practices section */
+ .para2 {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+}
+/* Good Change Section Styles */
+.Good-change {
+  background-color: #000;
+  color: #fff;
+  height: auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* Button GC Styles */
+.btn-GC {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* B GC Styles */
+.b-GC {
+  background-color: #067749;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 10rem;
+  font-family: 'Poppins';
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Wrapper Styles */
+.wrapper {
+  align-items: center;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+
+/* Ball Styles */
 .ball {
   position: absolute;
   width: 50px;
@@ -457,75 +476,87 @@ border-radius: 20px;
   cursor: move;
   user-select: none;
 }
-.capsule{
+
+/* Capsule Styles */
+.capsule {
   border: none;
 }
 
-
-
-/* Animation */
+/* Animation Styles */
 @keyframes jump {
   0% {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(
-      calc(100% - 50px),
-      calc(100% - 50px)
-    );
+    transform: translate(calc(100% - 50px), calc(100% - 50px));
   }
   100% {
     transform: translate(0, 0);
   }
 }
 
-/* Apply animation to balls */
+/* Apply Animation to Balls */
 .ball {
   animation: jump 2s infinite;
 }
 
-/* Make balls draggable */
+/* Make Balls Draggable */
 .ball:active {
   cursor: grabbing;
 }
-/* .card-text{
-  width: 200px;
-} */
 
+
+/* Media query for small devices with maximum width of 280px */
 @media (max-width: 280px){
-  .section-cards .img-fluid{
+  /* Styling for images in .section-cards */
+  .section-cards .img-fluid {
     margin-left: -5px;
-    
   }
-  .count-details{
+
+  /* Styling for elements with class .count-details */
+  .count-details {
     padding: 0px 5px;
   }
+
+  /* Styling for .section-cards inside .mand-v */
   .mand-v .section-cards {
     flex-direction: column;
     margin: 0px 15px;
   }
-  /* .card-text {
-    margin: 0px 5px;
-  } */
-}
-.para2{
-  font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 600;
 
-font-size: 36px;
-}
-.solid-line {
-  border:5px solid #067749;
-  background: #067749;
-}
-@media (max-width: 767.98px){
-  .capsule{
-    border-bottom: solid 3px #C7F2AB; 
+  /* Styling for paragraph elements with class .para2 */
+  .para2 {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  /* Styling for elements with class .solid-line */
+  .solid-line {
+    border: 5px solid #067749;
+    background: #067749;
   }
 }
-/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 767px){
+.worrior {
+    text-align: center;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 20px 10px;
+    flex-direction: column;
+    top: -10px;
+}
+}
+/* Media query for extra small devices with maximum width of 575.98px */
 @media (max-width: 575.98px) {
+  /* Styling for elements with class .capsule */
+  .capsule {
+    border-bottom: solid 3px #C7F2AB;
+  }
+
+  /* Styling for elements with class .worrior .btn-join */
   .worrior .btn-join {
     width: 121px;
     height: 40px;
@@ -533,289 +564,229 @@ font-size: 36px;
     padding: 10px;
     box-shadow: none;
   }
-  .section-cards .img-fluid{
+
+  /* Styling for images in .section-cards */
+  .section-cards .img-fluid {
     width: 80px;
     height: 80px;
-   
   }
+ /* Styling for elements with class .para-sideh3 */
+ .para-side .para-sideh3 {
 
-.btnrow .btn-1,.btnrow  .btn-2{
-  width: 112px;
-  font-size: 15px;
-  
+  font-size: 24px;
+  text-align: center;
 }
-  .faqImg{
+  /* Styling for elements with class .faqImg */
+  .faqImg {
     display: none;
   }
-  .left-intro h1,.left-intro h6{
+
+  /* Styling for headings in .left-intro */
+  .left-intro h1,
+  .left-intro h6 {
     font-size: 18px;
   }
-  .left-intro{
-   
-    text-align: center;
-}
 
-  .img-arrow{
+  /* Styling for .left-intro */
+  .left-intro {
+    text-align: center;
+  }
+
+  /* Styling for elements with class .img-arrow */
+  .img-arrow {
     display: none;
   }
-  .para2{
+
+  /* Styling for paragraph elements with class .para2 */
+  .para2 {
     font-size: 18px;
     text-align: left;
     padding: 0px 15px;
   }
 
-  .small-image{
+  /* Styling for elements with class .small-image */
+  .small-image {
     width: 117px !important;
   }
+
+  /* Styling for elements with class .home-counter .counter */
   .home-counter .counter {
     flex-wrap: wrap;
     padding: 10px;
     justify-content: center !important;
     width: auto;
     background: #067A46;
-   color: white;
-    border-radius: 0; 
+    color: white;
+    border-radius: 0;
   }
-  .text1{
+
+  /* Styling for elements with class .text1 */
+  .text1 {
     font-weight: 400;
-font-size: 22px;
+    font-size: 22px;
   }
-.text2{
+
+  /* Styling for elements with class .text2 */
+  .text2 {
     font-weight: 500;
-font-size: 14px;
+    font-size: 14px;
   }
-  
-  .descript{
+
+  /* Styling for elements with class .descript */
+  .descript {
     font-weight: 500;
     font-size: 15px;
-}
-  .capsule{
+  }
+
+  /* Styling for elements with class .capsule */
+  .capsule {
     width: 100%;
-    border-bottom: solid 3px #C7F2AB; 
-   
+    border-bottom: solid 3px #C7F2AB;
     margin: 10px 20px;
     display: flex;
   }
- .count{
+
+  /* Styling for elements with class .count */
+  .count {
     font-weight: 800;
     font-size: 15px;
   }
-  .count-details{
+
+  /* Styling for elements with class .count-details */
+  .count-details {
     display: flex;
     flex-direction: column;
- 
   }
- .left-para h5,.left-para h1{
-  font-size: 24px;
- }
- ul .list{
-  font-size: 16px;
- }
 
-  /* .blue-circle{
-   margin: 10px;
-    height: 50px;
-    width: 60px;
-    background-color: #A3CFFF;
-    border-radius: 50%;
-  } */
-  
-  .mand-v .title{
+  /* Styling for headings in .left-para */
+  .left-para h5,
+  .left-para h1 {
+    font-size: 24px;
+  }
+
+  /* Styling for list items inside ul */
+  ul .list {
+    font-size: 16px;
+  }
+
+  /* Styling for elements with class .mand-v .title */
+  .mand-v .title {
     margin: 0px;
   }
- .title{
-  padding:5px 15px;
-  font-size: 23px;
- }
+
+  /* Styling for elements with class .title */
+  .title {
+    padding: 5px 15px;
+    font-size: 23px;
+  }
+
+  /* Styling for elements with class .head-line */
   .head-line {
     display: none;
   }
-  .section-img{
+
+  /* Styling for elements with class .section-img */
+  .section-img {
     height: 50px;
     width: 50px;
     display: flex;
     margin: auto;
   }
 
+  /* Styling for .mand-v .section-cards */
   .mand-v .section-cards {
     flex-direction: column;
     font-family: 'Comfortaa';
   }
-  .slogancard-text{
+
+  /* Styling for elements with class .slogancard-text */
+  .slogancard-text {
     text-align: left;
   }
- 
-  /* .card-text{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    
-    text-align: left;
-  } */
-  .section-cards .card1{
+
+  /* Styling for .section-cards .card1 */
+  .section-cards .card1 {
     display: flex;
   }
-  .section-cards .card2{
+
+  /* Styling for .section-cards .card2 */
+  .section-cards .card2 {
     display: flex;
     flex-direction: row-reverse;
   }
-  .section-cards .card3{
+
+  /* Styling for .section-cards .card3 */
+  .section-cards .card3 {
     display: flex;
   }
+
+  /* Styling for elements with class .mand-v .title */
   .mand-v .title {
-     margin-top: 18rem;
+    margin-top: 18rem;
   }
- 
-  .HowToDo{
-  
-      flex-wrap: wrap;
-      flex-direction: column-reverse;
-    
+
+  /* Styling for elements with class .HowToDo */
+  .HowToDo {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
-  .worrior h6{
+
+  /* Styling for elements with class .worrior h6 */
+  .worrior h6 {
     font-family: 'Arvo';
     font-size: 16px;
     line-height: 25px;
   }
-  .worrior{
-    text-align: center;
-      width: 100%;
-      border-radius: 0px;
-    box-shadow: none;
-    padding: 20px 10px;
-  
-    flex-direction: column;
-    top: -10px;
+
+
+  /* Styling for elements with class .faqImg */
+  .faqImg {
+    padding: 20px;
   }
-  .faqImg{
-   padding: 20px;
-  }
-  .left-intro,.donateclassright-form{
+
+  /* Styling for elements with class .left-intro and .donateclassright-form */
+  .left-intro,
+  .donateclassright-form {
     width: 100%;
     padding: 20px;
   }
-  .DonateNow{
+
+  /* Styling for elements with class .DonateNow */
+  .DonateNow {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   height: fit-content;
-
+    height: fit-content;
   }
+
+  /* Styling for elements with class .h1-GC */
   .h1-GC {
     font-size: 24px;
-line-height: 27px;
+    line-height: 27px;
   }
-  .blog{
+
+  /* Styling for elements with class .blog */
+  .blog {
     font-family: 'Arvo';
-font-style: normal;
-font-size: 28px;
+    font-style: normal;
+    font-size: 28px;
   }
-  .update{
+
+  /* Styling for elements with class .update */
+  .update {
     font-family: 'Arvo';
     font-style: normal;
     font-weight: 400;
-font-size: 22px;
+    font-size: 22px;
   }
 }
+
+/* Styling for elements with class .be-diff */
 .be-diff {
   background: #FFFFFF;
- 
 }
-
-
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 780.98px) {
-  .header-title{
-    font-size: 15px;
-
-     }
-
-  .home-section {
-    flex-direction: column;
-  
-  }
-  .home-section .header-left {
-    text-align: center;
-    margin: auto;
-  }
-  .header-left .orderNow {
-    margin: 10px;
-    padding: 7px 25px !important;
-    
-  }
-  
-  
-  .header-left .donate {
-    margin: 10px;
-    padding: 7px 25px !important;
-  }
-  .head-btn:hover {
-    background-color: gainsboro;
-  }
-  /* .card-botton {
-    height: fit-content;
-  } */
-  .be-diff {
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .img-side {
-    width: auto;
-  }
-
-  .line {
-    display: none;
-  }
-  .para-sideh3 {
-    font-weight: 600;
-font-size: 24px;
-text-align: center;
-  }
-  .para-sidep{
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-  }
-  .HowToDo{
-    flex-wrap: wrap;
-   
-  }
- 
-  .h1-GC{
-    padding: 10px;
-  }
-
-.accordian{
-  padding: 20px;
-  width: auto;
-}
-
-.wrapper{
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .worrior .btn-join{
-    width: 125px;
-    height: 45px;
-  }
-  .worrior h6 {
-    font-size: 20px;
-  }
-  .worrior .btn-join ,.worrior h6 {
-    font-size: 14px;
-  }
-  .donateclassright-form {
-    height: 420px;
-}
-}
+/* Media query for small devices with minimum width of 576px and maximum width of 780.98px */
 @media (max-width: 767.98px) and (min-width: 500px) {
   .faqImg{
     display: none;
@@ -846,6 +817,7 @@ font-size: 14px;
     font-size: 15px;
 }
   .capsule{
+    border-bottom: solid 3px #C7F2AB;
     width: 100%;
     color: white;
     margin: 10px 20px;
@@ -862,21 +834,76 @@ font-size: 14px;
   
   }
   
-  .header-right {
-    width: 60%;
+ 
+ 
+}
+/* Media query for small devices with minimum width of 576px and maximum width of 780.98px */
+@media only screen and (min-width: 576px) and (max-width: 780.98px) {
+  /* Styling for elements with class .header-title */
+  .header-title {
+    font-size: 15px;
   }
+
+  /* Styling for elements with class .home-section */
+  .home-section {
+    flex-direction: column;
+  }
+
+  /* Styling for elements with class .head-btn when hovered */
+  .head-btn:hover {
+    background-color: gainsboro;
+  }
+  
+  /* Styling for elements with class .be-diff */
+  .be-diff {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Styling for elements with class .img-side */
+  .img-side {
+    width: auto;
+  }
+
+  /* Styling for elements with class .line */
+  .line {
+    display: none;
+  }
+
  
- 
+
+  /* Styling for elements with class .para-sidep */
+  .para-sidep {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Styling for elements with class .HowToDo */
+  .HowToDo {
+    flex-wrap: wrap;
+  }
+
+  /* Styling for elements with class .h1-GC */
+  .h1-GC {
+    padding: 10px;
+  }
+
+  /* Styling for elements with class .accordian */
+  .accordian {
+    padding: 20px;
+    width: auto;
+  }
+
+  /* Styling for elements with class .wrapper */
+  .wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
-.section-cards .homesloaganpara{
-  font-family: 'Poppins';
-}
-/* for large devices */
-@media only screen and (min-width: 1024px) {
-  /* .left-intro ,.donateclassright-form{
-    width: 30%;
-  } */
-}
+/* Media query for devices with minimum width of 992 and maximum width of 768 */
 @media only screen and (min-width: 992px), screen and (min-width: 768px) {
   .capsule{
     padding: 0px 20px;
@@ -888,7 +915,7 @@ font-size: 14px;
   }
   .home-counter .counter{
     position: absolute;
-right: 0;
+    right: 0;
     top: -50px;
   
   }
@@ -909,97 +936,128 @@ right: 0;
   .btn-diff{
     display: none;
   }
+  /* Wrapper Styles */
+.wrapper {
+  align-items: center;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
-@media only screen and (min-width: 992px) {
- 
-/* .header-left {
-    margin-left: 63px;
-    margin-top: 27px;
-  } */
-  .count{
-    font-size: 35px;
-  }
-  .descript{
-    font-size: 18px;
-  }
-  .capsule-imgs{
-    display: none;
-  }
-  .home-counter .counter {
-    padding:0px 20px;
-  }
-  
-  /* .home-counter .counter{
-    position: absolute;
-  right: 0;
-    top: -20px;
-  } */
-}
-@media only screen and (min-width:1400px) {
-  .home-counter .counter{
-    width: 50%;
-      }
-  .left-intro h1{
-
- 
-    font-size: 34px;
-    line-height: 45px;
-    }
-
- 
-  #left-parah1 {
-    font-size: 36px;
-}
-.right-form {
-  height: 420px;
-  width: 26%;
-}
+/* Accordian Styles */
+.accordian {
+  width: 50%;
 }
 
-@media only screen and (min-width: 768px){
-  .capsule-imgs{
-    display: none;
+}
+/* Media query for devices with minimum width of 768px and maximum width of 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styling for elements with class .worrior .btn-join */
+  .worrior .btn-join {
+    width: 125px;
+    height: 45px;
   }
- 
+
+  /* Styling for elements with class .worrior h6 */
+  .worrior h6 {
+    font-size: 20px;
+  }
+
+  /* Styling for elements with class .worrior .btn-join and .worrior h6 */
+  .worrior .btn-join,
+  .worrior h6 {
+    font-size: 14px;
+  }
+
+  /* Styling for elements with class .donateclassright-form */
   .donateclassright-form {
     height: 420px;
-   
   }
-  .header-title{
-  
+}
+
+/* Media query for devices with minimum width of 992px and above */
+@media only screen and (min-width: 992px) {
+  /* Styling for elements with class .count */
+  .count {
+    font-size: 35px;
+  }
+
+  /* Styling for elements with class .descript */
+  .descript {
+    font-size: 18px;
+  }
+
+  /* Styling for elements with class .capsule-imgs */
+  .capsule-imgs {
+    display: none;
+  }
+
+  /* Styling for elements with class .home-counter .counter */
+  .home-counter .counter {
+    padding: 0px 20px;
+  }
+}
+
+/* Media query for devices with minimum width of 1400px and above */
+@media only screen and (min-width: 1400px) {
+  /* Styling for elements with class .home-counter .counter */
+  .home-counter .counter {
+    width: 50%;
+  }
+
+  /* Styling for headings in .left-intro */
+  .left-intro h1 {
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  /* Styling for elements with id #left-parah1 */
+  #left-parah1 {
+    font-size: 36px;
+  }
+
+  /* Styling for elements with class .right-form */
+  .right-form {
+    height: 420px;
+    width: 26%;
+  }
+}
+
+/* Media query for devices with minimum width of 768px */
+@media only screen and (min-width: 768px) {
+  /* Styling for elements with class .capsule-imgs */
+  .capsule-imgs {
+    display: none;
+  }
+
+  /* Styling for elements with class .donateclassright-form */
+  .donateclassright-form {
+    height: 420px;
+  }
+
+  /* Styling for elements with class .header-title */
+  .header-title {
     font-size: 24px;
-  
   }
- 
+
+  /* Styling for elements with class .p-GC */
   .p-GC {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 19px;
     line-height: 28px;
-color: #FFFFFF;
+    color: #FFFFFF;
   }
- 
 }
 
-
-
-/* // Medium devices (tablets, less than 992px) */
-/* @media (max-width: 991.98px) { 
-    .header-right{
-        width: 60%;
-    }
- }  */
-/* 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... } */
-
-/* // X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { ... } */
+/* Styling for elements with class .solid-line */
 .solid-line {
   border-bottom: 3px solid green;
   width: 100%;
 }
 
 
-
-
+/* Styling for elements with class .section-cards .homesloaganpara */
+.section-cards .homesloaganpara {
+  font-family: 'Poppins';
+}

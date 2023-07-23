@@ -1,21 +1,24 @@
+/* Styling for the main navigation bar */
 .navbarpage .nav1 {
-  
-  border-bottom: 3px solid #2EB167;;
+  border-bottom: 3px solid #2EB167;
   justify-content: space-between;
   display: flex;
- 
 }
-.navbarpage .nav1{
+
+/* Additional styling for .nav1 class */
+.navbarpage .nav1 {
   padding-top: 0px;
   padding-bottom: 0;
 }
-.logo-img{
+
+/* Styling for the logo image */
+.logo-img {
   width: 187px;
-  /* height: 80px; */
- 
+  /* height: 80px; */ /* Uncomment this line to set a specific height for the logo image */
 }
 
-.joinUs1{
+/* Styling for the "Join Us" button */
+.joinUs1 {
   border: none;
   border-radius: 15px;
   font-size: 12px;
@@ -23,279 +26,243 @@
   width: 5rem;
 }
 
-
-/* .nav_style h6{
-  color: #000;
-    margin-right: 2rem;
-    margin-top: 0.5rem;
-} */
-
-
+/* Styling for the first unordered list inside the navbar */
 .First-ul {
-
   list-style-type: none;
-
   text-decoration: none;
 }
 
-
+/* Styling for links inside the first unordered list */
 .First-ul a {
-  
-
   color: #000;
   text-decoration: none;
-
 }
 
-
-.First-ul #nav-link:hover,#causes:hover {
-border-bottom: solid 2px #2EB167;
-
+/* Styling for link hover effect in the first unordered list */
+.First-ul #nav-link:hover,
+#causes:hover {
+  border-bottom: solid 2px #2EB167;
 }
 
-.First-ul a:active{
-background: none;
+/* Styling for link active state in the first unordered list */
+.First-ul a:active {
+  background: none;
 }
-/* 
-.hamberger{
-  width: 15.625rem;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  bottom: 0; 
-} */
 
-
+/* Styling for the sidebar */
 .sidebar {
   position: absolute;
   display: flex;
   top: 0;
-  right:-10px;
+  right: -10px;
   height: calc(100vh-100px);
   width: 0px;
   border-radius: 1.5rem;
   background-color: #ffffff;
   z-index: 1;
   overflow: hidden;
-  /* transition: all 0.3s ease-in-out; */
-  
 }
- .sidebar.active {
-  width:40rem;
+
+/* Styling for the active state of the sidebar */
+.sidebar.active {
+  width: 40rem;
   z-index: 1;
   opacity: 1;
   height: 100vh;
 }
+
+/* Styling for the sidebar toggle icon */
 .sidebar-toggle {
   position: absolute;
   top: 10px;
   right: 10px;
-  /* cursor: pointer; */
-} 
+}
 
+/* Styling for elements inside the sidebar */
 .sidebar-elements {
-  /* padding: 40px 0px; */
   padding-inline-start: 0px;
 }
-.sidebar ul li{
-  /* height: 35px; */
-  width: 250px;
-} 
-.sidebar-elements ul{
+
+/* Styling for unordered list inside the sidebar */
+.sidebar-elements ul {
   padding-left: 0;
 }
-.sidebar ul li a{
-  /* padding: 20px; */
+
+/* Styling for links inside the sidebar */
+.sidebar ul li a {
   font-family: 'Comfortaa';
   width: 100px;
-  /* height: 40px; */
   font-size: 20px;
   font-weight: 300;
   color: #000;
   text-decoration: none;
 }
 
-.sidebar ul li a:hover{
- text-decoration: underline!important;
+/* Styling for link hover effect in the sidebar */
+.sidebar ul li a:hover {
+  text-decoration: underline !important;
   color: #2EB167;
-
 }
-.joinUs1{
+
+/* Styling for the "Join Us" button hover effect */
+.joinUs1 {
   background: rgb(6, 119, 73);
   color: white;
 }
-.joinUs1:hover{
+
+.joinUs1:hover {
   background-color: #C7F2AB;
   color: black;
 }
-@media screen and (max-width: 280px){
-  .menutext{
+
+/* Media query for screen width 280px and below */
+@media screen and (max-width: 280px) {
+  .menutext {
     display: none;
-   }
+  }
 }
 
-
+/* Media query for screen width between 992px and above */
 @media only screen and (min-width: 992px) {
- 
-#joinUsbtn{
-  display: block;
-}
+  #joinUsbtn {
+    display: block;
+  }
 
-  .joinUs1{
+  .joinUs1 {
     width: 132px;
     height: 39px;
     font-weight: 400;
     font-size: 20px;
   }
-  .menu-icon2,.First-ul {
+
+  .menu-icon2,
+  .First-ul {
     font-size: 20px;
   }
 }
-@media (max-width:1214px) {
- 
 
-
-.joinUs1{
-  height: 35px;
-}
-  
-}
-
-
-
-@media only screen and (min-width: 768px){
-  /* .navbar ul li{
-    margin-right: 37px;
-  } */
-  .navbarpage .navbar{
-    
-      height: 75px;
+/* Media query for screen width between 1214px and above */
+@media (max-width: 1214px) {
+  .joinUs1 {
+    height: 35px;
   }
-  .navbarpage .nav1 .menutext, .navbarpage .nav1 #First-ul {
+}
 
+/* Media query for screen width between 768px and above */
+@media only screen and (min-width: 768px) {
+  /* Additional styles for larger screens */
+  .navbarpage .navbar {
+    height: 75px;
+  }
+  .navbarpage .nav1 .menutext,
+  .navbarpage .nav1 #First-ul {
     font-weight: 500;
   }
-  .joinUs1{
+  .joinUs1 {
     display: none;
   }
- 
-
 }
+
+/* Media query for screen width between 600px and 767px */
 @media (min-width: 600px) and (max-width: 767px) {
   .navbarpage .First-ul {
-    display: none; 
-  }
-
-}
-@media (min-width: 1900px) {
-.navbarpage .navbar .col-xxl-5{
-width: 34%;
-}
-}
-@media (max-width: 600px) {
- .navbarpage .navbar{
-  height: 60px;
- }
-  .menu-icon {
-    display: block;
-    /* cursor: pointer; */
-    
-  } 
-  
-  .joinUs1{
     display: none;
   }
-  
-
-.sidebar-img{
-  display: none;
 }
-  .sidebar{
+
+/* Media query for screen width 1900px and above */
+@media (min-width: 1900px) {
+  .navbarpage .navbar .col-xxl-5 {
+    width: 34%;
+  }
+}
+
+/* Media query for screen width 767px and below */
+@media (max-width: 767px) {
+  .joinUs1 {
+    display: none;
+  }
+}
+
+/* Media query for screen width 600px and below */
+@media (max-width: 600px) {
+  .navbarpage .navbar {
+    height: 60px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .joinUs1 {
+    display: none;
+  }
+  .sidebar-img {
+    display: none;
+  }
+  .sidebar {
     position: absolute;
     left: -10px;
     top: 80px;
     background-color: #ffffff;
     width: 0px;
     height: calc(100vh - 60px);
-    /* transition: all  0.3s ease-in-out; */
     overflow: hidden;
     z-index: 2;
-    border:solid 1px #000;
+    border: solid 1px #000;
   }
-  .sidebar-elements ul{
+  .sidebar-elements ul {
     list-style-type: none;
   }
-
-  .sidebar.active{
+  .sidebar.active {
     width: 300px;
     height: 500px;
     z-index: 2;
-    border:none;
+    border: none;
   }
   .navbar .First-ul {
-    display: none; 
+    display: none;
   }
-
-
   .nav-elements.active {
-    /* width: 270px; */
     z-index: 2;
   }
-  
+}
 
-  
-}  @media (max-width: 600px) and (min-width:300px){
- 
-  .menutext{
+/* Media query for screen width between 300px and 600px */
+@media (max-width: 600px) and (min-width: 300px) {
+  .menutext {
     display: none;
-   }
-} 
- @media (max-width: 730px) and (min-width:600px){
+  }
+}
 
-  .menutext{
+/* Media query for screen width between 730px and 600px */
+@media (max-width: 730px) and (min-width: 600px) {
+  .menutext {
     display: none;
-   }
- 
- }
+  }
+}
 
-
-
-
+/* Styling for link hover effect in the main navigation */
 .navbar .nav-link:hover {
   text-decoration: none;
-
 }
-.dropdown-item{
 
+/* Styling for the dropdown items */
+.dropdown-item {
   min-width: 200px;
-  
   z-index: 1;
-  /* height: 55px; */
 }
 
-/* .dropdown-item:hover {
-  text-decoration: underline;
-  text-decoration-color: green;
-
-} */
-#navdrop{
-  font-size: 20px;
-}
-
+/* Styling for link hover effect in the dropdown items */
 #navdrop:hover {
   border-bottom: solid 2px #2EB167;
-  
-  }
+}
 
-  .navbarpage .custom-dropdown-content {
-    
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 10px 12px;
-    
-  }
-  .navbarpage .custom-dropdown-content :link{
-    padding: 5px 0px;
-  }
- 
+/* Styling for the custom dropdown content */
+.navbarpage .custom-dropdown-content {
+  background-color: #f9f9f9;
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 12px;
+}
+.navbarpage .custom-dropdown-content :link {
+  padding: 5px 0px;
+}

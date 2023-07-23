@@ -18,7 +18,7 @@ const Thankuclick = () => {
         <h1 className="ThankUpage-1h1 mb-2">Thank You!!</h1> {/* Heading with the class name ThankUpageh1 */}
         <h4 className="ThankUpage-1h4 mb-5">
             Your submission was submitted successfully.<br/>
-We will contact with you soon.</h4> {/* Subheading with the class name ThankUpageh4 */}
+            We will contact with you soon.</h4> {/* Subheading with the class name ThankUpageh4 */}
         <Link className="ThankUpage-1link mt-5" to="/" onClick={Thankuclick}>
             Redirect To Homepage {">"}</Link> {/* Link component with the class name ThankUpagelink */}
       </center>

@@ -1,8 +1,12 @@
-.containerb-wrapper{
-    background-color: #FFF;;
+/* CSS for Containerb Component */
+
+/* Styling for the containerb-wrapper */
+.containerb-wrapper {
+    background-color: #FFF;
 }
 
-.containerb-wrapperh3{
+/* Styling for the heading */
+.containerb-wrapperh3 {
     text-align: center;
     font-family: 'Comfortaa';
     font-style: normal;
@@ -12,15 +16,18 @@
     padding-top: 5rem;
 }
 
-.containerb-heading-color{
+/* Styling for the heading text "Saving Food" */
+.containerb-heading-color {
     color: #067A46;
 }
 
-.containerb-header-alpha{
+/* Styling for the alphabets (A, B, C) in the heading */
+.containerb-header-alpha {
     color: #ED4B4B;
 }
 
-.containerb-wrapperimage-list1 .containerb-wrapperp2{
+/* Styling for the slide captions in the slider */
+.containerb-wrapperimage-list1 .containerb-wrapperp2 {
     height: 46px;
     text-align: center;
     font-family: 'Poppins';
@@ -31,39 +38,54 @@
     color: #010101;
 }
 
-.containerb-wrapperimage-list1 .containerb-wrapperimg{
+/* Styling for the slide images in the slider */
+.containerb-wrapperimage-list1 .containerb-wrapperimg {
     width: 291px;
     height: 513px;
 }
 
-@media (min-width:1024px){
-    .containerbbutton-wrapper .containerbslider-buttons{
+/* Media query for larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    /* Hide slider buttons when screen size is larger */
+    .containerbbutton-wrapper .containerbslider-buttons {
         display: none;
     }
 }
 
-@media (max-width:1023px){
-    .containerb-wrapperimage-list1 .containerb-wrapperp2{
+/* Media query for smaller screens (max-width: 1023px) */
+@media (max-width: 1023px) {
+    /* Adjust margin for slide captions on smaller screens */
+    .containerb-wrapperimage-list1 .containerb-wrapperp2 {
         margin-top: 2rem;
     }
 }
 
-@media (max-width: 575.98px){
+/* Media query for smaller screens (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+    /* Adjust font size and padding for the heading on smaller screens */
     .containerb-wrapperh3 {
         font-size: 26px;
         padding: 0px 25px;
     }
 }
 
-.containerbbutton-wrapper .containerbslider-buttons{
+/* Styling for the slider buttons */
+.containerbbutton-wrapper .containerbslider-buttons {
     border-radius: 40px;
     border: 1px solid #000;
     background: #C7F2AB;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ 
     color: black;
 }
 
+/* Styling for the active slider button */
 .containerbslider-buttons.active {
     border: 1px solid black !important;
     color: black !important;
+}
+.containerbslider-buttons:focus {
+    border: 1px solid black !important;
+    color: black !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
