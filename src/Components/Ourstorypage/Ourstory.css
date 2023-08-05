@@ -1,0 +1,215 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
+
+/* Styling for the story animation container */
+.storyanimation-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Styling for the content wrapper that appears on scroll */
+.storycontent-wrapper {
+  background: #F9FAF9;
+  height: 100vh;
+}
+
+/* Styling for the intro text */
+.storyintro {
+  color: white;
+}
+
+/* Styling for the left and right side of the animation */
+.storyleft-side,
+.storyright-side {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Styling for the left side */
+.storyleft-side {
+  left: 0;
+  background: #C7F2AB;
+  /* Set your desired left side background color */
+}
+
+/* Styling for the right side */
+.storyright-side {
+  right: 0;
+  background: #172B0D;
+  /* Set your desired right side background color */
+}
+
+/* Styling when the content is open and sliding */
+.open .storyleft-side {
+  transform: translateX(-100%);
+}
+
+.open .storyright-side {
+  transform: translateX(100%);
+}
+
+/* Additional styling for both left and right sides */
+.storyleft-side,
+.storyright-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Align the text to the right on the left side */
+.storyleft-side {
+  text-align: right;
+}
+
+/* Add a red span in the story heading */
+.storyfull span {
+  color: red;
+  font-weight: 400;
+}
+
+/* Styling for the story parent container */
+.storyparent_container {
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Styling for the story heading */
+.storyheading {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the story heading underline */
+.storyheading::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid green;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Styling for the green tab content */
+.green-tab-content {
+  background-color: #D2D6D0;
+  font-family: 'Inter';
+  font-size: 28px;
+}
+
+/* Set tab text color to white */
+.tabs .nav-link {
+  color: white !important;
+  border: none !important;
+}
+
+/* Additional styling for the small screen tabs section */
+.sm-tabs-section {
+  background-color: #D2D6D0;
+}
+
+/* Hide the tabs section on small screens */
+@media only screen and (min-width: 998px) {
+  .sm-tabs-section {
+    display: none;
+  }
+}
+
+/* Adjustments for large screens */
+@media only screen and (min-width: 1200px) {
+  /* Set the height of the story cards section */
+  .storysection-cards .storysection-cards-class {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+/* Adjustments for medium screens */
+@media only screen and (min-width: 768px) {
+  /* Increase the font size for the content wrapper heading */
+  .storycontent-wrapper h2 {
+    font-size: 60px;
+  }
+  /* Adjust the font size for the story paragraphs */
+  .storyparagraph {
+    font-size: 25px;
+  }
+  /* Adjust the font size for the story end line */
+  .storyend_line {
+    font-size: 28px;
+  }
+  /* Adjust the font size for the small screen tabs section */
+  .sm-tabs-section {
+    font-size: 1.2rem;
+  }
+  /* Adjust the font size for the second paragraph section */
+  .storypara-2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Set the font family for the story paragraphs and end line */
+.storyparagraph,
+.storyend_line {
+  font-family: 'Inter';
+}
+
+/* Center the content within the story content wrapper */
+.storypage .storycontent-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Adjust the font size for small screens */
+@media (max-width: 576px) {
+  .storypage .storyright-content h2,
+  .storypage .storyleft-content h2 {
+    font-size: 20px;
+  }
+}
+
+/* Hide the tabs section on small screens */
+@media only screen and (max-width: 998px) {
+  .tabs-section {
+    display: none;
+  }
+}
+
+/* Styling for the tabs section */
+.tabs-section .tabs {
+  background-color: #067749;
+}
+
+/* Styling for the tabs links */
+.tabs .nav-link {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Show green underline for the active tab */
+.tabs .nav-link.active {
+  background-color: #067749 !important;
+  border-bottom: 5px solid white !important;
+  opacity: .8 !important;
+}
+
+/* Styling for the second paragraph section */
+.storypara-2 {
+  background: #F9FAF9;
+}
+
+/* Additional styling for the story cards section */
+.storysection-cards .storysection-cards-class .storycard-title {
+  text-transform: uppercase;
+}

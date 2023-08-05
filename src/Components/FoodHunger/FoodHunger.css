@@ -1,0 +1,81 @@
+/* Styling for FoodHunger.js component */
+
+/* Styling for the main container that holds all sections */
+.foodhunger-main-container {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the wrapper container of Container1 */
+.container1-wrapper {
+    display: flex;
+    background: #DDECFF;
+}
+
+/* Styling for the wrapper container of Container4 */
+.container4-wrapper {
+    color: #FFFFFF;
+    background: #067749;
+}
+
+/* Styling for the heading in Container4 */
+.container4-heading {
+    font-size: 35px;
+}
+
+/* Styling for the counter headings in Container4 */
+.container4-counter h3 {
+    text-align: left;
+}
+
+/* Styling for the wrapper container of Container3 */
+.container3-wrapper {
+    background: #CBF5E6;
+}
+
+/* Styling for the paragraph in Container3 */
+.container3-wrapper p {
+    font-weight: 100;
+    font-size: 20px;
+    background: #CBF5E6;
+}
+
+/* Styling for the individual counters in Container4 */
+.container4-wrapper .container4-wrappercounters:not(:last-child) {
+    border-right: 2px solid orange !important;
+}
+
+/* Media query for screens with a minimum width of 780px */
+@media (min-width: 780px) {
+    /* Add any specific styles for larger screens here */
+    .container3-wrapper p {
+        border-left: 2px solid #0448BC;
+        padding: 0px 30px;
+    }
+}
+
+/* Media query for screens with a maximum width of 575.98px (small screens) */
+@media (max-width: 575.98px) {
+    /* Add any specific styles for small screens here */
+    .container1-wrapper, .container2-wrapper, .container3-wrapper, .container4-wrapper {
+        text-align: center;
+    }
+    .food-hungerh1 {
+        text-align: center;
+    }
+}
+
+/* Media query for screens with a maximum width of 360px */
+@media (max-width: 360px) {
+    /* Add any specific styles for screens with a maximum width of 360px here */
+    .container1-wrapper h5 {
+        font-size: 15px;
+    }
+    .container3-wrapper p {
+        font-weight: 100;
+        font-size: 17px;
+    }
+    .container4-heading {
+        font-size: 30px;
+    }
+}

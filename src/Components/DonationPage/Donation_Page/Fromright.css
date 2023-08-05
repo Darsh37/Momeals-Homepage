@@ -1,0 +1,145 @@
+/* Fromright.css */
+
+/* Styles for the form modal */
+.fromrightform-modal {
+  background-color: #c7f2ab;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+}
+
+/* Media query for screens with min-width 768px */
+@media (min-width: 768px){
+  /* Styles for the form modal on larger screens */
+  .fromrightform-modal{
+      width: 26rem;
+      height: 35rem;
+      margin-bottom: -40px;
+      padding: 0px 35px;
+  }
+}
+
+/* Styles for the focus state of the predefined buttons */
+.fromrightamt-btn .fromrightcustom-button:focus{
+  border:2px solid #0d8354;
+}
+
+/* Styles for the form header */
+.fromrightform-header{
+  text-align:center;
+  color:#1B5240;
+  font-size:32px;
+  font-weight:bold;
+  letter-spacing: -2px;
+}
+
+/* Styles for the small text in the form */
+.fromrightform-modal small{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+/* Styles for the container of the one-time and monthly buttons */
+.fromrightbutton-container{
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles for the one-time and monthly buttons */
+.monthly, .one-time{
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align:center;
+  width: 180px;
+  height: 60px;
+  font-weight: 400;
+  border:none;
+}
+
+/* Styles for the monthly button */
+.monthly{
+  background-color:#FFFFFF;
+}
+
+/* Styles for the active state of the one-time and monthly buttons */
+.one-time.active,.monthly.active  {
+  background-color: #1B5240;
+  color: white;
+}
+
+/* Styles for the custom amount input button */
+.fromrightform-modal .fromrightcustom-button {
+  border: 1px solid #0d8354;
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+  padding:0px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+}
+
+/* Styles for the custom amount input */
+.fromrightamt-input .fromrightcustom-input {
+width: 100%;
+  border: 1px solid #0d8354;
+  border-radius: 8px;
+  padding: 8px;
+  /* Add the following properties */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles for the custom amount input when in focus */
+.fromrightamt-input .fromrightcustom-input:focus{
+  outline:2px solid #1B5240;
+}
+
+/* Styles for the 'Donate Now' button */
+.fromrightform-modal .fromrightdonate-now{
+  text-align:center;
+}
+
+/* Styles for the hover state of the 'Donate Now' button */
+.fromrightform-modal .fromrightdonatebtn:hover{
+  background-color: orange !important;
+}
+
+/* Styles for the focus state of the 'Donate Now' button */
+.fromrightform-modal .fromrightdonatebtn:focus{
+  box-shadow: none;
+}
+
+/* Styles for the 'Donate Now' button */
+.fromrightform-modal .fromrightdonatebtn{
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 18px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #1b5240;
+}
+
+/* Media query for screens with max-width 767px */
+@media (max-width: 767px) {
+  /* Adjust button container on smaller screens */
+  .fromrightbutton-container {
+    flex-wrap: wrap;
+  }
+  /* Styles for the form modal on smaller screens */
+  .fromrightform-modal{
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  /* Adjust button styles on smaller screens */
+  .one-time,
+  .monthly {
+    flex-basis: calc(50%);
+  }
+}

@@ -1,0 +1,58 @@
+
+/* ThankU.css */
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap'); 
+
+/* Setting the background color for elements with the ThankUpage class */
+.ThankUpage {
+  background: #C7F2AB; 
+}
+
+@media screen and (min-width: 768px) {
+  /* Setting the font family for elements with the ThankUpageh1 class */
+  .ThankUpageh1 {
+    font-family: 'Comfortaa';
+    font-size: 64px;
+    font-style: normal; 
+    font-weight: 400; 
+  }
+
+  /* Setting the font family for elements with the ThankUpageh4 class */
+  .ThankUpageh4 {
+    font-family: 'Poppins'; 
+    font-size: 32px; 
+    font-weight: 400; 
+  }
+
+  /* Setting the text color for elements with the ThankUpagelink class */
+  .ThankUpagelink {
+    color: #004EE7;
+    text-align: center; 
+    font-family: 'Poppins'; 
+    font-size: 32px; 
+    font-weight: 400; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Setting the font size for elements with the ThankUpageh1 class on smaller screens */
+  .ThankUpageh1 {
+    font-size: 32px; 
+  }
+
+  /* Setting the font size for elements with the ThankUpageh4 class on smaller screens */
+  .ThankUpageh4 {
+    font-size: 16px;
+  }
+
+  /* Setting the font size for elements with the ThankUpagelink class on smaller screens */
+  .ThankUpagelink {
+    font-size: 16px;
+  }
+
+  /* Making the image take the full width on smaller screens */
+  .Thankuimg {
+    width: 100%;
+  }
+}
