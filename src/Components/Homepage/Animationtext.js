@@ -21,9 +21,9 @@ function Animationtext() {
   // Data for the animations
   const data = [
     {
-      text1: "Build",
+      text1: "Born",
       Color: "#044EAF",
-      text2: "Hunger-Free World",
+      text2: "Feed The World",
       imgages: animate1
     },
     {
@@ -33,9 +33,9 @@ function Animationtext() {
       imgages: animate2
     },
     {
-      text1: "Born",
+      text1: "Build",
       Color: "#FD7E14",
-      text2: "Feed The World",
+      text2: "Hunger-Free World",
       imgages: animate3
     },
   ];
