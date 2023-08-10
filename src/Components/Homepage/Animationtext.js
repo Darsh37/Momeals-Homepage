@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import { useTransition, animated } from "react-spring";
-import animate1 from '../Images/Hunger free world 1.png'
+import animate1 from '../Images/re-born 2.png'
 import animate2 from '../Images/Save Food 1.png'
-import animate3 from '../Images/re-born 2.png'
+import animate3 from '../Images/Hunger free world 1.png'
 import Row from 'react-bootstrap/Row';
 import { Col, Button } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
