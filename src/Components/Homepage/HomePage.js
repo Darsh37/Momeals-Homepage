@@ -162,16 +162,6 @@ export const HomePage = () => {
         </div>
       </div>
 
-      {/* Ethical practices section */}
-      <div className="pb-5 p-3 px-md-5 px-lg-3" style={{ background: "#c7f2ab" }}>
-        <p className="m-lg-5 para2 text-left px-lg-4 px-md-2 px-2">
-          MAKE A LASTING IMPRESSION ON INDIVIDUALS AND COMMUNITIES WITH MOMEALS'
-          ETHICAL PRACTICES.
-        </p>
-        {/* SloganCard3 component */}
-        <SloganCard3 />
-      </div>
-
       {/* Be different, make a difference section */}
       <div className="be-diff p-lg-5 pb-lg-0 p-4 p-md-5 px-md-5 ">
         <div className="para-side m-lg-5  mt-1 m-xs-2">
@@ -184,6 +174,39 @@ export const HomePage = () => {
             <button className="btn-diff ">READ MORE</button>
           </div>
         </div>
+      </div>
+
+      <div className="solid-line"></div>
+     {/* Left Paragraph section */}
+      <div className="HowWeDo p-lg-5 p-4 px-md-5">
+        <div className="left-para  m-lg-5 ">
+          <h5>How We Do ?</h5>
+          <h1>
+            Build A Visionary and Sustainable Food Waste System That Benefits
+            All.
+          </h1>
+          <ul>
+            <li className="list">Quick Recovery of food</li>
+            <li className="list">Homeless no more hopeless</li>
+            <li className="list">Feeding Missions</li>
+            <li className="list">Nature Friendly</li>
+            <li className="list">Partners with Cooks</li>
+          </ul>
+        </div>
+        <div className="right-img pb-5 ">
+          <img src={factory} className="img-fluid" alt="hwd" />
+        </div>
+      </div>
+
+      
+      {/* Ethical practices section */}
+      <div className="pb-5 p-3 px-md-5 px-lg-3" style={{ background: "#E4FABF" }}>
+        <p className="m-lg-5 para2 text-left px-lg-4 px-md-2 px-2">
+          MAKE A LASTING IMPRESSION ON INDIVIDUALS AND COMMUNITIES WITH MOMEALS'
+          ETHICAL PRACTICES.
+        </p>
+        {/* SloganCard3 component */}
+        <SloganCard3 />
       </div>
       {/* main-worrior section */}
       <div className="main-worrior">
