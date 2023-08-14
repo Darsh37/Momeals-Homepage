@@ -1,17 +1,29 @@
 import React from "react";
 
+<<<<<<< HEAD
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import Button from 'react-bootstrap/Button';
+=======
+
+import {Button,Col,Row,Card,Form} from 'react-bootstrap';
+>>>>>>> momeals-frontend/master
 import "./FoodHunger.css"
 
 
 function Container1() {
   return (
+<<<<<<< HEAD
     <div class="container1-wrapper" >
             <h5 >
+=======
+    <div className="container1-wrapper pt-5 p-4">
+      <Row className="d-flex justify-content-center px-md-2 px-lg-0">
+        <Col lg={8} md={7} xs={12} >
+        <h5 >
+>>>>>>> momeals-frontend/master
               Every year, hunger claims the lives of approximately 25 lakh
               individuals in India. Shockingly, this figure is five times
               greater than the total fatalities caused by the COVID-19 pandemic,
@@ -27,16 +39,30 @@ function Container1() {
               population for five years, even if food production were to cease,
               a staggering 14% of the population is unable to afford even two
               meals a day.
+<<<<<<< HEAD
             </h5>    
           <div className="sponso">
             <Card
               style={{boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)", width: "20rem",  marginLeft:"10rem", borderRadius:"10px", padding:"0" }}
+=======
+            </h5>
+        </Col>
+       
+        <Col lg={3} md={5} xs={12}>
+        {/* <div className="sponso"> */}
+            <Card style={{width:""}}
+              // style={{boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)", width: "20rem",  marginLeft:"10rem", borderRadius:"10px", padding:"0" }}
+>>>>>>> momeals-frontend/master
             >
               <Card.Body style={{display:"flex", alignItems:"center", justifyContent:"center", borderRadius: "30px"}} >
                 <Card.Title>Sponsor a Child</Card.Title>
                 </Card.Body>
                 <Card.Body style={{ padding:"1.5rem", background:"#ED4B4B", color:"#FFFFFF", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px"}}>         
+<<<<<<< HEAD
                 <Card.Text style={{width:"17rem",textAlign:"center",fontFamily:"Comfortaa"}}>
+=======
+                <Card.Text style={{textAlign:"center",fontFamily:"Comfortaa"}}>
+>>>>>>> momeals-frontend/master
                   Make monthly contribution to help a child to have better
                   accesibilty to resources.
                 </Card.Text>
@@ -48,12 +74,27 @@ function Container1() {
                     <Form.Control type="text" placeholder="Mobile Number" style={{ borderRadius: '20px' }}/>
                   </Form.Group>
                 </Form>
+<<<<<<< HEAD
                 <Row>
                 <Button variant="danger" style={{background:"#FFFFFF", color:"#D90000", width :"7rem", marginLeft:"6rem", marginBottom:"3rem", borderRadius:"30px"}}>Donate</Button>
                 </Row>
               </Card.Body>
             </Card>
           </div>        
+=======
+                <Row >
+                  <Col  className="d-flex justify-content-center ">
+                  <Button variant="danger" className='p-2 containerfh-1 mb-3' style={{background:"#FFFFFF",width:"50%", color:"#D90000", borderRadius:"30px"}}>Donate</Button>
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
+          {/* </div> */}
+        </Col>
+      </Row>
+                
+                  
+>>>>>>> momeals-frontend/master
     </div>
   );
 }

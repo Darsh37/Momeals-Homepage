@@ -1,107 +1,126 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap");
 
-.header {
-  color: #25885f;
-  font-family: "Comfortaa";
-  font-weight: 400;
-  font-size: 4vw;
-  line-height: 1.2;
-  text-align: center;
+/* Styling for the header */
+.foodtypeheader {
+    color: #25885F;
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 1.2;
+    text-align: center;
 }
-.para {
-  font-family: "Poppins";
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  margin: 2vw auto;
-  max-width: 80%;
-}
-.card .titlecard {
-  font-size: 32px;
-  font-family: Comfortaa;
-  font-weight: 700;
-}
-.card .infocard {
-  color: #585858;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 500;
-}
-.arrowimage {
-  border: 1px solid black;
-  border-radius: 25px;
-  padding: 6px;
-  margin: 10px 0px 0px 16px;
-}
-.row .btn {
-  text-transform: uppercase;
 
-  width: 156px;
-  height: 50px;
-  border-radius: 50px;
-  color: white;
-  border: none;
-  background: #1b5240;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* Styling for the paragraph */
+.foodtypepara {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin: 2vw auto;
+    max-width: 80%;
 }
-.navbar.navbar2 {
-  background-color: #e9ffdb !important;
-}
-.row .btn:hover {
-  background-color: #fd7e14 !important;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .row.p-lg-5 {
-    height: 100vh;
-  }
-}
-@media screen and (min-width: 768px) {
-  .row { 
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 3px;
-    background-position: center;
-  }
-  .imgs {
-    width: 100px !important;
-    height: 100px !important;
-    padding: 22px !important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .row {
-    clip-path: polygon(62% 10%, 255% 56%, 128% 372%, -138% 51%, 48% 7%);
-  }
-  .row {
-    position: relative;
-    background-color: #c7f2ab;
-    padding-bottom: 3px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .row {
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 3px;
-    background-position: center;
-  }
-  .para {
-    font-size: 14px;
-  }
-  .header {
+
+/* Styling for the title of the image card */
+.foodtypetitlecard {
     font-size: 32px;
-  }
-  .card .titlecard {
-    font-size: 16px;
-  }
-  .card .infocard {
-    font-size: 14px;
-  }
-  .imgs {
-    width: 50px !important;
-    height: 50px !important;
-    padding: 22px !important;
-  }
+    font-family: 'Comfortaa';
+    font-weight: 700;
+}
+
+/* Styling for the information of the image card */
+.foodtypeinfocard {
+    color: #585858;
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+/* Styling for the back arrow image */
+.foodtypearrowimage {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 6px;
+    margin: 10px 0px 0px 16px;
+}
+
+/* Styling for the "Next" button */
+.foodtyperow .foodtypebtn {
+    text-transform: uppercase;
+    width: 156px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    background: #1B5240;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Styling for the "Next" button when active */
+.foodtype .foodtyperow .foodtypebtn:active {
+    background-color: #FD7E14;
+    box-shadow: none;
+}
+
+/* Styling for the "Next" button on hover */
+.foodtype .foodtyperow .foodtypebtn:hover {
+    background-color: #FD7E14;
+    box-shadow: none;
+}
+
+/* Media query for screens with a minimum width of 768px */
+@media screen and (min-width: 768px) {
+    /* Styling for larger screens */
+    .foodtyperow {
+        background-image: url("../Images/Rectangle 141.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 3px;
+        background-position: center;
+    }
+    .foodtypecard .foodimgs {
+        width: 100px;
+        height: 100px;
+        padding: 22px;
+    }
+}
+
+/* Media query for screens with a minimum width of 1200px */
+@media screen and (min-width: 1200px) {
+    /* Styling for larger screens */
+    .foodtyperow {
+        clip-path: polygon(62% 10%, 255% 56%, 128% 372%, -138% 51%, 48% 7%);
+        position: relative;
+        background-color: #C7F2AB;
+        padding-bottom: 3px;
+    }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    /* Styling for smaller screens */
+    .foodtyperow {
+        background-image: url("../Images/Rectangle 141.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 0px;
+        background-position: center;
+    }
+    .foodtypepara {
+        font-size: 14px;
+    }
+    .foodtypeheader {
+        font-size: 32px;
+    }
+    .foodtypetitlecard {
+        font-size: 16px;
+    }
+    .foodtypeinfocard {
+        font-size: 14px;
+    }
+    .foodtypecard .foodimgs {
+        width: 50px;
+        height: 50px;
+        padding: 22px;
+    }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: 575.98px) {
   .slogan3card-text2nd p{
       font-size: 18px;
@@ -66,12 +67,108 @@ display: none !important;
   color: #000000 !important;
   font-size: 24px !important;
  
+=======
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap');
+
+/* Media query for devices with maximum width of 575.98px */
+@media (max-width: 575.98px) {
+  /* Styling for elements with class .slogan3card-text2ndp */
+  .slogan3card-text2ndp {
+    font-size: 18px;
+  }
+}
+
+/* Styling for elements with class .slogan3card-textpara */
+.slogan3card-textpara {
+  font-family: Poppins;
+}
+
+/* Media query for devices with maximum width of 780.98px */
+@media (max-width: 767px) {
+  /* Styling for elements with class .slogan3card-row .slogan3card-text2nd */
+  .slogan3card-row .slogan3card-text2nd {
+    width: 250px;
+    height: 280px;
+  }
+}
+
+/* Styling for elements with class .slogan3card-text2ndp */
+.slogan3card-text2ndp {
+  font-family: 'Comfortaa';
+}
+
+/* Media query for large devices */
+@media only screen and (min-width: 992px), screen and (min-width: 768px) {
+  /* Styling for elements with class .slogan3card-text2ndp */
+  .slogan3card-text2ndp {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+  }
+}
+
+/* Media query for devices with minimum width of 992px */
+@media only screen and (min-width: 992px) {
+  /* Styling for elements with class .slogan3card-row .slogan3card-text2nd */
+  .slogan3card-row .slogan3card-text2nd {
+    width: 100%;
+  }
+  /* Styling for elements with class .slogan3card-row */
+  .slogan3card-row {
+    padding: 0px 40px;
+  }
+}
+
+/* Media query for devices with minimum width of 1400px */
+@media only screen and (min-width: 1400px) {
+  /* Styling for elements with id #slogan3card-text2nd */
+  #slogan3card-text2nd {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+/* Media query for devices with minimum width of 768px */
+@media only screen and (min-width: 768px) {
+  /* Styling for elements with class .slogan3card-row .slogan3card-text2nd */
+  .slogan3card-row .slogan3card-text2nd {
+    width: 300px;
+    height: 350px;
+  }
+  /* Styling for elements with class .slogan3card-textpara */
+  .slogan3card-textpara {
+    font-size: 18px;
+  }
+}
+
+/* Media query for slider on devices with minimum width of 992px */
+@media (min-width: 992px) {
+  /* Styling for elements with class .slider-butn */
+  .slider-butn {
+    visibility: hidden !important;
+  }
+}
+
+/* Styling for elements with class .slide-buts */
+.slide-buts {
+  display: flex !important;
+}
+
+/* Styling for elements with id #slid-btns */
+#slid-btns {
+  border: none !important;
+  color: #000000 !important;
+  font-size: 24px !important;
+>>>>>>> momeals-frontend/master
   border-radius: 50% !important;
   width: 40px !important;
   height: 40px !important;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+<<<<<<< HEAD
 
 
   position: relative !important;
@@ -107,3 +204,10 @@ display: flex !important;
 
 
   
+=======
+  position: relative !important;
+  background: #FFFFFF !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  display: flex !important;
+}
+>>>>>>> momeals-frontend/master

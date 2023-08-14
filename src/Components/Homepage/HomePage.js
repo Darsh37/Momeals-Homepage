@@ -1,4 +1,19 @@
+<<<<<<< HEAD
 import * as React from "react";
+=======
+// Importing necessary dependencies and components
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import Animationtext from "./Animationtext";
+import SloganCard3 from "./SloganCard3";
+import SloganCard4 from "./SloganCard4";
+import { SloganCard, SloganCard2, SloganCard2Carousel } from "./SloganCard";
+import { Accordian } from "./Accordian";
+import ImgMediaCard from "./ImgMediaCard";
+
+// Importing images and styles
+>>>>>>> momeals-frontend/master
 import "../Homepage/homeStyle.css";
 import box from "../Images/Donate.png";
 import m1 from "../Images/foodwastage1.png";
@@ -9,15 +24,19 @@ import be from "../Images/Be.png";
 import MOMEALS from "../Images/MOMEALS Hero Image 1.png";
 import faq from "../Images/faq.png";
 import factory from "../Images/Final_illustration_transparent.png";
+<<<<<<< HEAD
 import { SloganCard } from "./SloganCard";
 import { SloganCard2, SloganCard2Carousel } from "./SloganCard2";
 import { Accordian } from "./Accordian";
 import ImgMediaCard from "./ImgMediaCard";
 import { useState, useEffect } from "react";
+=======
+>>>>>>> momeals-frontend/master
 import img1 from "../Images/img1.png";
 import img2 from "../Images/img2.png";
 import img3 from "../Images/img3.png";
 import img4 from "../Images/img4.png";
+<<<<<<< HEAD
 import { Container, Row, Col, Button } from "react-bootstrap";
 import arrow2 from "../Images/arrow-2.png";
 import SloganCard3 from "./SloganCard3";
@@ -42,6 +61,34 @@ export const HomePage = () => {
   }; 
   const [isMobileView, setIsMobileView] = useState(true);
 
+=======
+import arrow2 from "../Images/arrow-2.png";
+
+// Define the HomePage component
+export const HomePage = () => {
+  // Data for the counters
+  const data = [
+    { img: img1, count: "245+", description: "KG Of Food We Saved" },
+    { img: img2, count: "150+", description: "Children We Fed" },
+    { img: img3, count: "120+", description: "Families We Served" },
+    { img: img4, count: "50+", description: "Women We Empowered" },
+  ];
+
+  // State to manage the input value for donation amount
+  const [inputValue, setInputValue] = useState("");
+  const [inputName, setInputName] = useState("");
+
+  // Using React Router's `useNavigate` hook to handle navigation
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/DonationPage");
+  };
+
+  // State to determine if the current view is mobile or not
+  const [isMobileView, setIsMobileView] = useState(true);
+
+  // useEffect hook to check the window size and determine mobile view
+>>>>>>> momeals-frontend/master
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -60,6 +107,7 @@ export const HomePage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+<<<<<<< HEAD
   return (
     <div>
       <section className="home-section mb-md-5 pb-md-5 d-flex justify-content-evenly align-items-center">
@@ -112,6 +160,43 @@ export const HomePage = () => {
             <div className="capsule" key={index}>
               <img
                 className="m-3  mb-3 imgs"
+=======
+  // Handle the donation amount button click
+  const handleButtonClick = (amount) => {
+    setInputValue(amount);
+  };
+
+  const [inputError,setError]=useState("")
+
+  const submitDonationHandler=()=>{
+    if(!inputName || inputValue=="")
+    {
+      setError("Please enter both field")
+    }else{
+      setError("")
+      console.log(inputName,inputValue)
+    }
+  }
+
+  return (
+    <div>
+      {/* Section with animation text */}
+      <section className=" mb-md-5 pb-md-5 ">
+          {/* headerh6 */}
+        <h6 className="header-title text-center  mt-5 mb-3 px-lg-2 px-md-2 px-3">
+          Powered By Human To Empower Humans
+        </h6>
+        <Animationtext />
+      </section>
+
+      {/* Counter section */}
+      <div className="home-counter pt-lg-4 pt-md-3 ">
+        <div className="d-flex justify-content-around  counter" id="counter-home">
+          {data.map((item, index) => (
+            <div className="capsule" key={index}>
+              <img
+                className="m-3  mb-3 capsule-imgs"
+>>>>>>> momeals-frontend/master
                 src={item.img}
                 width="50px"
                 height="50px"
@@ -126,10 +211,18 @@ export const HomePage = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       <div style={{ background: "black", color: "white" }}>
         <div className="head-section d-flex justify-content-center ">
           <div className="title text-center">
             <p className="text1 mt-3">
+=======
+      {/* Section with three cards */}
+      <div style={{ background: "black", color: "white" }}>
+        <div className="head-section d-flex justify-content-center ">
+          <div className="title text-center">
+            <p className="text1  px-md-5 ">
+>>>>>>> momeals-frontend/master
               {" "}
               <img className="section-img" src={heart} alt="" /> Building a
               Better World: <br />
@@ -143,6 +236,7 @@ export const HomePage = () => {
 
         <div className="mand-v pb-5">
           <div className="section-cards ">
+<<<<<<< HEAD
             <SloganCard
               destination="/FoodWastage"
               para="Collect Eatable Leftover Foods from Eateries."
@@ -161,12 +255,36 @@ export const HomePage = () => {
               para="Empowering Homeless and Unemployed women's."
               card="card3"
               slogan="EMPOWERMENT"
+=======
+            {/* SloganCard component with different data */}
+            <SloganCard
+              destination="/FoodWastage"
+              para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Collect Eatable Leftover Foods from Eateries.</div>}
+              card="card1"
+              slogan={<div style={{ color: '#4ECD99' }}>ZERO FOOD WASTAGE</div>}
+              src={m1}
+            />
+            {/* SloganCard component with different data */}
+            <SloganCard
+              destination="/FoodHunger"
+              para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Feed Homeless and Malnutrition Childrens For Free.</div>}
+              card="card2"
+              slogan={<div style={{ color: '#FCAD30' }}>ZERO FOOD HUNGER</div>}
+              src={m2}
+            />
+            {/* SloganCard component with different data */}
+            <SloganCard
+              para={<div style={{ maxWidth: '200px' }} className="homesloaganpara">Empowering Homeless and Unemployed women's.</div>}
+              card="card3"
+              slogan={<div style={{ color: '#FCC0C5' }}>EMPOWERMENT</div>}
+>>>>>>> momeals-frontend/master
               src={m3}
             />
           </div>
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className="pt-5 pb-5 p-3" style={{ background: "#c7f2ab" }}>
         <p className="m-lg-5 para2">
           MAKE A LASTING IMPRESSION ON INDIVIDUALS AND COMMUNITIES WITH MOMEALS'
@@ -187,6 +305,14 @@ export const HomePage = () => {
             every step of the way. Together we can make sure that no one goes
             hungry while also helping reduce unnecessary wastage of precious
             resources like food!
+=======
+      {/* Be different, make a difference section */}
+      <div className="be-diff p-lg-5 pb-lg-0 p-4 p-md-5 px-md-5 ">
+        <div className="para-side m-lg-5  mt-1 m-xs-2">
+          <h3 className="para-sideh3">Be Different, Make <span style={{color:"#067749"}}>Difference.</span></h3>
+          <p className="para-sidep mt-3">
+            At Momeals, we strive to make a meaningful impact by combating hunger and reducing food waste simultaneously. Our dedicated team delivers top-notch service while staying environmentally conscious at every step. Together, let's ensure no one goes hungry and minimize wastage of precious food resources.
+>>>>>>> momeals-frontend/master
           </p>
           <img className="img-arrow mt-3" src={arrow2} />
           <div className="d-flex justify-content-center">
@@ -194,10 +320,18 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="solid-line"></div>
 
       <div className="HowToDo ">
         <div className="left-para">
+=======
+
+      <div className="solid-line"></div>
+     {/* Left Paragraph section */}
+      <div className="HowWeDo p-lg-5 p-4 px-md-5">
+        <div className="left-para  m-lg-5 ">
+>>>>>>> momeals-frontend/master
           <h5>How We Do ?</h5>
           <h1>
             Build A Visionary and Sustainable Food Waste System That Benefits
@@ -211,10 +345,29 @@ export const HomePage = () => {
             <li className="list">Partners with Cooks</li>
           </ul>
         </div>
+<<<<<<< HEAD
         <div className="right-img pb-5">
           <img src={factory} className="img-fluid" alt="hwd" />
         </div>
       </div>
+=======
+        <div className="right-img pb-5 ">
+          <img src={factory} className="img-fluid" alt="hwd" />
+        </div>
+      </div>
+
+      
+      {/* Ethical practices section */}
+      <div className="pb-5 p-3 px-md-5 px-lg-3" style={{ background: "#E4FABF" }}>
+        <p className="m-lg-5 para2 text-left px-lg-4 px-md-2 px-2">
+          MAKE A LASTING IMPRESSION ON INDIVIDUALS AND COMMUNITIES WITH MOMEALS'
+          ETHICAL PRACTICES.
+        </p>
+        {/* SloganCard3 component */}
+        <SloganCard3 />
+      </div>
+      {/* main-worrior section */}
+>>>>>>> momeals-frontend/master
       <div className="main-worrior">
         <div className="worrior p-5">
           <h6>BE A FOOD WORRIOR AND SAVE LIVES</h6>
@@ -222,13 +375,23 @@ export const HomePage = () => {
           <button className="btn-join">JOIN</button>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="DonateNow">
         <div className="left-intro mt-4">
+=======
+      {/* Section for donation form */}
+      <Row className="DonateNow d-flex justify-content-evenly px-4 pb-3 pb-lg-2 pb-md-2  p-md-5 p-lg-5 pt-lg-5 pt-md-5 align-items-center">
+        <Col md={5} lg={4} className="left-intro mt-4 mt-lg-5  pt-md-5">
+>>>>>>> momeals-frontend/master
           <h6>
             {" "}
             <img src={heart} alt="" width={40} /> DONATE NOW
           </h6>
+<<<<<<< HEAD
           <h1 className="mt-4">
+=======
+          <h1 className="mt-3">
+>>>>>>> momeals-frontend/master
             Be A Happy Helping Hand For Homeless and Hopeless.
           </h1>
           <h4 className="mt-4 mb-5" style={{ color: "#C7F2AB" }}>
@@ -237,14 +400,24 @@ export const HomePage = () => {
               Help us save lives and create a world free from hunger
             </span>
           </h4>
+<<<<<<< HEAD
         </div>
         <div className="right-form  mt-lg-4">
+=======
+        </Col>
+        <Col lg={2}  md={1}></Col>
+        <Col md={6}  lg={4} className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 px-lg-5">
+>>>>>>> momeals-frontend/master
           <div className="donate">
             <h4 className="donatenow">DONATE NOW </h4>
           </div>
           <div className="inputfield ">
             <h6
+<<<<<<< HEAD
               className="mb-3"
+=======
+              className="mb-3 inputfieldh6"
+>>>>>>> momeals-frontend/master
               style={{ textAlign: "center", color: "white" }}
             >
               Every Bite Counts and every contribution can make an Impact
@@ -254,12 +427,18 @@ export const HomePage = () => {
               name=""
               placeholder="Your Name"
               className="rounded-pill my-2"
+<<<<<<< HEAD
+=======
+              value={inputName}
+              onChange={(e) => setInputName(e.target.value)}
+>>>>>>> momeals-frontend/master
             />
             <input
               type="text"
               name=""
               placeholder="Amount Value"
               className="rounded-pill my-2"
+<<<<<<< HEAD
             />
             <div className="button">
               <button className="rounded-pill money">50 Rs</button>
@@ -269,12 +448,37 @@ export const HomePage = () => {
             <div className="button-sec mb-5">
               <button className=" button-donate rounded-pill p-3" onClick={handleDonate}>
                 {" "}
+=======
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+            />
+            <div className="button">
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("50 Rs")}>50 Rs</button>
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("100 Rs")}>100 Rs</button>
+              <button className="rounded-pill money"  onClick={() => handleButtonClick("500 Rs")}>500 Rs</button>
+            </div>
+            {
+              inputError && (
+                <p className=" text-center"> * {inputError}</p>
+              )
+            }
+            <div className="button-sec mb-5">
+              <button className=" button-donate rounded-pill p-3" type="submit" onClick={submitDonationHandler}>
+               
+>>>>>>> momeals-frontend/master
                 DONATE NOW
               </button>
             </div>
           </div>
+<<<<<<< HEAD
         </div>
       </div>
+=======
+        </Col>
+      </Row>
+
+      {/* Good change section */}
+>>>>>>> momeals-frontend/master
       <div>
         <SloganCard4 />
         <div className="Good-change pt-5 pb-4 p-3">
@@ -287,19 +491,31 @@ export const HomePage = () => {
                 </h1>
                 <Col xs={12} md={8} xl={6}>
                   <p className="p-GC pt-3">
+<<<<<<< HEAD
                     We are community of like minded human beings born with only
                     purpose of feeding every human for three times in a day. By
                     Reducing Food Wastage. We can achieve this. Lets Work
                     Together, Lets feed the World together.
+=======
+                    "We are a community of like-minded individuals united by the sole purpose of providing three meals a day to every person. Our mission is to combat food wastage, and by doing so, we can achieve this goal. Let's join forces and work together to feed the world."
+>>>>>>> momeals-frontend/master
                   </p>
                 </Col>
               </Row>
             </Container>
           </div>
           <div className="btn-GC pt-3 pb-3">
+<<<<<<< HEAD
             <button className="b-GC rounded-pill">JOIN US</button>
           </div>
         </div>
+=======
+            <button className="b-GC rounded-pill homejoin-btn">JOIN US</button>
+          </div>
+        </div>
+
+        {/* Blogs section */}
+>>>>>>> momeals-frontend/master
         <div className="blogs pt-5 pb-5">
           <div className="intro mt-2">
             <h4
@@ -311,6 +527,7 @@ export const HomePage = () => {
             <h2 className="text-center update mt-3">
               Our Latest Blogs and Updates
             </h2>
+<<<<<<< HEAD
           </div>
         </div>
 
@@ -320,17 +537,38 @@ export const HomePage = () => {
             className="btn-update rounded-pill"
             style={{ color: "white" }}
           >
+=======
+            {/* ImgMediaCard component */}
+            <div className="mx-lg-5 mx-md-5 mt-5 px-lg-5">
+              <ImgMediaCard />
+            </div>
+          </div>
+        </div>
+
+        {/* Button to view more */}
+        <div className="but  mb-4">
+          <button className="btn-update rounded-pill" style={{ color: "white" }}>
+>>>>>>> momeals-frontend/master
             VIEW MORE
           </button>
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className="wrapper p-md-5">
+=======
+      {/* FAQ section */}
+      <div className="wrapper px-lg-3 px-xl-3 pt-2 pb-2 px-md-5 px-3">
+>>>>>>> momeals-frontend/master
         <div className="accordian">
           <h5 className="mt-5">
             FREQUENTLY ASKED <span style={{ color: "blue" }}>QUESTIONS</span>
           </h5>
           <br />
+<<<<<<< HEAD
+=======
+          {/* Accordian component with different data */}
+>>>>>>> momeals-frontend/master
           <Accordian
             head="What services does Momeals provide?"
             para="We provide innovative services that focus on hunger awareness, food bank management, donation collection, waste reduction measures, and volunteer recruitment."

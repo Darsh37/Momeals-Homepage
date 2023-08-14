@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
 
+=======
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
+
+/* Home Counter Section */
+>>>>>>> momeals-frontend/master
 .home-counter {
   position: relative;
 }
@@ -13,6 +20,7 @@
   border-top-left-radius: 28px;
   border-bottom-left-radius: 28px;
   width: 50%;
+<<<<<<< HEAD
 
 }
 
@@ -35,6 +43,11 @@ font-size: 18px;
   box-shadow: none;
 }
 
+=======
+}
+
+/* Counter Headline */
+>>>>>>> momeals-frontend/master
 .counter .head-line {
   background-color: orange;
   height: 6.25rem;
@@ -42,6 +55,7 @@ font-size: 18px;
   width: 0.188rem;
 }
 
+<<<<<<< HEAD
 .header-title{
 font-family: 'Comfortaa';
 font-style: normal;
@@ -79,11 +93,54 @@ color: #000000;
 }
 .mand-v {
   /* margin-top: 60px; */
+=======
+/* Header Title Styles */
+.header-title {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.37rem;
+  color: #000000;
+}
+
+/* Slogan Card Paragraph */
+.slogancard-para {
+  font-family: 'Comfortaa';
+}
+
+/* Header Content Styles */
+.header-content {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.9rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+/* Description Styles */
+.descript {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+/* Count Styles */
+.count {
+  font-size: 15px;
+}
+
+/* Main Section - Mand-v Styles */
+.mand-v {
+>>>>>>> momeals-frontend/master
   background-color: black;
   display: flex;
   flex-direction: column;
   color: white;
   flex-wrap: wrap;
+<<<<<<< HEAD
  
 }
 .mand-v .title {
@@ -100,17 +157,47 @@ line-height: 40px;
 
 }
 .text2{
+=======
+}
+
+.mand-v .title {
+  display: flex;
+  justify-content: center;
+}
+
+/* Text 1 */
+.text1 {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+/* Text 2 */
+.text2 {
+>>>>>>> momeals-frontend/master
   font-family: 'Comfortaa';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 35px;
+<<<<<<< HEAD
  text-align: center;
  display: flex;
  justify-content: center;
 }
 .mand-v .section-cards {
  
+=======
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Section Cards */
+.mand-v .section-cards {
+>>>>>>> momeals-frontend/master
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -118,24 +205,45 @@ line-height: 40px;
   margin-right: 20px;
   margin-left: 20px;
 }
+<<<<<<< HEAD
+=======
+
+/* Card Styles */
+>>>>>>> momeals-frontend/master
 .section-cards .card1,
 .section-cards .card2,
 .section-cards .card3 {
   background-color: #000;
   height: 15%;
   margin-bottom: 2.5rem;
+<<<<<<< HEAD
   /* width: 15%; */
   text-align: center;
 
 }
 .card-botton {
   /* border: 10px solid red; */
+=======
+  text-align: center;
+}
+
+/* Card Bottom */
+.card-botton {
+>>>>>>> momeals-frontend/master
   background-image: url("../Images/helpinghands.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 60vh;
 }
+<<<<<<< HEAD
+=======
+/* Be different h3 */
+.be-diff .para-sideh3{
+  font-size: 36px;
+}
+/* Card Headline */
+>>>>>>> momeals-frontend/master
 .cardh3 {
   background-color: #c7f2ab;
   border-bottom-left-radius: 60px;
@@ -150,6 +258,11 @@ line-height: 40px;
   z-index: 1;
   margin-top: -10px;
 }
+<<<<<<< HEAD
+=======
+
+/* Rounded Paragraph */
+>>>>>>> momeals-frontend/master
 .para-round {
   align-items: center;
   background-color: #fff;
@@ -169,13 +282,22 @@ line-height: 40px;
   width: 50px;
   z-index: 1;
 }
+<<<<<<< HEAD
+=======
+
+/* Card Bottom Section */
+>>>>>>> momeals-frontend/master
 .cardbottom {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Image Side Styles */
+>>>>>>> momeals-frontend/master
 .img-side {
   align-items: center;
   display: flex;
@@ -184,6 +306,7 @@ line-height: 40px;
   width: 40%;
 }
 
+<<<<<<< HEAD
 .rounded-pill:hover{
   background-color:#C7F2AB!important;
   color: black !important;
@@ -216,12 +339,37 @@ color: black;
 }
 .btn-diff {
   background-color: #067749;;
+=======
+/* Hover Styles */
+.btn-update:hover,
+.homejoin-btn:hover,
+.button-donate:hover,
+.donateclassright-form .money:hover {
+  background-color: #c7f2ab !important;
+}
+
+/* Hover Rounded Pill */
+.rounded-pill:hover {
+  color: black !important;
+}
+
+/* Button Different Styles */
+.btn-diff:hover {
+  background-color: #c7f2ab;
+  color: black;
+}
+
+/* Button Different */
+.btn-diff {
+  background-color: #067749;
+>>>>>>> momeals-frontend/master
   border: none;
   border-radius: 20px;
   color: #fff;
   width: 121px;
   height: 40px;
   font-weight: 400;
+<<<<<<< HEAD
 font-size: 14px;
 }
 
@@ -432,6 +580,99 @@ border-radius: 20px;
   width: 35%;
 }
 
+=======
+  font-size: 14px;
+}
+
+/* How To Do Section */
+.HowToDo {
+  align-items: center;
+  background-color: #c7f2ab;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* How To Do List Styles */
+ul .list {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+/* Left Paragraph Styles */
+.left-para h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+/* Left Paragraph Header 1 Styles */
+.left-para h1 {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+/* Be different section para */
+.para-sidep {
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  font-family: 'Poppins';
+}
+/* Main Warrior Section */
+.main-worrior {
+  position: relative;
+}
+
+/* Worrior Section Styles */
+.worrior {
+  align-items: center;
+  background-color: #ed4b4b;
+  border-radius: 90px 0px 0px 90px;
+  color: #fff;
+  display: flex;
+  height: 10rem;
+  justify-content: space-evenly;
+  position: absolute;
+  top: -80px;
+  right: 0px;
+  z-index: 1;
+  width: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Worrior Paragraph Styles */
+.worrior h6 {
+  font-weight: 400;
+  line-height: 40px;
+  font-family: 'Comfortaa';
+}
+
+/* Worrior Button Styles */
+.worrior .btn-join:hover {
+  background-color: #c7f2ab;
+  color: black;
+}
+
+/* Worrior Join Button Styles */
+.worrior .btn-join {
+  border: none;
+  color: #ed4b4b;
+  font-family: 'Arvo';
+  font-weight: 400;
+  font-size: 24px;
+  padding: 10px;
+  text-decoration: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  width: 183px;
+  height: 58px;
+}
+/* view more btn */
+>>>>>>> momeals-frontend/master
 .but {
   display: flex;
   justify-content: center;
@@ -444,6 +685,162 @@ border-radius: 20px;
   width: 10rem;
 }
 
+<<<<<<< HEAD
+=======
+/* Donate Now Section */
+.DonateNow {
+  background-color: #067749;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 9rem;
+}
+
+
+/* Donate Class Right Form Styles */
+.donateclassright-form .inputfieldh6 {
+  font-family: 'Inter';
+}
+
+/* Left Introduction Styles */
+.left-intro {
+  color: #fff;
+}
+
+.left-intro h6 {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.left-intro h1 {
+  font-size: 23px;
+  line-height: 35px;
+}
+
+.left-intro h4 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Donate Class Right Form Styles */
+.donateclassright-form {
+  height: auto;
+  width: 40%;
+}
+
+/* Donate Now Styles */
+.donatenow {
+  align-items: center;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  height: 70px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  justify-content: center;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+.button-sec {
+  background: none;
+  display: flex;
+  justify-content: center;
+}
+/* Input Field Styles */
+.inputfield {
+  background-color: #ed4b4b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.DonateNow input {
+  border: none;
+  padding: 10px;
+}
+
+/* Button Section Styles */
+.inputfield .button {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* Money Input Styles */
+.money {
+  background: none;
+  border: 0.2px solid #fff;
+  color: #fff;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 2px;
+  width: 80px;
+}
+
+/* Button Donate Styles */
+.button-donate {
+  border: none;
+  color: #ed4b4b;
+  width: 171px;
+  background-color: white;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Comfortaa';
+}
+ /* Ethical practices section */
+ .para2 {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+}
+/* Good Change Section Styles */
+.Good-change {
+  background-color: #000;
+  color: #fff;
+  height: auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* Button GC Styles */
+.btn-GC {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* B GC Styles */
+.b-GC {
+  background-color: #067749;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 10rem;
+  font-family: 'Poppins';
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Wrapper Styles */
+.wrapper {
+  align-items: center;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+
+/* Ball Styles */
+>>>>>>> momeals-frontend/master
 .ball {
   position: absolute;
   width: 50px;
@@ -453,6 +850,7 @@ border-radius: 20px;
   cursor: move;
   user-select: none;
 }
+<<<<<<< HEAD
 .capsule{
   border: none;
 }
@@ -460,26 +858,44 @@ border-radius: 20px;
 
 
 /* Animation */
+=======
+
+/* Capsule Styles */
+.capsule {
+  border: none;
+}
+
+/* Animation Styles */
+>>>>>>> momeals-frontend/master
 @keyframes jump {
   0% {
     transform: translate(0, 0);
   }
   50% {
+<<<<<<< HEAD
     transform: translate(
       calc(100% - 50px),
       calc(100% - 50px)
     );
+=======
+    transform: translate(calc(100% - 50px), calc(100% - 50px));
+>>>>>>> momeals-frontend/master
   }
   100% {
     transform: translate(0, 0);
   }
 }
 
+<<<<<<< HEAD
 /* Apply animation to balls */
+=======
+/* Apply Animation to Balls */
+>>>>>>> momeals-frontend/master
 .ball {
   animation: jump 2s infinite;
 }
 
+<<<<<<< HEAD
 /* Make balls draggable */
 .ball:active {
   cursor: grabbing;
@@ -496,10 +912,32 @@ border-radius: 20px;
   .count-details{
     padding: 0px 5px;
   }
+=======
+/* Make Balls Draggable */
+.ball:active {
+  cursor: grabbing;
+}
+
+
+/* Media query for small devices with maximum width of 280px */
+@media (max-width: 280px){
+  /* Styling for images in .section-cards */
+  .section-cards .img-fluid {
+    margin-left: -5px;
+  }
+
+  /* Styling for elements with class .count-details */
+  .count-details {
+    padding: 0px 5px;
+  }
+
+  /* Styling for .section-cards inside .mand-v */
+>>>>>>> momeals-frontend/master
   .mand-v .section-cards {
     flex-direction: column;
     margin: 0px 15px;
   }
+<<<<<<< HEAD
   .card-text {
     margin: 0px 5px;
   }
@@ -517,6 +955,42 @@ font-size: 36px;
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+=======
+
+  /* Styling for paragraph elements with class .para2 */
+  .para2 {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  /* Styling for elements with class .solid-line */
+  .solid-line {
+    border: 5px solid #067749;
+    background: #067749;
+  }
+}
+@media (max-width: 767px){
+.worrior {
+    text-align: center;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 20px 10px;
+    flex-direction: column;
+    top: -10px;
+}
+}
+/* Media query for extra small devices with maximum width of 575.98px */
+@media (max-width: 575.98px) {
+  /* Styling for elements with class .capsule */
+  .capsule {
+    border-bottom: solid 3px #C7F2AB;
+  }
+
+  /* Styling for elements with class .worrior .btn-join */
+>>>>>>> momeals-frontend/master
   .worrior .btn-join {
     width: 121px;
     height: 40px;
@@ -524,6 +998,7 @@ font-size: 36px;
     padding: 10px;
     box-shadow: none;
   }
+<<<<<<< HEAD
   .section-cards .img-fluid{
     width: 80px;
     height: 80px;
@@ -550,20 +1025,254 @@ font-size: 36px;
     display: none;
   }
   .para2{
+=======
+
+  /* Styling for images in .section-cards */
+  .section-cards .img-fluid {
+    width: 80px;
+    height: 80px;
+  }
+ /* Styling for elements with class .para-sideh3 */
+ .para-side .para-sideh3 {
+
+  font-size: 24px;
+  text-align: center;
+}
+  /* Styling for elements with class .faqImg */
+  .faqImg {
+    display: none;
+  }
+
+  /* Styling for headings in .left-intro */
+  .left-intro h1,
+  .left-intro h6 {
+    font-size: 18px;
+  }
+
+  /* Styling for .left-intro */
+  .left-intro {
+    text-align: center;
+  }
+
+  /* Styling for elements with class .img-arrow */
+  .img-arrow {
+    display: none;
+  }
+
+  /* Styling for paragraph elements with class .para2 */
+  .para2 {
+>>>>>>> momeals-frontend/master
     font-size: 18px;
     text-align: left;
     padding: 0px 15px;
   }
 
+<<<<<<< HEAD
   .small-image{
     width: 117px !important;
   }
+=======
+  /* Styling for elements with class .small-image */
+  .small-image {
+    width: 117px !important;
+  }
+
+  /* Styling for elements with class .home-counter .counter */
+>>>>>>> momeals-frontend/master
   .home-counter .counter {
     flex-wrap: wrap;
     padding: 10px;
     justify-content: center !important;
     width: auto;
+<<<<<<< HEAD
     background: #C7F2AB;
+=======
+    background: #067A46;
+    color: white;
+    border-radius: 0;
+  }
+
+  /* Styling for elements with class .text1 */
+  .text1 {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  /* Styling for elements with class .text2 */
+  .text2 {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  /* Styling for elements with class .descript */
+  .descript {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  /* Styling for elements with class .capsule */
+  .capsule {
+    width: 100%;
+    border-bottom: solid 3px #C7F2AB;
+    margin: 10px 20px;
+    display: flex;
+  }
+
+  /* Styling for elements with class .count */
+  .count {
+    font-weight: 800;
+    font-size: 15px;
+  }
+
+  /* Styling for elements with class .count-details */
+  .count-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Styling for headings in .left-para */
+  .left-para h5,
+  .left-para h1 {
+    font-size: 24px;
+  }
+
+  /* Styling for list items inside ul */
+  ul .list {
+    font-size: 16px;
+  }
+
+  /* Styling for elements with class .mand-v .title */
+  .mand-v .title {
+    margin: 0px;
+  }
+
+  /* Styling for elements with class .title */
+  .title {
+    padding: 5px 15px;
+    font-size: 23px;
+  }
+
+  /* Styling for elements with class .head-line */
+  .head-line {
+    display: none;
+  }
+
+  /* Styling for elements with class .section-img */
+  .section-img {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+  }
+
+  /* Styling for .mand-v .section-cards */
+  .mand-v .section-cards {
+    flex-direction: column;
+    font-family: 'Comfortaa';
+  }
+
+  /* Styling for elements with class .slogancard-text */
+  .slogancard-text {
+    text-align: left;
+  }
+
+  /* Styling for .section-cards .card1 */
+  .section-cards .card1 {
+    display: flex;
+  }
+
+  /* Styling for .section-cards .card2 */
+  .section-cards .card2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  /* Styling for .section-cards .card3 */
+  .section-cards .card3 {
+    display: flex;
+  }
+
+  /* Styling for elements with class .mand-v .title */
+  .mand-v .title {
+    margin-top: 18rem;
+  }
+
+  /* Styling for elements with class .HowToDo */
+  .HowToDo {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  /* Styling for elements with class .worrior h6 */
+  .worrior h6 {
+    font-family: 'Arvo';
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+
+  /* Styling for elements with class .faqImg */
+  .faqImg {
+    padding: 20px;
+  }
+
+  /* Styling for elements with class .left-intro and .donateclassright-form */
+  .left-intro,
+  .donateclassright-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Styling for elements with class .DonateNow */
+  .DonateNow {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  /* Styling for elements with class .h1-GC */
+  .h1-GC {
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  /* Styling for elements with class .blog */
+  .blog {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-size: 28px;
+  }
+
+  /* Styling for elements with class .update */
+  .update {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+  }
+}
+
+/* Styling for elements with class .be-diff */
+.be-diff {
+  background: #FFFFFF;
+}
+/* Media query for small devices with minimum width of 576px and maximum width of 780.98px */
+@media (max-width: 767.98px) and (min-width: 500px) {
+  .faqImg{
+    display: none;
+  }
+ 
+ 
+  .home-counter .counter {
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center !important;
+    width: auto;
+    background: #067A46;
+   
+>>>>>>> momeals-frontend/master
 
     border-radius: 0; 
   }
@@ -581,11 +1290,17 @@ font-size: 14px;
     font-size: 15px;
 }
   .capsule{
+<<<<<<< HEAD
     width: 100%;
     border-radius: 50px;
     border: solid 1px #000; 
     color: #000;
     background-color: #fff;
+=======
+    border-bottom: solid 3px #C7F2AB;
+    width: 100%;
+    color: white;
+>>>>>>> momeals-frontend/master
     margin: 10px 20px;
     display: flex;
   }
@@ -596,6 +1311,7 @@ font-size: 14px;
   .count-details{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
  
   }
  .left-para h5,.left-para h1{
@@ -747,14 +1463,48 @@ font-size: 22px;
   } */
   .be-diff {
     
+=======
+    margin-top: 10px;
+  
+  }
+  
+ 
+ 
+}
+/* Media query for small devices with minimum width of 576px and maximum width of 780.98px */
+@media only screen and (min-width: 576px) and (max-width: 780.98px) {
+  /* Styling for elements with class .header-title */
+  .header-title {
+    font-size: 15px;
+  }
+
+  /* Styling for elements with class .home-section */
+  .home-section {
+    flex-direction: column;
+  }
+
+  /* Styling for elements with class .head-btn when hovered */
+  .head-btn:hover {
+    background-color: gainsboro;
+  }
+  
+  /* Styling for elements with class .be-diff */
+  .be-diff {
+>>>>>>> momeals-frontend/master
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+<<<<<<< HEAD
+=======
+
+  /* Styling for elements with class .img-side */
+>>>>>>> momeals-frontend/master
   .img-side {
     width: auto;
   }
 
+<<<<<<< HEAD
   .line {
     display: none;
   }
@@ -764,10 +1514,22 @@ font-size: 24px;
 text-align: center;
   }
   .para-side p{
+=======
+  /* Styling for elements with class .line */
+  .line {
+    display: none;
+  }
+
+ 
+
+  /* Styling for elements with class .para-sidep */
+  .para-sidep {
+>>>>>>> momeals-frontend/master
     font-weight: 400;
     font-size: 14px;
     text-align: center;
   }
+<<<<<<< HEAD
   .HowToDo{
     flex-wrap: wrap;
    
@@ -802,6 +1564,33 @@ text-align: center;
 }
 
 /* for large devices */
+=======
+
+  /* Styling for elements with class .HowToDo */
+  .HowToDo {
+    flex-wrap: wrap;
+  }
+
+  /* Styling for elements with class .h1-GC */
+  .h1-GC {
+    padding: 10px;
+  }
+
+  /* Styling for elements with class .accordian */
+  .accordian {
+    padding: 20px;
+    width: auto;
+  }
+
+  /* Styling for elements with class .wrapper */
+  .wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/* Media query for devices with minimum width of 992 and maximum width of 768 */
+>>>>>>> momeals-frontend/master
 @media only screen and (min-width: 992px), screen and (min-width: 768px) {
   .capsule{
     padding: 0px 20px;
@@ -809,11 +1598,19 @@ text-align: center;
   }
 
   .head-section {
+<<<<<<< HEAD
     padding-top: 200px;
   }
   .home-counter .counter{
     position: absolute;
 right: 0;
+=======
+    padding-top: 150px;
+  }
+  .home-counter .counter{
+    position: absolute;
+    right: 0;
+>>>>>>> momeals-frontend/master
     top: -50px;
   
   }
@@ -834,6 +1631,7 @@ right: 0;
   .btn-diff{
     display: none;
   }
+<<<<<<< HEAD
 }
 @media only screen and (min-width: 992px) {
  
@@ -902,11 +1700,119 @@ right: 0;
   .HowToDo{
     padding: 50px;
   }
+=======
+  /* Wrapper Styles */
+.wrapper {
+  align-items: center;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+/* Accordian Styles */
+.accordian {
+  width: 50%;
+}
+
+}
+/* Media query for devices with minimum width of 768px and maximum width of 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styling for elements with class .worrior .btn-join */
+  .worrior .btn-join {
+    width: 125px;
+    height: 45px;
+  }
+
+  /* Styling for elements with class .worrior h6 */
+  .worrior h6 {
+    font-size: 20px;
+  }
+
+  /* Styling for elements with class .worrior .btn-join and .worrior h6 */
+  .worrior .btn-join,
+  .worrior h6 {
+    font-size: 14px;
+  }
+
+  /* Styling for elements with class .donateclassright-form */
+  .donateclassright-form {
+    height: 420px;
+  }
+}
+
+/* Media query for devices with minimum width of 992px and above */
+@media only screen and (min-width: 992px) {
+  /* Styling for elements with class .count */
+  .count {
+    font-size: 35px;
+  }
+
+  /* Styling for elements with class .descript */
+  .descript {
+    font-size: 18px;
+  }
+
+  /* Styling for elements with class .capsule-imgs */
+  .capsule-imgs {
+    display: none;
+  }
+
+  /* Styling for elements with class .home-counter .counter */
+  .home-counter .counter {
+    padding: 0px 20px;
+  }
+}
+
+/* Media query for devices with minimum width of 1400px and above */
+@media only screen and (min-width: 1400px) {
+  /* Styling for elements with class .home-counter .counter */
+  .home-counter .counter {
+    width: 50%;
+  }
+
+  /* Styling for headings in .left-intro */
+  .left-intro h1 {
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  /* Styling for elements with id #left-parah1 */
+  #left-parah1 {
+    font-size: 36px;
+  }
+
+  /* Styling for elements with class .right-form */
+  .right-form {
+    height: 420px;
+    width: 26%;
+  }
+}
+
+/* Media query for devices with minimum width of 768px */
+@media only screen and (min-width: 768px) {
+  /* Styling for elements with class .capsule-imgs */
+  .capsule-imgs {
+    display: none;
+  }
+
+  /* Styling for elements with class .donateclassright-form */
+  .donateclassright-form {
+    height: 420px;
+  }
+
+  /* Styling for elements with class .header-title */
+  .header-title {
+    font-size: 24px;
+  }
+
+  /* Styling for elements with class .p-GC */
+>>>>>>> momeals-frontend/master
   .p-GC {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 19px;
     line-height: 28px;
+<<<<<<< HEAD
 color: #FFFFFF;
   }
  
@@ -926,11 +1832,25 @@ color: #FFFFFF;
 
 /* // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) { ... } */
+=======
+    color: #FFFFFF;
+  }
+}
+
+/* Styling for elements with class .solid-line */
+>>>>>>> momeals-frontend/master
 .solid-line {
   border-bottom: 3px solid green;
   width: 100%;
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+/* Styling for elements with class .section-cards .homesloaganpara */
+.section-cards .homesloaganpara {
+  font-family: 'Poppins';
+}
+>>>>>>> momeals-frontend/master

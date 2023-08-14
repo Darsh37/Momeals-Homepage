@@ -9,11 +9,15 @@ import {Row,Container,Col} from 'react-bootstrap'
 function DonationPage() {
   return (
     <div style={{overflow:"hidden"}}>
+<<<<<<< HEAD
     {/* <div className='mt-5 formdiv' >
     <center> <Fromleft/>    </center>
     <center className='fromright'><Fromright /></center>   
     
     </div> */}
+=======
+   
+>>>>>>> momeals-frontend/master
     <Container className='mt-5'>
       <Row className='justify-content-between'>
         <Col xs={12} md={12} lg='auto'>

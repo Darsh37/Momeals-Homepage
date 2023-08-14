@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .contactUs-container{
     margin: 2rem 5rem;
     margin-bottom: 5rem;
@@ -92,3 +93,153 @@ padding: 2rem;
         color:#FFFFFF;
     }
 }
+=======
+/* ContactUs.css */
+
+/* Styles for the back button */
+.contactUs-container .contactarrow {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 6px;
+    margin: 10px 0px 0px 16px;
+  }
+  
+  /* Styles for the right-side container */
+  .contactUs-right-side {
+    border-radius: 50px;
+    background: #c7f2ab;
+  }
+  
+  /* Styles for the subheading in contact details section */
+  .contactUs-headerh5 {
+    color: #067749;
+    font-family: 'Comfortaa';
+    font-weight: 600;
+  }
+  
+  /* Styles for paragraph 1 in contact details section */
+  .contactUs-p1 {
+    color: #484747;
+    font-weight: 400;
+    font-family: 'Inter';
+  }
+  
+  /* Styles for paragraph 2 in contact details section */
+  .contactUs-p2 {
+    color: black;
+    font-weight: 600;
+    font-family: 'Inter';
+  }
+  
+  /* Styles for the subheading in right-side container */
+  .contactUs-righth3 {
+    font-weight: 500;
+    font-family: 'Comfortaa';
+  }
+  
+  /* Styles for form input fields */
+  .contactUs-right-side .contact-inp {
+    border-bottom: 2px solid #888888;
+  }
+  
+  /* Styles for form input placeholders */
+  .contactUs-right-side .contact-inp::placeholder {
+    color: black;
+  }
+  
+  /* Styles for paragraphs and radio buttons */
+  .contactus-rightp,
+  .contact-inp,
+  .contactus-right-radio {
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+  
+  /* Styles for the submit button */
+  .contactUs1-btn {
+    border-radius: 20px;
+    width: 100%;
+    background: #1b5240;
+    color: #ffffff;
+  }
+  
+  /* Styles for form input fields (default styles) */
+  .contact-inp {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #000;
+    margin: 15px 0px;
+    border-bottom: 4px solid black;
+    outline: none; /* Add this line to remove the outline */
+  }
+  
+  /* Styles for form input fields when focused */
+  .contact-inp:focus {
+    background: none;
+    outline: none;
+  }
+  
+  /* Media query for screens with min-width 768px */
+  @media screen and (min-width: 768px) {
+    /* Increase font size for the contact header */
+    .contactUs-headerh3 {
+      font-size: 32px;
+    }
+    /* Increase font size for the subheading in contact details section */
+    .contactUs-headerh5 {
+      font-size: 22px;
+    }
+    /* Increase font size for paragraphs in contact details section */
+    .contactUs-p1,
+    .contactUs-p2 {
+      font-size: 20px;
+    }
+    /* Increase font size for paragraphs and radio buttons in right-side container */
+    .contactus-rightp,
+    .contact-inp,
+    .contactus-right-radio {
+      font-size: 18px;
+    }
+  }
+  
+  /* Media query for screens with max-width 600px */
+  @media screen and (max-width: 600px) {
+    /* Increase font size for the subheading in right-side container */
+    .contactUs-righth3 {
+      font-size: 24px;
+    }
+    /* Decrease font size for form input fields in right-side container */
+    .contactUs-right-side .contact-inp {
+      font-size: 14px;
+    }
+    /* Increase font size for the subheading in contact details section */
+    .contactUs-headerh5 {
+      font-size: 22px;
+    }
+    /* Increase font size for paragraphs in contact details section */
+    .contactUs-p1,
+    .contactUs-p2 {
+      font-size: 20px;
+    }
+    /* Reverse the order of rows in contact details and form section */
+    .contactUs-row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    /* Reverse the order of social media icons and contact details in the first column */
+    .contactus1st-div {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 10px 0px;
+    }
+    /* Center align the first column and social media icons on smaller screens */
+    .contactUs-container .contactus1st-col,
+    .contctus-imgs {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+>>>>>>> momeals-frontend/master

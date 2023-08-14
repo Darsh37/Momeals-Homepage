@@ -1,9 +1,19 @@
 import React from "react";
 import "../FoodHunger/FoodHunger.css";
+<<<<<<< HEAD
 
 export const Container3 = () => {
   return (
     <div className="container3-wrapper">
+=======
+import { Col, Row } from "react-bootstrap";
+
+export const Container3 = () => {
+  return (
+    <div className="container3-wrapper px-lg-4">
+     <Row>
+      <Col className="p-5">
+>>>>>>> momeals-frontend/master
       <p>
         “ To reduce food wastage, individuals can change their habits and take
         simple steps, such as appropriate planning before purchasing food,
@@ -11,6 +21,11 @@ export const Container3 = () => {
         about food storage and preservation. These steps can make a significant
         impact in reducing food wastage in India.”
       </p>
+<<<<<<< HEAD
+=======
+      </Col>
+     </Row>
+>>>>>>> momeals-frontend/master
     </div>
   );
 };

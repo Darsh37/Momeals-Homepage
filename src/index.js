@@ -4,6 +4,10 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.css';
+<<<<<<< HEAD
+=======
+import '@fortawesome/fontawesome-svg-core/styles.css';
+>>>>>>> momeals-frontend/master
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

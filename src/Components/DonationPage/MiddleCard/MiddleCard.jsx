@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// Importing necessary modules and components
+>>>>>>> momeals-frontend/master
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -9,6 +13,7 @@ import Malnutritio_child from "../../Images/Malnutritio_ Child_2.png";
 import HelpCard from "../HelpCard/HelpCard";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 
 function MiddleCard() {
@@ -18,6 +23,11 @@ function MiddleCard() {
     navigate('/MembershipForm');
   }; 
 
+=======
+
+function MiddleCard() {
+  // State to store data for the cards
+>>>>>>> momeals-frontend/master
   const [data] = useState([
     {
       heading: "MALNUTRITION CHILDREN’S",
@@ -38,7 +48,14 @@ function MiddleCard() {
     },
   ]);
 
+<<<<<<< HEAD
   const sliderRef = useRef(null);
+=======
+  // Create a reference for the slider
+  const sliderRef = useRef(null);
+
+  // Slider settings
+>>>>>>> momeals-frontend/master
   const settings = {
     dots: true,
     infinite: true,
@@ -67,16 +84,26 @@ function MiddleCard() {
       },
     ],
   };
+<<<<<<< HEAD
   
 
+=======
+
+  // Function to go to the next slide
+>>>>>>> momeals-frontend/master
   const slideNext = () => {
     sliderRef.current.slickNext();
   };
 
+<<<<<<< HEAD
+=======
+  // Function to go to the previous slide
+>>>>>>> momeals-frontend/master
   const slidePrev = () => {
     sliderRef.current.slickPrev();
   };
 
+<<<<<<< HEAD
   return (
     <div className="middle-container">
       <center>
@@ -111,6 +138,45 @@ function MiddleCard() {
                         </Card.Text>
                       </div>
                    
+=======
+  // JSX content of the component
+  return (
+    <div className="middle-container">
+      <center>
+        {/* Header */}
+        <div className="work-header">
+          <Row>
+            <h1 className="pt-5 work-headerh1">For Whom We Work</h1>
+          </Row>
+          <br />
+          <Row className="m-2">
+            <Col>
+              <p className="work-headerp">
+                We Work Selflessly to help homeless people, malnutrition
+                children’s and unemployed women’s seeking support
+              </p>
+            </Col>
+          </Row>
+        </div>
+        {/* Slider */}
+        <div className="middle-containerslider-container">
+          <Slider {...settings} ref={sliderRef}>
+            {data.map((dta, id) => (
+              <div className="helpingcards" key={id}>
+                <Card className="middle-container-card card-spacing mt-5">
+                  <Card.Body className="d-flex flex-column middle-containercard-body">
+                    <Card.Title className="middle-containerheading">
+                      {dta.heading}
+                    </Card.Title>
+                    <div className=" mt-3">
+                      <div className="position-absolute left-0 middle-containercard-line"></div>
+                    </div>
+                    <div className="mb-5" style={{ marginBottom: "50px" }}>
+                      <Card.Text variant="top" className="mt-4 middle-containercard-text">
+                        {dta.para}
+                      </Card.Text>
+                    </div>
+>>>>>>> momeals-frontend/master
                     <div className="mt-5">
                       <Card.Img
                         variant="top"
@@ -124,6 +190,7 @@ function MiddleCard() {
               </div>
             ))}
           </Slider>
+<<<<<<< HEAD
           <div className="slider-buttons">
             <Button className="slider-button" onClick={slidePrev}>
               <FaAngleLeft />
@@ -134,10 +201,28 @@ function MiddleCard() {
           </div>
         </div>
         <Button className="mt-5 " id="member_but" onClick={handleClick}>
+=======
+          {/* Slider buttons */}
+          <div className="middle-containerslider-buttons">
+            <button className="middle-containerslider-button" onClick={slidePrev}>
+              <FaAngleLeft />
+            </button>
+            <button className="middle-containerslider-button" onClick={slideNext}>
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+        {/* Button */}
+        <Button className="mt-5 " id="member_but">
+>>>>>>> momeals-frontend/master
           Become A Member
         </Button>
       </center>
 
+<<<<<<< HEAD
+=======
+      {/* HelpCard component */}
+>>>>>>> momeals-frontend/master
       <div className="mt-5">
         <HelpCard />
       </div>

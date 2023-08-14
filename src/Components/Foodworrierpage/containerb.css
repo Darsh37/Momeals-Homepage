@@ -1,0 +1,91 @@
+/* CSS for Containerb Component */
+
+/* Styling for the containerb-wrapper */
+.containerb-wrapper {
+    background-color: #FFF;
+}
+
+/* Styling for the heading */
+.containerb-wrapperh3 {
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 47px;
+    padding-top: 5rem;
+}
+
+/* Styling for the heading text "Saving Food" */
+.containerb-heading-color {
+    color: #067A46;
+}
+
+/* Styling for the alphabets (A, B, C) in the heading */
+.containerb-header-alpha {
+    color: #ED4B4B;
+}
+
+/* Styling for the slide captions in the slider */
+.containerb-wrapperimage-list1 .containerb-wrapperp2 {
+    height: 46px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #010101;
+}
+
+/* Styling for the slide images in the slider */
+.containerb-wrapperimage-list1 .containerb-wrapperimg {
+    width: 291px;
+    height: 513px;
+}
+
+/* Media query for larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    /* Hide slider buttons when screen size is larger */
+    .containerbbutton-wrapper .containerbslider-buttons {
+        display: none;
+    }
+}
+
+/* Media query for smaller screens (max-width: 1023px) */
+@media (max-width: 1023px) {
+    /* Adjust margin for slide captions on smaller screens */
+    .containerb-wrapperimage-list1 .containerb-wrapperp2 {
+        margin-top: 2rem;
+    }
+}
+
+/* Media query for smaller screens (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+    /* Adjust font size and padding for the heading on smaller screens */
+    .containerb-wrapperh3 {
+        font-size: 26px;
+        padding: 0px 25px;
+    }
+}
+
+/* Styling for the slider buttons */
+.containerbbutton-wrapper .containerbslider-buttons {
+    border-radius: 40px;
+    border: 1px solid #000;
+    background: #C7F2AB;
+ 
+    color: black;
+}
+
+/* Styling for the active slider button */
+.containerbslider-buttons.active {
+    border: 1px solid black !important;
+    color: black !important;
+}
+.containerbslider-buttons:focus {
+    border: 1px solid black !important;
+    color: black !important;
+    outline: none !important;
+    box-shadow: none !important;
+}

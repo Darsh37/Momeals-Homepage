@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
 
@@ -39,3 +40,53 @@ font-size: 18px;
   padding: 0px 15px;
 }
 }
+=======
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
+
+/* Styles for the support page container */
+.support-page {
+  height: 400px;
+  width: 100%;
+  background-image: url('../../Images/Giveawayfood-2\ 1.png');
+}
+
+/* Styles for the support content */
+.support-dis {
+  color: white;
+  font-size: 20px;
+  font-family: 'Comfortaa';
+}
+
+/* Styles for the support button */
+.support-dis .support-but {
+  background-color: orange;
+  border-radius: 15px;
+  border: none;
+  height: 45px;
+  width: 200px;
+  color: #fff;
+  font-size: large;
+  box-shadow: 2px 2px 2px 0 rgb(119, 112, 112);
+}
+
+/* Styles for the support button on hover */
+.support-dis .support-but:hover {
+  background: #067A46 !important;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .support-dis {
+    font-size: 18px;
+  }
+
+  .support-heading {
+    font-size: 18px;
+  }
+
+  .support-page {
+    padding: 0px 15px;
+  }
+}
+>>>>>>> momeals-frontend/master

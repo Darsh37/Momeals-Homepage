@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+/* Fromleft.css */
+
+/* Styles for the caption and buttons */
+>>>>>>> momeals-frontend/master
 .donation-caption {
   /* max-width:65%;
     padding:58px; */
@@ -5,17 +11,29 @@
   font-style: "Arvo";
 }
 
+<<<<<<< HEAD
+=======
+/* Styles for the cause description */
+>>>>>>> momeals-frontend/master
 .cause-description {
   font-size: 21px;
   font-family: sans-serif;
   font-weight: 400;
 }
 
+<<<<<<< HEAD
+=======
+/* Media query for screens with min-width 782px */
+>>>>>>> momeals-frontend/master
 @media (min-width: 782px) {
   .cause-description {
     width: 375px;
   }
 
+<<<<<<< HEAD
+=======
+  /* Styles for the first half of the caption on larger screens */
+>>>>>>> momeals-frontend/master
   .donation-caption .first-half {
     font-size: 43px;
     line-height: 45px;
@@ -23,6 +41,10 @@
     letter-spacing: -3px;
   }
 
+<<<<<<< HEAD
+=======
+  /* Styles for the second half of the caption on larger screens */
+>>>>>>> momeals-frontend/master
   .donation-caption .second-half {
     font-size: 58px;
     color: #1b5240;
@@ -33,10 +55,16 @@
     display: inline-block;
   }
 }
+<<<<<<< HEAD
+=======
+
+/* Media query for screens with min-width 1025px */
+>>>>>>> momeals-frontend/master
 @media (min-width: 1025px) {
   .cause-description {
     width: 375px;
   }
+<<<<<<< HEAD
   .donation-caption {
     text-align: left;
   }
@@ -45,6 +73,15 @@
     justify-content: flex-start;
   }
 
+=======
+
+  /* Align the caption to the left on larger screens */
+  .donation-caption {
+    text-align: left;
+  }
+
+  /* Styles for the first half of the caption on larger screens */
+>>>>>>> momeals-frontend/master
   .donation-caption .first-half {
     font-size: 43px;
     line-height: 45px;
@@ -52,6 +89,10 @@
     letter-spacing: -3px;
   }
 
+<<<<<<< HEAD
+=======
+  /* Styles for the second half of the caption on larger screens */
+>>>>>>> momeals-frontend/master
   .donation-caption .second-half {
     font-size: 58px;
     color: #1b5240;
@@ -61,6 +102,11 @@
     position: relative;
     display: inline-block;
   }
+<<<<<<< HEAD
+=======
+
+  /* Underline effect for the second half of the caption on larger screens */
+>>>>>>> momeals-frontend/master
   .underline {
     position: absolute;
     bottom: 6px;
@@ -74,10 +120,31 @@
   }
 }
 
+<<<<<<< HEAD
 .donate-buttons .btn-1:hover {
   background: #067a46 !important;
 }
 .donate-buttons .btn-1 {
+=======
+/* Styles for the active state of buttons when clicked */
+.donation-caption .donate-buttons .fromleftbtn-1:active {
+  background: #067a46;
+}
+
+.donation-caption .donate-buttons .fromleftbtn-2:active {
+  background: #fd7e14;
+}
+
+/* Styles for the hover state of buttons */
+.donate-buttons .fromleftbtn-1:hover {
+  background: #067a46;
+  box-shadow: none;
+  border: none;
+}
+
+/* Styles for the 'Give Food' button */
+.donate-buttons .fromleftbtn-1 {
+>>>>>>> momeals-frontend/master
   border-radius: 50px;
   border: none;
   height: 50px;
@@ -91,7 +158,12 @@
   border-radius: 30px;
 }
 
+<<<<<<< HEAD
 .donate-buttons .btn-2 {
+=======
+/* Styles for the 'Donate' button */
+.donate-buttons .fromleftbtn-2 {
+>>>>>>> momeals-frontend/master
   border-radius: 30px;
   height: 50px;
   width: 165px;
@@ -101,47 +173,94 @@
   background: #ffffff;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+<<<<<<< HEAD
   
 }
 
 @media (max-width: 768px) {
   .donate-buttons .btn-1,
   .donate-buttons .btn-2 {
+=======
+}
+
+/* Media query for screens with max-width 768px */
+@media (max-width: 768px) {
+  .donate-buttons .fromleftbtn-1,
+  .donate-buttons .fromleftbtn-2 {
+>>>>>>> momeals-frontend/master
     height: 50px;
     width: 105px;
     font-size: 15px;
     border-radius: 30px;
     font-weight: 700;
   }
+<<<<<<< HEAD
+=======
+
+  /* Styles for the first half of the caption on smaller screens */
+>>>>>>> momeals-frontend/master
   .donation-caption .first-half {
     font-weight: 600;
     font-size: 30px;
     line-height: 40px;
   }
+<<<<<<< HEAD
   .donation-caption .second-half {
     font-weight: 800;
     font-size: 40px;
 
+=======
+
+  /* Styles for the second half of the caption on smaller screens */
+  .donation-caption .second-half {
+    font-weight: 800;
+    font-size: 40px;
+>>>>>>> momeals-frontend/master
     color: #1b5240;
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 280px) {
   .col-auto {
+=======
+/* Media query for screens with max-width 280px */
+@media (max-width: 280px) {
+  /* Adjust the width of the button container on smaller screens */
+  .fromleftcolbtns {
+>>>>>>> momeals-frontend/master
     width: 110px !important;
   }
 }
 
+<<<<<<< HEAD
+=======
+/* Styles for the button container */
+>>>>>>> momeals-frontend/master
 .donate-buttons {
   margin-top: 40px;
 }
 
+<<<<<<< HEAD
 .donate-buttons .btn-2:hover {
   background-color: #fd7e14 !important;
   color: #ffffff;
 }
 
 @media (max-width: 768px) {
+=======
+/* Styles for the hover state of the 'Donate' button */
+.donate-buttons .fromleftbtn-2:hover {
+  background-color: #fd7e14;
+  color: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
+/* Media query for screens with max-width 768px */
+@media (max-width: 768px) {
+  /* Adjust the margin of the caption on smaller screens */
+>>>>>>> momeals-frontend/master
   .donation-caption {
     margin: 0px 30px;
   }

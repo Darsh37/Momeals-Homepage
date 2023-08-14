@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
 
+=======
+/* HelpCard.css */
+
+/* Styles for the container of the help card */
+>>>>>>> momeals-frontend/master
 .help_container {
   background: #C7F2AB;
   padding: 0 50px;
 }
+<<<<<<< HEAD
 .p_heading{
   font-family: 'Comfortaa';
 font-style: normal;
@@ -39,6 +46,56 @@ line-height: 27px;
 
 
 
+=======
+
+/* Styles for the 'One Hand For Others' heading */
+.p_heading {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+/* Styles for the main heading */
+.h1_heading {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+/* Styles for the low-level heading */
+.p_low_heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+/* Styles for the inner card title */
+.inner_card .helpcard-title {
+  font-family: 'Comfortaa' !important;
+  margin: 0px;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 400;
+}
+
+/* Styles for the inner card text */
+.inner_card .helpcard-text {
+  margin: 0px;
+  font-family: 'Poppins' !important;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  width: 100% !important;
+  text-align: left;
+}
+
+/* Styles for the 'Help them' button */
+>>>>>>> momeals-frontend/master
 .but_help {
   background-color: orange;
   border-radius: 15px;
@@ -49,10 +106,20 @@ line-height: 27px;
   font-size: x-large;
   box-shadow: 2px 2px 2px 0 rgb(119, 112, 112);
 }
+<<<<<<< HEAD
 .but_help:hover{
   background-color: #067A46 ;
 
 }
+=======
+
+/* Styles for the hover state of the 'Help them' button */
+.but_help:hover {
+  background-color: #067A46 ;
+}
+
+/* Styles for the inner cards */
+>>>>>>> momeals-frontend/master
 .inner_card {
   position: relative;
   width: 350px !important;
@@ -63,15 +130,28 @@ line-height: 27px;
   font-family: 'Comfortaa';
 }
 
+<<<<<<< HEAD
 .arrow {
   height: 25px;
   width: 25px;
   background-color: #D9D9D9;
+=======
+/* Styles for the arrow icon on the cards */
+.help_container .arrow {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  color: black;
+>>>>>>> momeals-frontend/master
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
+<<<<<<< HEAD
+=======
+/* Styles for the color lines on the cards */
+>>>>>>> momeals-frontend/master
 .color-line1,
 .color-line2,
 .color-line3 {
@@ -80,6 +160,7 @@ line-height: 27px;
   position: absolute;
   bottom: 0;
   left: 40px;
+<<<<<<< HEAD
 }
 
 .arrow1,
@@ -107,10 +188,55 @@ line-height: 27px;
   background-color: orange;
 }
 @media (min-width: 992px){
+=======
+  background-color: white;
+}
+
+/* Styles for the arrow position on card 1, 2, and 3 */
+.help_container .arrow1,
+.help_container .arrow2,
+.help_container .arrow3 {
+  top: 260px;
+  right: 10px;
+}
+
+/* Styles for the container of the cards */
+.cards_help {
+  display: flex;
+  top: 20px;
+  gap: 10px;
+}
+
+/* Styles for the inner card 1 */
+.cards_help .inner-hcard1 {
+  background-color: #ED4B4B;
+  color: white;
+}
+
+/* Styles for the inner card 2 */
+.cards_help .inner-hcard2 {
+  background-color: #067749;
+  color: white;
+}
+
+/* Styles for the inner card 3 */
+.cards_help .inner-hcard3 {
+  background-color: #FD7E14;
+  color: white;
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+>>>>>>> momeals-frontend/master
   .help_container {
     margin-right: 10px;
   }
 }
+<<<<<<< HEAD
+=======
+
+/* Media query for small and medium-sized screens in portrait orientation */
+>>>>>>> momeals-frontend/master
 @media (max-width: 768px) {
   .help_container {
     flex-direction: column;
@@ -120,7 +246,10 @@ line-height: 27px;
 
   .inner_card {
     width: 100% !important;
+<<<<<<< HEAD
     height: 300px !important;
+=======
+>>>>>>> momeals-frontend/master
   }
 
   .help_left,
@@ -144,11 +273,22 @@ line-height: 27px;
     left: 50px;
     top: initial;
   }
+<<<<<<< HEAD
   .h1_heading{
+=======
+
+  /* Adjust the main heading size for smaller screens */
+  .h1_heading {
+>>>>>>> momeals-frontend/master
     font-size: 25px;
     font-family: 600;
   }
 }
+<<<<<<< HEAD
+=======
+
+/* Media query for medium-sized screens in portrait orientation */
+>>>>>>> momeals-frontend/master
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .cards_help {
     flex-direction: row !important;
@@ -157,6 +297,10 @@ line-height: 27px;
   }
 }
 
+<<<<<<< HEAD
+=======
+/* Media query for screens with max-width 1024px */
+>>>>>>> momeals-frontend/master
 @media (max-width: 1024px) {
   .help_container {
     height: auto !important;
@@ -176,6 +320,7 @@ line-height: 27px;
     width: 100% !important;
     max-width: 400px !important;
   }
+<<<<<<< HEAD
 
  
 }
@@ -190,4 +335,6 @@ line-height: 27px;
 }
 .inner_card .card-text {
   width:100% !important;
+=======
+>>>>>>> momeals-frontend/master
 }

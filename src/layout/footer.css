@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/* Styling for the footer */
+>>>>>>> momeals-frontend/master
 footer {
     background-color: #000;
     box-sizing: border-box;
@@ -5,6 +9,7 @@ footer {
     height: auto;
     padding-top: 2rem;
     width: 100%;
+<<<<<<< HEAD
 }
 
 
@@ -18,10 +23,39 @@ footer form input {
     width: 60%;
 }
 footer .Subscribe {
+=======
+  }
+  
+  /* Styling for footer text */
+  .footerdivh6 {
+    font-family: 'Poppins';
+    line-height: normal;
+  }
+  
+  .second-div h6 {
+    font-family: 'Poppins';
+  }
+  
+  /* Styling for the footer border */
+  .footerBorder {
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+  }
+  
+  /* Styling for the newsletter subscription form input */
+  footer form input {
+    padding: 0.2rem;
+  }
+  
+  /* Styling for the subscribe button */
+  footer .Subscribe {
+>>>>>>> momeals-frontend/master
     background-color: #c7f2ab;
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
     color: #000;
+<<<<<<< HEAD
     margin-left: 2rem;
     margin-top: 1rem;
     padding: 0.2rem;
@@ -48,3 +82,58 @@ footer .Subscribe {
         border-radius: 30px;
     }
 }
+=======
+    margin-top: 1rem;
+    padding: 0.2rem;
+  }
+  footer .first-div,   footer .second-div,   footer .last-div{
+      
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+.second-div .d-flex{
+    justify-content: center;
+    text-align: center;
+}
+  /* Media query for medium screens */
+  @media only screen and (min-width: 768px) {
+    /* Align the last column to the right */
+    .footerdiv .last-div {
+      text-align: right;
+    }
+  
+    /* Align the first column to the left */
+    .footerdiv .first-div {
+      text-align: left;
+    }
+  
+    /* Align text and links to the left in the second column */
+    .footerdiv .second-div .d-flex, .second-div h3 {
+      text-align: left;
+      justify-content: left;
+    }
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 575.98px) {
+    /* Order the last column first and center its content */
+    .last-div {
+      order: -1;
+      text-align: center;
+      align-items: center;
+    }
+  
+    /* Adjust the width of the subscribe button */
+    .Subscribe {
+      width: 45%;
+    }
+  
+    /* Add border-radius to the subscribe button */
+    footer .Subscribe {
+      border-radius: 30px;
+    }
+  }
+  
+>>>>>>> momeals-frontend/master

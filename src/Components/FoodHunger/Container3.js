@@ -1,9 +1,14 @@
 import React from "react";
 import "./FoodHunger.css";
+<<<<<<< HEAD
+=======
+import { Col, Row } from "react-bootstrap";
+>>>>>>> momeals-frontend/master
 
 function Container3() {
   return (
     <div className="container3-wrapper">
+<<<<<<< HEAD
       <p>
         Hunger is a predictable, preventable, and treatable issue that requires
         addressing its root causes. With the right tools, we can save the lives
@@ -13,6 +18,21 @@ function Container3() {
         create a world free from hunger for everyone.<br/><br/> Support us in the fight
         against hunger for the future of humankind.
       </p>
+=======
+     <Row className="align-items-center px-lg-5">
+        <Col className="p-5">
+          <p className="container3-wrapperp">
+            Hunger is a predictable, preventable, and treatable issue that requires
+            addressing its root causes. With the right tools, we can save the lives
+            of malnourished children and help them get the nutritious food they need
+            to thrive. By fighting poverty, improving access to clean water and
+            sanitation, preventing food waste, and addressing inequality, we can
+            create a world free from hunger for everyone.<br/><br/> Support us in the fight
+            against hunger for the future of humankind.
+          </p>
+        </Col>
+      </Row>
+>>>>>>> momeals-frontend/master
     </div>
   );
 }

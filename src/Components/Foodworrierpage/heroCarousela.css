@@ -1,0 +1,141 @@
+/* heroCarousela.css */
+
+/* Styles for caption and content in the carousel */
+
+/* Heading */
+.heroCarousela-heading .heroCarouselah5 {
+  max-width: 100%;
+  font-size: 48px;
+  font-family: Comfortaa;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+/* Hover style for the "GIVE AWAY" button */
+.heroCarouselagiveaway:hover {
+  background-color: #C7F2AB !important;
+  color: black !important;
+  border: none !important;
+}
+
+/* Paragraph */
+.heroCarousela-heading .heroCarouselap {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: Poppins;
+}
+
+/* Span within the heading */
+.heroCarousela-heading .heroCarouselah5 span {
+  color: #80ED99;
+}
+
+/* "GIVE AWAY" button */
+.heroCarousela-heading #heroCarouselabtn {
+  background: #FD7E14;
+  border-radius: 35px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 32px;
+}
+
+/* Media Query for screens between 575.98px and 998px */
+@media screen and (min-width: 575.98px) and (max-width: 998px) {
+  /* Hide the carousel for this screen size range */
+  .heroCarouselacarouselpage {
+      display: none;
+  }
+}
+
+/* Media Query for screens up to 575.98px */
+@media (max-width: 575.98px) {
+  /* Hide the carousel for small screens */
+  .heroCarouselacarouselpage {
+      display: none;
+  }
+  /* Adjust font size for smaller screens */
+  .heroCarousela-heading .heroCarouselah5 {
+      font-size: 10px;
+  }
+  .heroCarousela-heading .heroCarouselap {
+      font-size: 10px;
+  }
+  .heroCarousela-heading #heroCarouselabtn {
+      font-size: 10px;
+  }
+  /* Adjust font size for heroCarouselaFoodwarriorpage */
+  .heroCarouselaFoodwarriorpage .heroCarouselah3 {
+      font-size: 20px;
+      font-family: 'Comfortaa';
+  }
+  .heroCarouselaFoodwarriorpage .heroCarouselap {
+      font-size: 15px;
+      font-family: Inter;
+  }
+}
+
+/* Media Query for screens up to 280px */
+@media (max-width: 280px) {
+  /* Further adjustment for font size */
+  .heroCarouselaFoodwarriorpage .heroCarouselah3 {
+      font-size: 15px;
+      line-height: 1.3rem;
+  }
+}
+
+/* Button style for heroCarouselaFoodwarriorpage */
+.heroCarouselaFoodwarriorpage #heroCarouselabtn {
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 500;
+  background-color: #FD7E14;
+  color: white;
+}
+
+/* Media Query for screens larger than 768px */
+@media only screen and (min-width: 768px) {
+  /* Hide the carousel for this screen size */
+  .heroCarouselacarouselpage {
+      display: none;
+  }
+}
+
+/* Media Query for screens larger than 1200px */
+@media (min-width: 1200px) {
+  /* Show the carousel and hide the alternative content */
+  .fwcarousel-page .carousel-caption {
+      position: absolute;
+      text-align: left;
+      right: 0;
+      left: 0;
+  }
+  .heroCarouselacarouselpage {
+      display: block;
+  }
+  .heroCarouselaFoodwarriorpage {
+      display: none;
+  }
+  /* Adjust alignment for the background */
+  .fwcarousel-page .heroCarousela-background {
+      justify-content: left;
+      align-items: left;
+  }
+}
+
+/* Further adjustments for larger screens */
+@media only screen and (min-width: 768px) {
+  /* Adjust the positioning of the caption */
+  .heroCarousela-heading {
+      top: 20%;
+  }
+  /* Adjust button width */
+  .heroCarousela-heading #heroCarouselabtn {
+      width: 271px;
+  }
+}

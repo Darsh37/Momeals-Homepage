@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@100&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&display=swap');
+
+>>>>>>> momeals-frontend/master
 .App {
   padding: 0;
   margin: 0;
@@ -16,7 +21,11 @@ p{
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
+<<<<<<< HEAD
 font-size: 16px;
+=======
+/* font-size: 16px; */
+>>>>>>> momeals-frontend/master
 }
 
 .App-logo {
@@ -34,6 +43,12 @@ font-size: 16px;
   .header1{
     display: none;
   }
+<<<<<<< HEAD
+=======
+  .bottomnavbardiv{
+    display: none;
+  }
+>>>>>>> momeals-frontend/master
 }
 .Apppage{
   overflow: hidden;

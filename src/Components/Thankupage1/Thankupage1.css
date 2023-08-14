@@ -1,0 +1,45 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&display=swap'); 
+/* Setting the background color for elements with the ThankUpage-1 class */
+.ThankUpage-1 {
+  background: #C7F2AB; 
+}
+
+@media screen and (min-width: 768px) {
+     /* Setting the font family for elements with the ThankUpage-1h1 class */
+  .ThankUpage-1h1 {
+    font-family: 'Comfortaa';
+    font-size: 64px;
+    font-style: normal; 
+    font-weight: 400; 
+  }
+  /* Setting the font family for elements with the ThankUpage-1h4 class */
+  .ThankUpage-1h4 {
+    font-family: 'Poppins'; 
+    font-size: 32px; 
+    font-weight: 400; 
+  }
+   /* Setting the text color for elements with the ThankUpage-1link class */
+  .ThankUpage-1link {
+    color: #004EE7;
+    text-align: center; 
+    font-family: 'Poppins'; 
+    font-size: 32px; 
+    font-weight: 400; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ThankUpage-1h1 {
+    font-size: 32px; 
+  }
+  .ThankUpage-1h4 {
+    font-size: 16px;
+  }
+  .ThankUpage-1link {
+    font-size: 16px;
+  }
+  .Thankuimg-1 {
+    width: 100%;
+  }
+}
