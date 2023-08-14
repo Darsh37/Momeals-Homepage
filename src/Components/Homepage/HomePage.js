@@ -320,18 +320,11 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-      <div className="solid-line"></div>
-
-      <div className="HowToDo ">
-        <div className="left-para">
-=======
 
       <div className="solid-line"></div>
      {/* Left Paragraph section */}
       <div className="HowWeDo p-lg-5 p-4 px-md-5">
         <div className="left-para  m-lg-5 ">
->>>>>>> momeals-frontend/master
           <h5>How We Do ?</h5>
           <h1>
             Build A Visionary and Sustainable Food Waste System That Benefits
@@ -345,12 +338,6 @@ export const HomePage = () => {
             <li className="list">Partners with Cooks</li>
           </ul>
         </div>
-<<<<<<< HEAD
-        <div className="right-img pb-5">
-          <img src={factory} className="img-fluid" alt="hwd" />
-        </div>
-      </div>
-=======
         <div className="right-img pb-5 ">
           <img src={factory} className="img-fluid" alt="hwd" />
         </div>
@@ -367,7 +354,6 @@ export const HomePage = () => {
         <SloganCard3 />
       </div>
       {/* main-worrior section */}
->>>>>>> momeals-frontend/master
       <div className="main-worrior">
         <div className="worrior p-5">
           <h6>BE A FOOD WORRIOR AND SAVE LIVES</h6>
@@ -375,23 +361,14 @@ export const HomePage = () => {
           <button className="btn-join">JOIN</button>
         </div>
       </div>
-<<<<<<< HEAD
-      <div className="DonateNow">
-        <div className="left-intro mt-4">
-=======
       {/* Section for donation form */}
       <Row className="DonateNow d-flex justify-content-evenly px-4 pb-3 pb-lg-2 pb-md-2  p-md-5 p-lg-5 pt-lg-5 pt-md-5 align-items-center">
         <Col md={5} lg={4} className="left-intro mt-4 mt-lg-5  pt-md-5">
->>>>>>> momeals-frontend/master
           <h6>
             {" "}
             <img src={heart} alt="" width={40} /> DONATE NOW
           </h6>
-<<<<<<< HEAD
-          <h1 className="mt-4">
-=======
           <h1 className="mt-3">
->>>>>>> momeals-frontend/master
             Be A Happy Helping Hand For Homeless and Hopeless.
           </h1>
           <h4 className="mt-4 mb-5" style={{ color: "#C7F2AB" }}>
@@ -400,24 +377,15 @@ export const HomePage = () => {
               Help us save lives and create a world free from hunger
             </span>
           </h4>
-<<<<<<< HEAD
-        </div>
-        <div className="right-form  mt-lg-4">
-=======
         </Col>
         <Col lg={2}  md={1}></Col>
         <Col md={6}  lg={4} className="donateclassright-form  mt-lg-5 pt-lg-5 pt-md-5 px-lg-5">
->>>>>>> momeals-frontend/master
           <div className="donate">
             <h4 className="donatenow">DONATE NOW </h4>
           </div>
           <div className="inputfield ">
             <h6
-<<<<<<< HEAD
-              className="mb-3"
-=======
               className="mb-3 inputfieldh6"
->>>>>>> momeals-frontend/master
               style={{ textAlign: "center", color: "white" }}
             >
               Every Bite Counts and every contribution can make an Impact
@@ -427,11 +395,8 @@ export const HomePage = () => {
               name=""
               placeholder="Your Name"
               className="rounded-pill my-2"
-<<<<<<< HEAD
-=======
               value={inputName}
               onChange={(e) => setInputName(e.target.value)}
->>>>>>> momeals-frontend/master
             />
             <input
               type="text"
